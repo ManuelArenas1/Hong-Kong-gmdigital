@@ -1,0 +1,453 @@
+codigo_dcca,codigo,hospital_urgencias_mas_cercano,distancia_hospital_m
+B11,B,Ruttonjee Hospital,1373.0
+B10,B,Ruttonjee Hospital,1118.0
+B09,B,Ruttonjee Hospital,1605.0
+B08,B,Ruttonjee Hospital,2640.0
+B07,B,Ruttonjee Hospital,2039.0
+B04,B,Ruttonjee Hospital,1334.0
+B06,B,Ruttonjee Hospital,2167.0
+B01,B,Ruttonjee Hospital,595.0
+B12,B,Ruttonjee Hospital,174.0
+B02,B,Ruttonjee Hospital,821.0
+B13,B,Ruttonjee Hospital,1097.0
+B03,B,Ruttonjee Hospital,1142.0
+B05,B,Ruttonjee Hospital,1854.0
+K04,K,Yan Chai Hospital,835.0
+K11,K,Yan Chai Hospital,8504.0
+K02,K,Yan Chai Hospital,295.0
+K01,K,Yan Chai Hospital,146.0
+K03,K,Yan Chai Hospital,375.0
+K09,K,Yan Chai Hospital,404.0
+K05,K,Yan Chai Hospital,1316.0
+K08,K,Yan Chai Hospital,912.0
+K07,K,Yan Chai Hospital,1316.0
+K18,K,Yan Chai Hospital,2016.0
+K12,K,Yan Chai Hospital,7348.0
+K19,K,Yan Chai Hospital,1857.0
+K16,K,Yan Chai Hospital,1628.0
+K13,K,Yan Chai Hospital,6010.0
+K14,K,Yan Chai Hospital,3070.0
+K15,K,Yan Chai Hospital,2641.0
+K17,K,Yan Chai Hospital,4385.0
+K10,K,Yan Chai Hospital,695.0
+K06,K,Yan Chai Hospital,583.0
+A04,A,Ruttonjee Hospital,2292.0
+A06,A,Queen Mary Hospital,978.0
+A02,A,Ruttonjee Hospital,1906.0
+A03,A,Queen Mary Hospital,2522.0
+A05,A,Queen Mary Hospital,1569.0
+A15,A,Queen Mary Hospital,1985.0
+A13,A,Queen Mary Hospital,2666.0
+A14,A,Queen Mary Hospital,2332.0
+A01,A,Ruttonjee Hospital,1753.0
+A12,A,Ruttonjee Hospital,3123.0
+A11,A,Queen Mary Hospital,3058.0
+A10,A,Queen Mary Hospital,2749.0
+A09,A,Queen Mary Hospital,2450.0
+A08,A,Queen Mary Hospital,2394.0
+A07,A,Queen Mary Hospital,1684.0
+H22,H,United Christian Hospital,1421.0
+H08,H,United Christian Hospital,3180.0
+H25,H,United Christian Hospital,2309.0
+H09,H,Kwong Wah Hospital,3158.0
+H07,H,United Christian Hospital,2799.0
+H23,H,United Christian Hospital,1849.0
+H10,H,Kwong Wah Hospital,3165.0
+H02,H,United Christian Hospital,3200.0
+H21,H,United Christian Hospital,1670.0
+H24,H,United Christian Hospital,2158.0
+H01,H,United Christian Hospital,3632.0
+H11,H,Kwong Wah Hospital,3458.0
+H03,H,Kwong Wah Hospital,3643.0
+H12,H,Caritas Medical Centre,3267.0
+H14,H,Caritas Medical Centre,3763.0
+H05,H,United Christian Hospital,3308.0
+H06,H,United Christian Hospital,2972.0
+H04,H,United Christian Hospital,3599.0
+H19,H,United Christian Hospital,3368.0
+H20,H,United Christian Hospital,2569.0
+H15,H,Prince of Wales Hospital,3743.0
+H16,H,Prince of Wales Hospital,3616.0
+H13,H,Caritas Medical Centre,3389.0
+H17,H,Prince of Wales Hospital,3155.0
+H18,H,Prince of Wales Hospital,3389.0
+L16,L,Tuen Mun Hospital,3751.0
+L17,L,Tuen Mun Hospital,3541.0
+L18,L,Tuen Mun Hospital,3575.0
+L15,L,Tuen Mun Hospital,3517.0
+L19,L,Tuen Mun Hospital,2969.0
+L04,L,Tuen Mun Hospital,2642.0
+L05,L,Tuen Mun Hospital,2189.0
+L03,L,Tuen Mun Hospital,2289.0
+L02,L,Tuen Mun Hospital,2369.0
+L06,L,Tuen Mun Hospital,2246.0
+L21,L,Tuen Mun Hospital,2121.0
+L01,L,Tuen Mun Hospital,1530.0
+L08,L,Tuen Mun Hospital,1385.0
+L07,L,Tuen Mun Hospital,983.0
+L09,L,Tuen Mun Hospital,657.0
+L10,L,Tuen Mun Hospital,361.0
+L24,L,Tuen Mun Hospital,771.0
+L13,L,Tuen Mun Hospital,5511.0
+L23,L,Tuen Mun Hospital,1106.0
+L26,L,Tuen Mun Hospital,439.0
+L22,L,Tuen Mun Hospital,1649.0
+L31,L,Tuen Mun Hospital,721.0
+L27,L,Tuen Mun Hospital,308.0
+L11,L,Tuen Mun Hospital,2447.0
+L30,L,Tuen Mun Hospital,1522.0
+L20,L,Tuen Mun Hospital,6748.0
+L29,L,Tuen Mun Hospital,2124.0
+L25,L,Tuen Mun Hospital,2440.0
+L12,L,Tuen Mun Hospital,4233.0
+L14,L,Tuen Mun Hospital,3480.0
+L28,L,Tuen Mun Hospital,1355.0
+T10,T,St John Hospital,904.0
+T09,T,Queen Mary Hospital,7798.0
+T02,T,North Lantau Hospital,527.0
+T03,T,North Lantau Hospital,76.0
+T08,T,St John Hospital,6463.0
+T05,T,North Lantau Hospital,1753.0
+T07,T,Queen Mary Hospital,8056.0
+T01,T,North Lantau Hospital,6337.0
+T06,T,North Lantau Hospital,4622.0
+T04,T,North Lantau Hospital,914.0
+E20,E,Queen Elizabeth Hospital,851.0
+E18,E,Queen Elizabeth Hospital,330.0
+E03,E,Kwong Wah Hospital,829.0
+E04,E,Kwong Wah Hospital,566.0
+E05,E,Kwong Wah Hospital,542.0
+E17,E,Queen Elizabeth Hospital,1088.0
+E01,E,Queen Elizabeth Hospital,1848.0
+E16,E,Kwong Wah Hospital,198.0
+E07,E,Kwong Wah Hospital,661.0
+E06,E,Kwong Wah Hospital,298.0
+E09,E,Kwong Wah Hospital,830.0
+E15,E,Kwong Wah Hospital,524.0
+E10,E,Kwong Wah Hospital,1056.0
+E08,E,Kwong Wah Hospital,1684.0
+E11,E,Kwong Wah Hospital,1237.0
+E13,E,Kwong Wah Hospital,789.0
+E12,E,Kwong Wah Hospital,1203.0
+E14,E,Kwong Wah Hospital,989.0
+E19,E,Queen Elizabeth Hospital,602.0
+E02,E,Kwong Wah Hospital,1609.0
+S25,S,Princess Margaret Hospital,2362.0
+S26,S,Yan Chai Hospital,2882.0
+S27,S,Yan Chai Hospital,2791.0
+S18,S,Princess Margaret Hospital,526.0
+S19,S,Princess Margaret Hospital,700.0
+S23,S,Yan Chai Hospital,2179.0
+S24,S,Yan Chai Hospital,2518.0
+S17,S,Princess Margaret Hospital,958.0
+S28,S,Princess Margaret Hospital,3680.0
+S22,S,Yan Chai Hospital,1765.0
+S16,S,Princess Margaret Hospital,1635.0
+S31,S,Yan Chai Hospital,1897.0
+S15,S,Princess Margaret Hospital,1713.0
+S21,S,Yan Chai Hospital,1296.0
+S30,S,Yan Chai Hospital,2226.0
+S29,S,Yan Chai Hospital,3742.0
+S03,S,Yan Chai Hospital,1208.0
+S20,S,Yan Chai Hospital,1317.0
+S14,S,Yan Chai Hospital,1923.0
+S04,S,Yan Chai Hospital,714.0
+S06,S,Yan Chai Hospital,1320.0
+S01,S,Yan Chai Hospital,1627.0
+S12,S,Yan Chai Hospital,2461.0
+S13,S,Yan Chai Hospital,2567.0
+S05,S,Yan Chai Hospital,746.0
+S07,S,Yan Chai Hospital,1274.0
+S09,S,Yan Chai Hospital,2065.0
+S08,S,Yan Chai Hospital,2224.0
+S11,S,Yan Chai Hospital,2733.0
+S02,S,Yan Chai Hospital,1406.0
+S10,S,Yan Chai Hospital,2411.0
+C13,C,Pamela Youde Nethersole Eastern Hospital,2572.0
+C35,C,Pamela Youde Nethersole Eastern Hospital,1788.0
+C11,C,Pamela Youde Nethersole Eastern Hospital,1765.0
+C33,C,Pamela Youde Nethersole Eastern Hospital,538.0
+C34,C,Pamela Youde Nethersole Eastern Hospital,1158.0
+C14,C,Pamela Youde Nethersole Eastern Hospital,1177.0
+C12,C,Pamela Youde Nethersole Eastern Hospital,2565.0
+C31,C,Pamela Youde Nethersole Eastern Hospital,488.0
+C32,C,Pamela Youde Nethersole Eastern Hospital,330.0
+C10,C,Pamela Youde Nethersole Eastern Hospital,2090.0
+C30,C,Pamela Youde Nethersole Eastern Hospital,1379.0
+C29,C,Pamela Youde Nethersole Eastern Hospital,1236.0
+C09,C,Pamela Youde Nethersole Eastern Hospital,1365.0
+C06,C,Pamela Youde Nethersole Eastern Hospital,1190.0
+C05,C,Pamela Youde Nethersole Eastern Hospital,1496.0
+C08,C,Pamela Youde Nethersole Eastern Hospital,1174.0
+C28,C,Pamela Youde Nethersole Eastern Hospital,1989.0
+C26,C,Pamela Youde Nethersole Eastern Hospital,2225.0
+C04,C,Pamela Youde Nethersole Eastern Hospital,1739.0
+C25,C,Pamela Youde Nethersole Eastern Hospital,2518.0
+C27,C,Pamela Youde Nethersole Eastern Hospital,2440.0
+C15,C,Pamela Youde Nethersole Eastern Hospital,1894.0
+C16,C,Ruttonjee Hospital,2847.0
+C17,C,Ruttonjee Hospital,2514.0
+C07,C,Pamela Youde Nethersole Eastern Hospital,1230.0
+C21,C,Ruttonjee Hospital,3189.0
+C20,C,Ruttonjee Hospital,3038.0
+C22,C,Ruttonjee Hospital,3456.0
+C03,C,Pamela Youde Nethersole Eastern Hospital,2176.0
+C02,C,Pamela Youde Nethersole Eastern Hospital,2493.0
+C01,C,Pamela Youde Nethersole Eastern Hospital,2904.0
+C18,C,Queen Elizabeth Hospital,2582.0
+C19,C,Queen Elizabeth Hospital,2857.0
+C23,C,Pamela Youde Nethersole Eastern Hospital,3656.0
+C24,C,United Christian Hospital,3269.0
+J22,J,United Christian Hospital,3271.0
+J25,J,United Christian Hospital,2608.0
+J21,J,United Christian Hospital,2587.0
+J26,J,Pamela Youde Nethersole Eastern Hospital,2851.0
+J20,J,United Christian Hospital,2193.0
+J27,J,United Christian Hospital,2182.0
+J28,J,United Christian Hospital,1812.0
+J19,J,United Christian Hospital,1841.0
+J18,J,United Christian Hospital,1923.0
+J17,J,United Christian Hospital,2327.0
+J32,J,United Christian Hospital,1027.0
+J15,J,United Christian Hospital,1483.0
+J29,J,United Christian Hospital,1637.0
+J31,J,United Christian Hospital,876.0
+J37,J,United Christian Hospital,775.0
+J01,J,United Christian Hospital,1273.0
+J36,J,United Christian Hospital,584.0
+J33,J,United Christian Hospital,532.0
+J38,J,United Christian Hospital,746.0
+J30,J,United Christian Hospital,952.0
+J34,J,United Christian Hospital,226.0
+J35,J,United Christian Hospital,239.0
+J12,J,United Christian Hospital,862.0
+J39,J,United Christian Hospital,702.0
+J40,J,United Christian Hospital,741.0
+J02,J,United Christian Hospital,1523.0
+J07,J,United Christian Hospital,810.0
+J08,J,United Christian Hospital,439.0
+J10,J,United Christian Hospital,984.0
+J03,J,United Christian Hospital,1157.0
+J06,J,United Christian Hospital,1212.0
+J16,J,United Christian Hospital,1732.0
+J05,J,United Christian Hospital,1542.0
+J09,J,United Christian Hospital,1066.0
+J04,J,United Christian Hospital,2071.0
+J11,J,United Christian Hospital,833.0
+J13,J,United Christian Hospital,960.0
+J14,J,United Christian Hospital,1343.0
+J24,J,United Christian Hospital,3137.0
+J23,J,Pamela Youde Nethersole Eastern Hospital,3007.0
+R14,R,Caritas Medical Centre,2470.0
+R17,R,Prince of Wales Hospital,3204.0
+R13,R,Prince of Wales Hospital,3143.0
+R18,R,Prince of Wales Hospital,2707.0
+R12,R,Prince of Wales Hospital,2351.0
+R16,R,Prince of Wales Hospital,2715.0
+R19,R,Prince of Wales Hospital,2191.0
+R11,R,Prince of Wales Hospital,1444.0
+R08,R,Prince of Wales Hospital,595.0
+R15,R,Caritas Medical Centre,2318.0
+R20,R,Prince of Wales Hospital,2326.0
+R07,R,Prince of Wales Hospital,554.0
+R09,R,Prince of Wales Hospital,1672.0
+R41,R,Prince of Wales Hospital,1668.0
+R01,R,Prince of Wales Hospital,1407.0
+R05,R,Prince of Wales Hospital,593.0
+R06,R,Prince of Wales Hospital,291.0
+R04,R,Prince of Wales Hospital,895.0
+R03,R,Prince of Wales Hospital,791.0
+R02,R,Prince of Wales Hospital,1486.0
+R21,R,Prince of Wales Hospital,3270.0
+R39,R,Prince of Wales Hospital,1352.0
+R40,R,Prince of Wales Hospital,2076.0
+R37,R,Prince of Wales Hospital,3646.0
+R36,R,Prince of Wales Hospital,3812.0
+R34,R,Prince of Wales Hospital,5009.0
+R23,R,Prince of Wales Hospital,2690.0
+R33,R,Prince of Wales Hospital,5412.0
+R26,R,Prince of Wales Hospital,5373.0
+R35,R,Prince of Wales Hospital,4718.0
+R32,R,Prince of Wales Hospital,5693.0
+R31,R,Prince of Wales Hospital,6206.0
+R30,R,Prince of Wales Hospital,6869.0
+R27,R,Prince of Wales Hospital,5484.0
+R28,R,Alice Ho Miu Ling Nethersole Hospital,6251.0
+R29,R,Prince of Wales Hospital,7082.0
+R24,R,Prince of Wales Hospital,4352.0
+R10,R,Prince of Wales Hospital,709.0
+R22,R,Prince of Wales Hospital,2544.0
+R25,R,Prince of Wales Hospital,4496.0
+R38,R,Prince of Wales Hospital,1112.0
+D05,D,Ruttonjee Hospital,4200.0
+D04,D,Ruttonjee Hospital,4894.0
+D06,D,Queen Mary Hospital,4267.0
+D07,D,Queen Mary Hospital,3722.0
+D02,D,Queen Mary Hospital,3820.0
+D03,D,Ruttonjee Hospital,3855.0
+D01,D,Ruttonjee Hospital,3754.0
+D14,D,Ruttonjee Hospital,3223.0
+D08,D,Queen Mary Hospital,3053.0
+D09,D,Queen Mary Hospital,2558.0
+D13,D,Queen Mary Hospital,3060.0
+D10,D,Queen Mary Hospital,2131.0
+D15,D,Ruttonjee Hospital,2870.0
+D16,D,Ruttonjee Hospital,5721.0
+D17,D,Pamela Youde Nethersole Eastern Hospital,4799.0
+D12,D,Queen Mary Hospital,1900.0
+D11,D,Queen Mary Hospital,1029.0
+F06,F,Kwong Wah Hospital,1579.0
+F08,F,Kwong Wah Hospital,1692.0
+F07,F,Caritas Medical Centre,1539.0
+F05,F,Kwong Wah Hospital,1755.0
+F03,F,Caritas Medical Centre,1505.0
+F10,F,Caritas Medical Centre,1145.0
+F04,F,Caritas Medical Centre,1563.0
+F14,F,Princess Margaret Hospital,2164.0
+F13,F,Caritas Medical Centre,899.0
+F15,F,Princess Margaret Hospital,1279.0
+F25,F,Kwong Wah Hospital,1899.0
+F02,F,Caritas Medical Centre,1104.0
+F23,F,Caritas Medical Centre,1553.0
+F16,F,Princess Margaret Hospital,838.0
+F11,F,Caritas Medical Centre,698.0
+F01,F,Caritas Medical Centre,795.0
+F18,F,Caritas Medical Centre,675.0
+F17,F,Princess Margaret Hospital,798.0
+F21,F,Caritas Medical Centre,732.0
+F20,F,Caritas Medical Centre,374.0
+F24,F,Caritas Medical Centre,2318.0
+F22,F,Caritas Medical Centre,982.0
+F12,F,Caritas Medical Centre,1456.0
+F09,F,Caritas Medical Centre,1327.0
+F19,F,Caritas Medical Centre,442.0
+G20,G,Queen Elizabeth Hospital,1520.0
+G21,G,Queen Elizabeth Hospital,1297.0
+G22,G,Queen Elizabeth Hospital,1135.0
+G19,G,Queen Elizabeth Hospital,2766.0
+G23,G,Queen Elizabeth Hospital,1301.0
+G17,G,Queen Elizabeth Hospital,1561.0
+G25,G,Queen Elizabeth Hospital,698.0
+G18,G,Queen Elizabeth Hospital,2139.0
+G16,G,Queen Elizabeth Hospital,1758.0
+G24,G,Queen Elizabeth Hospital,868.0
+G15,G,Queen Elizabeth Hospital,2204.0
+G06,G,Queen Elizabeth Hospital,1175.0
+G04,G,Queen Elizabeth Hospital,1837.0
+G05,G,Queen Elizabeth Hospital,1538.0
+G03,G,Queen Elizabeth Hospital,2120.0
+G07,G,Kwong Wah Hospital,906.0
+G02,G,Queen Elizabeth Hospital,2397.0
+G08,G,Kwong Wah Hospital,1029.0
+G01,G,Kwong Wah Hospital,2153.0
+G09,G,Kwong Wah Hospital,1864.0
+G11,G,Kwong Wah Hospital,2719.0
+G14,G,United Christian Hospital,2138.0
+G10,G,Caritas Medical Centre,2723.0
+G13,G,United Christian Hospital,2200.0
+G12,G,United Christian Hospital,2315.0
+P11,P,Alice Ho Miu Ling Nethersole Hospital,1942.0
+P10,P,Alice Ho Miu Ling Nethersole Hospital,3255.0
+P09,P,Alice Ho Miu Ling Nethersole Hospital,3805.0
+P12,P,Alice Ho Miu Ling Nethersole Hospital,1859.0
+P01,P,Alice Ho Miu Ling Nethersole Hospital,1316.0
+P08,P,Alice Ho Miu Ling Nethersole Hospital,1119.0
+P15,P,Alice Ho Miu Ling Nethersole Hospital,1327.0
+P07,P,Alice Ho Miu Ling Nethersole Hospital,732.0
+P03,P,Alice Ho Miu Ling Nethersole Hospital,783.0
+P16,P,Alice Ho Miu Ling Nethersole Hospital,1759.0
+P06,P,Alice Ho Miu Ling Nethersole Hospital,590.0
+P04,P,Alice Ho Miu Ling Nethersole Hospital,545.0
+P02,P,Alice Ho Miu Ling Nethersole Hospital,829.0
+P05,P,Alice Ho Miu Ling Nethersole Hospital,74.0
+P13,P,Alice Ho Miu Ling Nethersole Hospital,4014.0
+P17,P,Alice Ho Miu Ling Nethersole Hospital,1304.0
+P19,P,Tseung Kwan O Hospital,21853.0
+P18,P,Alice Ho Miu Ling Nethersole Hospital,16719.0
+N05,N,North District Hospital,3809.0
+N06,N,North District Hospital,3857.0
+N04,N,North District Hospital,3860.0
+N03,N,North District Hospital,3598.0
+N08,N,North District Hospital,2968.0
+N09,N,North District Hospital,2115.0
+N07,N,North District Hospital,3248.0
+N10,N,North District Hospital,1952.0
+N01,N,North District Hospital,3748.0
+N12,N,North District Hospital,1994.0
+N02,N,North District Hospital,3425.0
+N17,N,North District Hospital,3547.0
+N14,N,North District Hospital,2678.0
+N13,N,North District Hospital,2316.0
+N15,N,North District Hospital,2652.0
+N18,N,Alice Ho Miu Ling Nethersole Hospital,5030.0
+N11,N,North District Hospital,598.0
+N16,N,Alice Ho Miu Ling Nethersole Hospital,9295.0
+M12,M,Pok Oi Hospital,2994.0
+M39,M,Yan Chai Hospital,5719.0
+M05,M,Pok Oi Hospital,1009.0
+M13,M,Tin Shui Wai Hospital,3414.0
+M03,M,Pok Oi Hospital,760.0
+M01,M,Pok Oi Hospital,1294.0
+M04,M,Pok Oi Hospital,300.0
+M06,M,Pok Oi Hospital,2024.0
+M02,M,Pok Oi Hospital,1028.0
+M07,M,Pok Oi Hospital,1623.0
+M18,M,Tin Shui Wai Hospital,1332.0
+M19,M,Tin Shui Wai Hospital,1536.0
+M09,M,Pok Oi Hospital,1095.0
+M20,M,Tin Shui Wai Hospital,1353.0
+M21,M,Tin Shui Wai Hospital,1594.0
+M23,M,Tin Shui Wai Hospital,623.0
+M11,M,Pok Oi Hospital,2128.0
+M22,M,Tin Shui Wai Hospital,1159.0
+M24,M,Tin Shui Wai Hospital,300.0
+M25,M,Tin Shui Wai Hospital,215.0
+M26,M,Tin Shui Wai Hospital,812.0
+M27,M,Tin Shui Wai Hospital,1324.0
+M16,M,Tin Shui Wai Hospital,2340.0
+M37,M,Pok Oi Hospital,1908.0
+M28,M,Tin Shui Wai Hospital,889.0
+M30,M,Tin Shui Wai Hospital,874.0
+M29,M,Tin Shui Wai Hospital,1394.0
+M31,M,Tin Shui Wai Hospital,1161.0
+M38,M,North District Hospital,5361.0
+M33,M,Tin Shui Wai Hospital,1731.0
+M32,M,Tin Shui Wai Hospital,1539.0
+M15,M,Tin Shui Wai Hospital,4018.0
+M35,M,Pok Oi Hospital,4835.0
+M34,M,Tin Shui Wai Hospital,2387.0
+M36,M,North District Hospital,3365.0
+M08,M,Pok Oi Hospital,1733.0
+M10,M,Pok Oi Hospital,725.0
+M14,M,Tin Shui Wai Hospital,2426.0
+M17,M,Tin Shui Wai Hospital,1688.0
+Q09,Q,Tseung Kwan O Hospital,3055.0
+Q08,Q,Tseung Kwan O Hospital,2211.0
+Q07,Q,Tseung Kwan O Hospital,2226.0
+Q10,Q,Tseung Kwan O Hospital,1637.0
+Q29,Q,Tseung Kwan O Hospital,2735.0
+Q06,Q,Tseung Kwan O Hospital,1838.0
+Q13,Q,Tseung Kwan O Hospital,1528.0
+Q12,Q,Tseung Kwan O Hospital,1223.0
+Q28,Q,Tseung Kwan O Hospital,1543.0
+Q14,Q,Tseung Kwan O Hospital,1237.0
+Q27,Q,Tseung Kwan O Hospital,723.0
+Q15,Q,Tseung Kwan O Hospital,1154.0
+Q25,Q,Tseung Kwan O Hospital,204.0
+Q26,Q,Tseung Kwan O Hospital,598.0
+Q23,Q,Tseung Kwan O Hospital,282.0
+Q24,Q,Tseung Kwan O Hospital,166.0
+Q22,Q,Tseung Kwan O Hospital,767.0
+Q21,Q,Tseung Kwan O Hospital,1044.0
+Q17,Q,Tseung Kwan O Hospital,2102.0
+Q16,Q,Tseung Kwan O Hospital,1531.0
+Q19,Q,Tseung Kwan O Hospital,1244.0
+Q18,Q,Tseung Kwan O Hospital,1661.0
+Q05,Q,United Christian Hospital,1754.0
+Q04,Q,Tseung Kwan O Hospital,13918.0
+Q01,Q,Tseung Kwan O Hospital,6992.0
+Q02,Q,Tseung Kwan O Hospital,5030.0
+Q03,Q,Tseung Kwan O Hospital,14139.0
+Q11,Q,Tseung Kwan O Hospital,1299.0
+Q20,Q,Tseung Kwan O Hospital,1422.0
+P14,P,Alice Ho Miu Ling Nethersole Hospital,1866.0

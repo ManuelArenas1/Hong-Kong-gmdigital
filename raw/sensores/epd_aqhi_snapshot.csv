@@ -1,0 +1,19 @@
+station_name,station_type,aqhi_value,health_risk,published_hkt
+Central/Western,General,2,Low,2026-10-06T07:30:00+08:00
+Southern,General,3,Low,2026-10-06T07:30:00+08:00
+Eastern,General,3,Low,2026-10-06T07:30:00+08:00
+Kwun Tong,General,2,Low,2026-10-06T07:30:00+08:00
+Sham Shui Po,General,2,Low,2026-10-06T07:30:00+08:00
+Kwai Chung,General,2,Low,2026-10-06T07:30:00+08:00
+Tsuen Wan,General,2,Low,2026-10-06T07:30:00+08:00
+Tseung Kwan O,General,2,Low,2026-10-06T07:30:00+08:00
+Yuen Long,General,2,Low,2026-10-06T07:30:00+08:00
+Tuen Mun,General,3,Low,2026-10-06T07:30:00+08:00
+Tung Chung,General,2,Low,2026-10-06T07:30:00+08:00
+Tai Po,General,2,Low,2026-10-06T07:30:00+08:00
+Sha Tin,General,2,Low,2026-10-06T07:30:00+08:00
+North,General,3,Low,2026-10-06T07:30:00+08:00
+Tap Mun,General,2,Low,2026-10-06T07:30:00+08:00
+Causeway Bay,Roadside,2,Low,2026-10-06T07:30:00+08:00
+Central,Roadside,2,Low,2026-10-06T07:30:00+08:00
+Mong Kok,Roadside,2,Low,2026-10-06T07:30:00+08:00

@@ -1,0 +1,19 @@
+codigo,distrito_en,distrito_zh,distrito_es,region,estaciones_meteorologicas,estaciones_calidad_aire,aqhi_ultimo
+A,Central and Western,中西區,Centro y Oeste,Isla de Hong Kong,4,2,2.0
+B,Wan Chai,灣仔區,Wan Chai,Isla de Hong Kong,1,1,
+C,Eastern,東區,Este,Isla de Hong Kong,4,1,3.0
+D,Southern,南區,Sur,Isla de Hong Kong,4,1,3.0
+E,Yau Tsim Mong,油尖旺區,Yau Tsim Mong,Kowloon,3,1,
+F,Sham Shui Po,深水埗區,Sham Shui Po,Kowloon,1,1,2.0
+G,Kowloon City,九龍城區,Ciudad de Kowloon,Kowloon,3,0,
+H,Wong Tai Sin,黃大仙區,Wong Tai Sin,Kowloon,2,0,
+J,Kwun Tong,觀塘區,Kwun Tong,Kowloon,1,1,2.0
+K,Tsuen Wan,荃灣區,Tsuen Wan,Nuevos Territorios,3,1,2.0
+L,Tuen Mun,屯門區,Tuen Mun,Nuevos Territorios,6,1,3.0
+M,Yuen Long,元朗區,Yuen Long,Nuevos Territorios,8,1,2.0
+N,North,北區,Norte,Nuevos Territorios,6,1,3.0
+P,Tai Po,大埔區,Tai Po,Nuevos Territorios,11,2,2.0
+Q,Sai Kung,西貢區,Sai Kung,Nuevos Territorios,8,1,2.0
+R,Sha Tin,沙田區,Sha Tin,Nuevos Territorios,1,1,2.0
+S,Kwai Tsing,葵青區,Kwai Tsing,Nuevos Territorios,3,1,2.0
+T,Islands,離島區,Islas,Nuevos Territorios,17,1,2.0

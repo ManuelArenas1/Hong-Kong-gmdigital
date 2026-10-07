@@ -1,0 +1,453 @@
+codigo_dcca,nombre_en,nombre_zh,codigo,distrito_en,distrito_es,region,area_km2_poligono,paradas_transporte,paradas_por_km2_poligono,suma_rutas_en_paradas
+B11,Stubbs Road,司徒拔道,B,Wan Chai,Wan Chai,Isla de Hong Kong,4.2032,71,16.89,170
+B10,Happy Valley,跑馬地,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.445,28,62.92,88
+B09,Broadwood,樂活,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.5285,22,41.63,53
+B08,Jardine's Lookout,渣甸山,B,Wan Chai,Wan Chai,Isla de Hong Kong,2.1935,46,20.97,94
+B07,Tai Hang,大坑,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.4049,44,108.67,207
+B04,Causeway Bay,銅鑼灣,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.2374,61,256.95,324
+B06,Tin Hau,天后,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.16,15,93.75,40
+B01,Hennessy,軒尼詩,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.3263,54,165.49,367
+B12,Southorn,修頓,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.9126,62,67.94,221
+B02,Oi Kwan,愛群,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.3744,68,181.62,366
+B13,Tai Fat Hau,大佛口,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.7287,57,78.22,371
+B03,Canal Road,鵝頸,B,Wan Chai,Wan Chai,Isla de Hong Kong,0.6797,54,79.45,314
+B05,Victoria Park,維園,B,Wan Chai,Wan Chai,Isla de Hong Kong,1.1484,45,39.18,288
+K04,Hoi Bun,海濱,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.2265,10,44.15,22
+K11,Ma Wan,馬灣,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,33.3634,39,1.17,196
+K02,Yeung Uk Road,楊屋道,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.2138,56,261.93,167
+K01,Tak Wah,德華,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.2113,63,298.15,218
+K03,Tsuen Wan South,荃灣南,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.414,58,140.1,129
+K09,Fuk Loi,福來,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.1621,41,252.93,163
+K05,Tsuen Wan West,荃灣西,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,1.2979,54,41.61,166
+K08,Discovery Park,愉景,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.1687,33,195.61,110
+K07,Tsuen Wan Centre,荃灣中心,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.1415,21,148.41,76
+K18,Lei Muk Shue West,梨木樹西,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.0914,1,10.94,22
+K12,Tsuen Wan Rural,荃灣郊區,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,4.229,55,13.01,183
+K19,Lei Muk Shue East,梨木樹東,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.6809,39,57.28,260
+K16,Cheung Shek,象石,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,1.0016,20,19.97,85
+K13,Ting Sham,汀深,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,9.8798,46,4.66,145
+K14,Lai To,麗濤,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,9.4037,13,1.38,36
+K15,Allway,荃威,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,8.1852,31,3.79,52
+K17,Shek Wai Kok,石圍角,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,14.0476,9,0.64,37
+K10,Luk Yeung,綠楊,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.3706,10,26.98,34
+K06,Clague Garden,祈德尊,K,Tsuen Wan,Tsuen Wan,Nuevos Territorios,0.1812,13,71.74,38
+A04,Peak,山頂,A,Central and Western,Centro y Oeste,Isla de Hong Kong,5.7392,29,5.05,44
+A06,Kwun Lung,觀龍,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.2373,12,50.57,76
+A02,Mid Levels East,半山東,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.3318,20,60.28,78
+A03,Castle Road,衛城,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.2747,31,112.85,88
+A05,University,大學,A,Central and Western,Centro y Oeste,Isla de Hong Kong,1.5283,62,40.57,274
+A15,Water Street,水街,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.15,22,146.67,85
+A13,Tung Wah,東華,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.1944,24,123.46,73
+A14,Centre Street,正街,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.1084,19,175.28,67
+A01,Chung Wan,中環,A,Central and Western,Centro y Oeste,Isla de Hong Kong,2.8988,301,103.84,1914
+A12,Sheung Wan,上環,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.9345,38,40.66,208
+A11,Sai Ying Pun,西營盤,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.6834,25,36.58,123
+A10,Shek Tong Tsui,石塘咀,A,Central and Western,Centro y Oeste,Isla de Hong Kong,1.0303,12,11.65,78
+A09,Belcher,寶翠,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.2257,20,88.61,89
+A08,Sai Wan,西環,A,Central and Western,Centro y Oeste,Isla de Hong Kong,0.5112,24,46.95,95
+A07,Kennedy Town & Mount Davis,堅摩,A,Central and Western,Centro y Oeste,Isla de Hong Kong,4.9069,37,7.54,144
+H22,Choi Wan South,彩雲南,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.0808,19,235.15,68
+H08,Tung Tau,東頭,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.2457,36,146.52,143
+H25,Choi Hung,彩虹,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.0924,30,324.68,147
+H09,Tung Mei,東美,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.2439,22,90.2,63
+H07,San Po Kong,新蒲崗,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.3344,45,134.57,123
+H23,Choi Wan West,彩雲西,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.179,7,39.11,28
+H10,Lok Fu,樂富,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1756,27,153.76,43
+H02,Lung Ha,龍下,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1458,20,137.17,62
+H21,Choi Wan East,彩雲東,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.6497,11,16.93,19
+H24,Chi Choi,池彩,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.4122,32,77.63,181
+H01,Lung Tsui,龍趣,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1537,34,221.21,134
+H11,Wang Tau Hom,橫頭磡,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1334,27,202.4,83
+H03,Lung Sheung,龍上,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.3215,33,102.64,222
+H12,Tin Keung,天強,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1464,16,109.29,62
+H14,Chuk Yuen South,竹園南,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1347,22,163.33,44
+H05,Fung Tak,鳳德,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1111,8,72.01,31
+H06,Lung Sing,龍星,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.6626,79,119.23,287
+H04,Fung Wong,鳳凰,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1825,26,142.47,62
+H19,Tsz Wan East,慈雲東,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1366,25,183.02,93
+H20,King Fu,瓊富,H,Wong Tai Sin,Wong Tai Sin,Kowloon,1.6229,27,16.64,69
+H15,Chuk Yuen North,竹園北,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.2615,13,49.71,18
+H16,Tsz Wan West,慈雲西,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.1767,13,73.57,26
+H13,Tsui Chuk & Pang Ching,翠竹及鵬程,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.6029,13,21.56,31
+H17,Ching Oi,正愛,H,Wong Tai Sin,Wong Tai Sin,Kowloon,0.4678,19,40.62,44
+H18,Ching On,正安,H,Wong Tai Sin,Wong Tai Sin,Kowloon,1.629,23,14.12,85
+L16,Siu Hei,兆禧,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1522,23,151.12,53
+L17,Wu King,湖景,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.0805,16,198.76,48
+L18,Butterfly,蝴蝶,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1828,17,93.0,59
+L15,Yuet Wu,悅湖,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1574,11,69.89,23
+L19,Fu Sun,富新,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.2748,21,76.42,70
+L04,Siu Tsui,兆翠,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.2396,27,112.69,96
+L05,Yau Oi South,友愛南,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.0863,10,115.87,36
+L03,On Ting,安定,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1665,27,162.16,79
+L02,Siu Chi,兆置,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.3047,52,170.66,136
+L06,Yau Oi North,友愛北,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.5208,30,57.6,100
+L21,Lung Mun,龍門,L,Tuen Mun,Tuen Mun,Nuevos Territorios,1.663,55,33.07,122
+L01,Tuen Mun Town Centre,屯門市中心,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.2941,88,299.22,229
+L08,Shan King,山景,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1391,9,64.7,23
+L07,Tsui Hing,翠興,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.5017,36,71.76,97
+L09,King Hing,景興,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.2698,31,114.9,98
+L10,Hing Tsak,興澤,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1701,12,70.55,31
+L24,Tin King,田景,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.0866,13,150.12,36
+L13,Sam Shing,三聖,L,Tuen Mun,Tuen Mun,Nuevos Territorios,36.8728,124,3.36,476
+L23,Leung King,良景,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1187,12,101.1,48
+L26,Kin Sang,建生,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.1756,21,119.59,71
+L22,San King,新景,L,Tuen Mun,Tuen Mun,Nuevos Territorios,2.1467,8,3.73,31
+L31,Prime View,景峰,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.6437,66,102.53,144
+L27,Siu Hong,兆康,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.6607,46,69.62,118
+L11,San Hui,新墟,L,Tuen Mun,Tuen Mun,Nuevos Territorios,10.7507,48,4.46,200
+L30,Fu Tai,富泰,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.9448,13,13.76,23
+L20,Lok Tsui,樂翠,L,Tuen Mun,Tuen Mun,Nuevos Territorios,102.0154,119,1.17,246
+L29,Tuen Mun Rural,屯門鄉郊,L,Tuen Mun,Tuen Mun,Nuevos Territorios,4.0408,52,12.87,162
+L25,Po Tin,寶田,L,Tuen Mun,Tuen Mun,Nuevos Territorios,9.0436,50,5.53,148
+L12,So Kwun Wat,掃管笏,L,Tuen Mun,Tuen Mun,Nuevos Territorios,14.343,88,6.14,243
+L14,Hanford,恒褔,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.6531,85,130.15,216
+L28,Yan Tin,欣田,L,Tuen Mun,Tuen Mun,Nuevos Territorios,0.8316,24,28.86,88
+T10,Cheung Chau,長洲,T,Islands,Islas,Nuevos Territorios,15.845,1,0.06,3
+T09,Lamma & Po Toi,南丫及蒲台,T,Islands,Islas,Nuevos Territorios,232.0866,2,0.01,2
+T02,Mun Yat,滿逸,T,Islands,Islas,Nuevos Territorios,0.2971,26,87.51,131
+T03,Yat Tung Estate North,逸東邨北,T,Islands,Islas,Nuevos Territorios,0.0964,8,82.99,44
+T08,Peng Chau & Hei Ling Chau,坪洲及喜靈洲,T,Islands,Islas,Nuevos Territorios,45.4571,3,0.07,5
+T05,Tung Chung Central,東涌中,T,Islands,Islas,Nuevos Territorios,0.4246,28,65.94,139
+T07,Discovery Bay,愉景灣,T,Islands,Islas,Nuevos Territorios,25.6382,3,0.12,3
+T01,Lantau,大嶼山,T,Islands,Islas,Nuevos Territorios,313.5034,154,0.49,883
+T06,Tung Chung North,東涌北,T,Islands,Islas,Nuevos Territorios,30.8609,190,6.16,1172
+T04,Tung Chung South,東涌南,T,Islands,Islas,Nuevos Territorios,0.4995,46,92.09,234
+E20,Tsim Sha Tsui Central,尖沙咀中,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.4762,37,77.7,155
+E18,Jordan North,佐敦北,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.156,37,237.18,182
+E03,Jordan West,佐敦西,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.3306,31,93.77,78
+E04,Yau Ma Tei South,油麻地南,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.442,39,88.24,164
+E05,Charming,富榮,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1605,8,49.84,28
+E17,East Tsim Sha Tsui & King's Park,尖東及京士柏,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,2.3846,140,58.71,750
+E01,Tsim Sha Tsui West,尖沙咀西,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,3.027,138,45.59,630
+E16,Yau Ma Tei North,油麻地北,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1358,26,191.46,147
+E07,Fu Pak,富柏,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.223,25,112.11,99
+E06,Mong Kok West,旺角西,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1509,33,218.69,146
+E09,Cherry,櫻桃,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1853,46,248.25,238
+E15,Mong Kok South,旺角南,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.2002,65,324.68,268
+E10,Tai Kok Tsui South,大角咀南,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.117,12,102.56,34
+E08,Olympic,奧運,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.7358,17,23.1,52
+E11,Tai Kok Tsui North,大角咀北,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1358,16,117.82,55
+E13,Mong Kok North,旺角北,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.2127,47,220.97,252
+E12,Tai Nan,大南,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1876,19,101.28,85
+E14,Mong Kok East,旺角東,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.3151,56,177.72,221
+E19,Jordan South,佐敦南,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,0.1263,29,229.61,154
+E02,Kowloon Station,九龍站,E,Yau Tsim Mong,Yau Tsim Mong,Kowloon,1.7546,37,21.09,257
+S25,Cheung Ching,長青,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.2272,36,158.45,167
+S26,Cheung Hong,長康,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.1667,16,95.98,101
+S27,Shing Hong,盛康,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0903,18,199.34,91
+S18,Cho Yiu,祖堯,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.7748,31,40.01,133
+S19,Lai King,荔景,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,5.4138,60,11.08,206
+S23,Tsing Yi Estate,青衣邨,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.1437,27,187.89,125
+S24,Greenfield,翠怡,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.6439,48,74.55,193
+S17,Lai Wah,荔華,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,1.4635,8,5.47,49
+S28,Tsing Yi South,青衣南,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,28.8684,41,1.42,161
+S22,Wai Ying,偉盈,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.426,12,28.17,32
+S16,Wah Lai,華麗,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.8447,16,18.94,66
+S31,Cheung On,長安,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0888,19,213.96,53
+S15,Hing Fong,興芳,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.4283,59,137.75,172
+S21,On Ho,安灝,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.3402,19,55.85,64
+S30,Ching Fat,青發,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.7518,3,3.99,5
+S29,Cheung Hang,長亨,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,2.6875,17,6.33,56
+S03,Kwai Shing East Estate,葵盛東邨,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.1104,17,153.99,57
+S20,Kwai Shing West Estate,葵盛西邨,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,1.8467,65,35.2,144
+S14,Kwai Fong,葵芳,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.4613,34,73.7,196
+S04,Upper Tai Wo Hau,上大窩口,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0844,9,106.64,24
+S06,Kwai Chung Estate South,葵涌邨南,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.174,23,132.18,52
+S01,Kwai Hing,葵興,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0886,20,225.73,68
+S12,Shek Lei North,石籬北,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0909,17,187.02,72
+S13,Shek Lei South,石籬南,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.6581,17,25.83,40
+S05,Lower Tai Wo Hau,下大窩口,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0896,13,145.09,70
+S07,Kwai Chung Estate North,葵涌邨北,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.2011,16,79.56,76
+S09,Tai Pak Tin West,大白田西,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.2193,17,77.52,92
+S08,Shek Yam,石蔭,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.2684,25,93.14,158
+S11,On Yam,安蔭,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,1.2548,24,19.13,168
+S02,Kwai Luen,葵聯,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.3248,47,144.7,127
+S10,Tai Pak Tin East,大白田東,S,Kwai Tsing,Kwai Tsing,Nuevos Territorios,0.0854,23,269.32,71
+C13,Wan Tsui,環翠,C,Eastern,Este,Isla de Hong Kong,2.9173,29,9.94,128
+C35,Kai Hiu,佳曉,C,Eastern,Este,Isla de Hong Kong,0.155,2,12.9,4
+C11,Siu Sai Wan,小西灣,C,Eastern,Este,Isla de Hong Kong,0.1168,21,179.79,116
+C33,Tsui Tak,翠德,C,Eastern,Este,Isla de Hong Kong,0.113,20,176.99,102
+C34,Yue Wan,漁灣,C,Eastern,Este,Isla de Hong Kong,0.2436,17,69.79,99
+C14,Fei Tsui,翡翠,C,Eastern,Este,Isla de Hong Kong,1.9909,19,9.54,76
+C12,King Yee,景怡,C,Eastern,Este,Isla de Hong Kong,1.7564,10,5.69,74
+C31,Hing Man,興民,C,Eastern,Este,Isla de Hong Kong,0.8625,26,30.14,144
+C32,Lok Hong,樂康,C,Eastern,Este,Isla de Hong Kong,0.6373,57,89.44,290
+C10,Yan Lam,欣藍,C,Eastern,Este,Isla de Hong Kong,0.9625,25,25.97,118
+C30,Upper Yiu Tung,上耀東,C,Eastern,Este,Isla de Hong Kong,0.3644,16,43.91,38
+C29,Lower Yiu Tung,下耀東,C,Eastern,Este,Isla de Hong Kong,0.185,45,243.24,175
+C09,Tsui Wan,翠灣,C,Eastern,Este,Isla de Hong Kong,1.4072,31,22.03,125
+C06,Shaukeiwan,筲箕灣,C,Eastern,Este,Isla de Hong Kong,0.1031,19,184.29,47
+C05,Aldrich Bay,愛秩序灣,C,Eastern,Este,Isla de Hong Kong,0.1012,6,59.29,20
+C08,Heng Fa Chuen,杏花邨,C,Eastern,Este,Isla de Hong Kong,0.7409,14,18.9,28
+C28,Hing Tung,興東,C,Eastern,Este,Isla de Hong Kong,0.2298,32,139.25,105
+C26,Kornhill,康怡,C,Eastern,Este,Isla de Hong Kong,0.1057,5,47.3,8
+C04,Sai Wan Ho,西灣河,C,Eastern,Este,Isla de Hong Kong,0.1904,43,225.84,249
+C25,Nam Fung,南豐,C,Eastern,Este,Isla de Hong Kong,0.0658,8,121.58,13
+C27,Kornhill Garden,康山,C,Eastern,Este,Isla de Hong Kong,0.1104,28,253.62,138
+C15,Mount Parker,柏架山,C,Eastern,Este,Isla de Hong Kong,4.1703,16,3.84,87
+C16,Braemar Hill,寶馬山,C,Eastern,Este,Isla de Hong Kong,1.5973,47,29.42,143
+C17,Fortress Hill,炮台山,C,Eastern,Este,Isla de Hong Kong,0.1437,36,250.52,237
+C07,A Kung Ngam,阿公岩,C,Eastern,Este,Isla de Hong Kong,1.7368,31,17.85,125
+C21,Kam Ping,錦屏,C,Eastern,Este,Isla de Hong Kong,0.0813,24,295.2,125
+C20,Fort Street,堡壘,C,Eastern,Este,Isla de Hong Kong,0.1135,16,140.97,87
+C22,Tanner,丹拿,C,Eastern,Este,Isla de Hong Kong,0.1403,9,64.15,51
+C03,Lei King Wan,鯉景灣,C,Eastern,Este,Isla de Hong Kong,0.4701,24,51.05,119
+C02,Tai Koo Shing East,太古城東,C,Eastern,Este,Isla de Hong Kong,0.4745,6,12.64,9
+C01,Tai Koo Shing West,太古城西,C,Eastern,Este,Isla de Hong Kong,0.5389,20,37.11,105
+C18,City Garden,城市花園,C,Eastern,Este,Isla de Hong Kong,0.582,15,25.77,78
+C19,Provident,和富,C,Eastern,Este,Isla de Hong Kong,0.6689,27,40.36,116
+C23,Healthy Village,健康村,C,Eastern,Este,Isla de Hong Kong,1.2242,77,62.9,446
+C24,Quarry Bay,鰂魚涌,C,Eastern,Este,Isla de Hong Kong,0.7931,24,30.26,157
+J22,Chun Cheung,俊翔,J,Kwun Tong,Kwun Tong,Kowloon,0.254,23,90.55,96
+J25,Yau Lai,油麗,J,Kwun Tong,Kwun Tong,Kowloon,0.0824,4,48.54,75
+J21,Pak Nga,栢雅,J,Kwun Tong,Kwun Tong,Kowloon,0.1588,17,107.05,85
+J26,Yau Tong West,油塘西,J,Kwun Tong,Kwun Tong,Kowloon,2.8072,58,20.66,212
+J20,Ping Tin,平田,J,Kwun Tong,Kwun Tong,Kowloon,0.133,24,180.45,83
+J27,Laguna City,麗港城,J,Kwun Tong,Kwun Tong,Kowloon,0.9443,45,47.65,164
+J28,King Tin,景田,J,Kwun Tong,Kwun Tong,Kowloon,0.1684,25,148.46,125
+J19,Lam Tin,藍田,J,Kwun Tong,Kwun Tong,Kowloon,0.1442,23,159.5,86
+J18,Hing Tin,興田,J,Kwun Tong,Kwun Tong,Kowloon,0.1021,19,186.09,59
+J17,Kwong Tak,廣德,J,Kwun Tong,Kwun Tong,Kowloon,0.5464,53,97.0,206
+J32,Yuet Wah,月華,J,Kwun Tong,Kwun Tong,Kowloon,0.1075,5,46.51,16
+J15,Sau Mau Ping South,秀茂坪南,J,Kwun Tong,Kwun Tong,Kowloon,0.1098,40,364.3,167
+J29,Tsui Ping,翠屏,J,Kwun Tong,Kwun Tong,Kowloon,0.3629,34,93.69,142
+J31,Po Lok,寶樂,J,Kwun Tong,Kwun Tong,Kowloon,0.0806,12,148.88,30
+J37,Ting On,定安,J,Kwun Tong,Kwun Tong,Kowloon,0.0825,14,169.7,48
+J01,Kwun Tong Central,觀塘中心,J,Kwun Tong,Kwun Tong,Kowloon,2.0483,206,100.57,945
+J36,Hong Lok,康樂,J,Kwun Tong,Kwun Tong,Kowloon,0.1773,25,141.0,34
+J33,Hip Hong,協康,J,Kwun Tong,Kwun Tong,Kowloon,0.2044,24,117.42,49
+J38,Upper Ngau Tau Kok Estate,牛頭角上邨,J,Kwun Tong,Kwun Tong,Kowloon,0.0794,11,138.54,29
+J30,Hiu Lai,曉麗,J,Kwun Tong,Kwun Tong,Kowloon,0.2099,36,171.51,97
+J34,Lok Wah South,樂華南,J,Kwun Tong,Kwun Tong,Kowloon,0.0944,18,190.68,61
+J35,Lok Wah North,樂華北,J,Kwun Tong,Kwun Tong,Kowloon,0.1966,27,137.33,80
+J12,Sau Mau Ping North,秀茂坪北,J,Kwun Tong,Kwun Tong,Kowloon,0.241,56,232.37,224
+J39,Lower Ngau Tau Kok Estate,牛頭角下邨,J,Kwun Tong,Kwun Tong,Kowloon,0.2202,53,240.69,263
+J40,To Tai,淘大,J,Kwun Tong,Kwun Tong,Kowloon,0.0581,9,154.91,18
+J02,Kowloon Bay,九龍灣,J,Kwun Tong,Kwun Tong,Kowloon,0.8049,102,126.72,508
+J07,Jordan Valley,佐敦谷,J,Kwun Tong,Kwun Tong,Kowloon,0.2033,18,88.54,32
+J08,Shun Tin,順天,J,Kwun Tong,Kwun Tong,Kowloon,0.661,29,43.87,85
+J10,On Lee,安利,J,Kwun Tong,Kwun Tong,Kowloon,0.2125,38,178.82,122
+J03,Kai Yip,啟業,J,Kwun Tong,Kwun Tong,Kowloon,0.501,51,101.8,195
+J06,Choi Tak,彩德,J,Kwun Tong,Kwun Tong,Kowloon,0.2091,29,138.69,70
+J16,Po Tat,寶達,J,Kwun Tong,Kwun Tong,Kowloon,0.2572,24,93.31,131
+J05,Ping Shek,坪石,J,Kwun Tong,Kwun Tong,Kowloon,0.2221,34,153.08,173
+J09,Sheung Shun,雙順,J,Kwun Tong,Kwun Tong,Kowloon,0.277,28,101.08,104
+J04,Lai Ching,麗晶,J,Kwun Tong,Kwun Tong,Kowloon,0.1305,19,145.59,78
+J11,Kwun Tong On Tai,觀塘安泰,J,Kwun Tong,Kwun Tong,Kowloon,0.2106,22,104.46,72
+J13,Sau Mau Ping Central,秀茂坪中,J,Kwun Tong,Kwun Tong,Kowloon,0.1883,27,143.39,104
+J14,On Tat,安達,J,Kwun Tong,Kwun Tong,Kowloon,0.1768,25,141.4,102
+J24,Yau Chui,油翠,J,Kwun Tong,Kwun Tong,Kowloon,0.0906,13,143.49,70
+J23,Yau Tong East,油塘東,J,Kwun Tong,Kwun Tong,Kowloon,0.2042,15,73.46,59
+R14,Hin Ka,顯嘉,R,Sha Tin,Sha Tin,Nuevos Territorios,0.6373,9,14.12,31
+R17,Keng Hau,徑口,R,Sha Tin,Sha Tin,Nuevos Territorios,0.4604,42,91.23,113
+R13,Chui Tin,翠田,R,Sha Tin,Sha Tin,Nuevos Territorios,1.3743,7,5.09,43
+R18,Tin Sum,田心,R,Sha Tin,Sha Tin,Nuevos Territorios,0.1853,30,161.9,98
+R12,Sun Tin Wai,新田圍,R,Sha Tin,Sha Tin,Nuevos Territorios,2.1943,27,12.3,102
+R16,Wan Shing,雲城,R,Sha Tin,Sha Tin,Nuevos Territorios,0.175,13,74.29,36
+R19,Chui Ka,翠嘉,R,Sha Tin,Sha Tin,Nuevos Territorios,0.3039,48,157.95,181
+R11,Chun Fung,秦豐,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2301,25,108.65,127
+R08,Pok Hong,博康,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2406,31,128.84,79
+R15,Lower Shing Mun,下城門,R,Sha Tin,Sha Tin,Nuevos Territorios,9.2384,40,4.33,160
+R20,Tai Wai,大圍,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2753,29,105.34,89
+R07,Sha Kok,沙角,R,Sha Tin,Sha Tin,Nuevos Territorios,0.1245,13,104.42,51
+R09,Shui Chuen O,水泉澳,R,Sha Tin,Sha Tin,Nuevos Territorios,3.7951,10,2.63,22
+R41,Kwong Yuen,廣源,R,Sha Tin,Sha Tin,Nuevos Territorios,0.0895,20,223.46,64
+R01,Sha Tin Town Centre,沙田市中心,R,Sha Tin,Sha Tin,Nuevos Territorios,0.7947,65,81.79,212
+R05,Yue Shing,愉城,R,Sha Tin,Sha Tin,Nuevos Territorios,0.1663,23,138.3,101
+R06,Wong Uk,王屋,R,Sha Tin,Sha Tin,Nuevos Territorios,0.692,59,85.26,219
+R04,City One,第一城,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2312,38,164.36,165
+R03,Wo Che Estate,禾輋邨,R,Sha Tin,Sha Tin,Nuevos Territorios,0.3009,20,66.47,78
+R02,Lek Yuen,瀝源,R,Sha Tin,Sha Tin,Nuevos Territorios,1.2994,41,31.55,125
+R21,Chung Tin,松田,R,Sha Tin,Sha Tin,Nuevos Territorios,4.4916,21,4.68,49
+R39,Bik Woo,碧湖,R,Sha Tin,Sha Tin,Nuevos Territorios,0.5656,31,54.81,119
+R40,Kwong Hong,廣康,R,Sha Tin,Sha Tin,Nuevos Territorios,2.102,15,7.14,30
+R37,Yu Yan,愉欣,R,Sha Tin,Sha Tin,Nuevos Territorios,11.0637,113,10.21,586
+R36,On Tai,鞍泰,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2358,25,106.02,72
+R34,Heng On,恆安,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2042,15,73.46,39
+R23,Fo Tan,火炭,R,Sha Tin,Sha Tin,Nuevos Territorios,7.3384,61,8.31,128
+R33,Yiu On,耀安,R,Sha Tin,Sha Tin,Nuevos Territorios,0.1105,23,208.14,62
+R26,Chung On,頌安,R,Sha Tin,Sha Tin,Nuevos Territorios,0.3034,41,135.14,188
+R35,Tai Shui Hang,大水坑,R,Sha Tin,Sha Tin,Nuevos Territorios,9.2902,34,3.66,142
+R32,Kam Ying,錦英,R,Sha Tin,Sha Tin,Nuevos Territorios,0.3147,16,50.84,48
+R31,Fu Lung,富龍,R,Sha Tin,Sha Tin,Nuevos Territorios,0.2107,31,147.13,159
+R30,Lee On,利安,R,Sha Tin,Sha Tin,Nuevos Territorios,0.4104,10,24.37,30
+R27,Kam To,錦濤,R,Sha Tin,Sha Tin,Nuevos Territorios,0.3611,7,19.39,45
+R28,Ma On Shan Town Centre,馬鞍山市中心,R,Sha Tin,Sha Tin,Nuevos Territorios,0.8057,31,38.48,109
+R29,Wu Kai Sha,烏溪沙,R,Sha Tin,Sha Tin,Nuevos Territorios,2.5082,29,11.56,105
+R24,Chun Ma,駿馬,R,Sha Tin,Sha Tin,Nuevos Territorios,5.9509,108,18.15,434
+R10,Jat Chuen,乙泉,R,Sha Tin,Sha Tin,Nuevos Territorios,0.7026,38,54.08,124
+R22,Sui Wo,穗禾,R,Sha Tin,Sha Tin,Nuevos Territorios,3.9548,49,12.39,91
+R25,Hoi Nam,海嵐,R,Sha Tin,Sha Tin,Nuevos Territorios,0.3705,20,53.98,77
+R38,Di Yee,帝怡,R,Sha Tin,Sha Tin,Nuevos Territorios,0.1665,9,54.05,44
+D05,Lei Tung II,利東二,D,Southern,Sur,Isla de Hong Kong,0.1097,14,127.62,76
+D04,Lei Tung I,利東一,D,Southern,Sur,Isla de Hong Kong,2.1375,11,5.15,64
+D06,South Horizons East,海怡東,D,Southern,Sur,Isla de Hong Kong,1.0309,25,24.25,70
+D07,South Horizons West,海怡西,D,Southern,Sur,Isla de Hong Kong,0.3267,7,21.43,47
+D02,Ap Lei Chau Estate,鴨脷洲邨,D,Southern,Sur,Isla de Hong Kong,0.0917,10,109.05,44
+D03,Ap Lei Chau North,鴨脷洲北,D,Southern,Sur,Isla de Hong Kong,0.1533,16,104.37,80
+D01,Aberdeen,香港仔,D,Southern,Sur,Isla de Hong Kong,1.0428,39,37.4,255
+D14,Shek Yue,石漁,D,Southern,Sur,Isla de Hong Kong,0.0747,2,26.77,12
+D08,Wah Kwai,華貴,D,Southern,Sur,Isla de Hong Kong,1.0071,5,4.96,17
+D09,Wah Fu South,華富南,D,Southern,Sur,Isla de Hong Kong,0.4923,14,28.44,120
+D13,Tin Wan,田灣,D,Southern,Sur,Isla de Hong Kong,0.5911,37,62.6,190
+D10,Wah Fu North,華富北,D,Southern,Sur,Isla de Hong Kong,0.203,34,167.49,156
+D15,Wong Chuk Hang,黃竹坑,D,Southern,Sur,Isla de Hong Kong,2.6942,89,33.03,642
+D16,Bays Area,海灣,D,Southern,Sur,Isla de Hong Kong,23.2782,92,3.95,405
+D17,Stanley & Shek O,赤柱及石澳,D,Southern,Sur,Isla de Hong Kong,53.472,99,1.85,279
+D12,Chi Fu,置富,D,Southern,Sur,Isla de Hong Kong,1.4226,33,23.2,247
+D11,Pokfulam,薄扶林,D,Southern,Sur,Isla de Hong Kong,5.8638,99,16.88,422
+F06,Nam Cheong South,南昌南,F,Sham Shui Po,Sham Shui Po,Kowloon,0.145,28,193.1,149
+F08,Nam Cheong West,南昌西,F,Sham Shui Po,Sham Shui Po,Kowloon,0.3294,21,63.75,83
+F07,Nam Cheong Central,南昌中,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1089,35,321.4,142
+F05,Nam Cheong East,南昌東,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1441,22,152.67,97
+F03,Nam Cheong North,南昌北,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1065,23,215.96,124
+F10,Lai Kok,麗閣,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1458,32,219.48,130
+F04,Shek Kip Mei,石硤尾,F,Sham Shui Po,Sham Shui Po,Kowloon,0.112,19,169.64,45
+F14,Lai Chi Kok South,荔枝角南,F,Sham Shui Po,Sham Shui Po,Kowloon,2.8963,17,5.87,37
+F13,Lai Chi Kok Central,荔枝角中,F,Sham Shui Po,Sham Shui Po,Kowloon,0.091,4,43.96,5
+F15,Mei Foo South,美孚南,F,Sham Shui Po,Sham Shui Po,Kowloon,0.3206,6,18.71,48
+F25,"Nam Shan, Tai Hang Tung & Tai Hang Sai",南山、大坑東及大坑西,F,Sham Shui Po,Sham Shui Po,Kowloon,0.4463,46,103.07,94
+F02,Cheung Sha Wan,長沙灣,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1794,31,172.8,119
+F23,Ha Pak Tin,下白田,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1516,29,191.29,59
+F16,Mei Foo Central,美孚中,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1732,15,86.61,52
+F11,Fortune,幸福,F,Sham Shui Po,Sham Shui Po,Kowloon,0.3296,36,109.22,237
+F01,Po Lai,寶麗,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1438,47,326.84,124
+F18,Lai Chi Kok North,荔枝角北,F,Sham Shui Po,Sham Shui Po,Kowloon,0.5307,83,156.4,291
+F17,Mei Foo North,美孚北,F,Sham Shui Po,Sham Shui Po,Kowloon,0.4396,35,79.62,193
+F21,Lei Cheng Uk,李鄭屋,F,Sham Shui Po,Sham Shui Po,Kowloon,0.2151,14,65.09,22
+F20,So Uk,蘇屋,F,Sham Shui Po,Sham Shui Po,Kowloon,0.1681,7,41.64,14
+F24,Yau Yat Tsuen,又一村,F,Sham Shui Po,Sham Shui Po,Kowloon,0.9658,69,71.44,277
+F22,Lung Ping & Sheung Pak Tin,龍坪及上白田,F,Sham Shui Po,Sham Shui Po,Kowloon,1.5926,17,10.67,63
+F12,Pik Wui,碧匯,F,Sham Shui Po,Sham Shui Po,Kowloon,0.6848,36,52.57,119
+F09,Fu Cheong,富昌,F,Sham Shui Po,Sham Shui Po,Kowloon,0.2789,20,71.71,82
+F19,Un Chau,元州,F,Sham Shui Po,Sham Shui Po,Kowloon,0.0998,18,180.36,91
+G20,Whampoa West,黃埔西,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1452,4,27.55,14
+G21,Hung Hom Bay,紅磡灣,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1143,22,192.48,80
+G22,Hung Hom,紅磡,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.149,26,174.5,90
+G19,Whampoa East,黃埔東,G,Kowloon City,Ciudad de Kowloon,Kowloon,2.1996,21,9.55,36
+G23,Ka Wai,家維,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1957,37,189.06,153
+G17,To Kwa Wan South,土瓜灣南,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.0997,30,300.9,128
+G25,Oi Chun,愛俊,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.0922,13,141.0,35
+G18,Hok Yuen Laguna Verde,鶴園海逸,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.9579,34,35.49,108
+G16,To Kwa Wan North,土瓜灣北,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.0767,15,195.57,63
+G24,Oi Man,愛民,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.3684,44,119.44,159
+G15,Hoi Sham,海心,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1969,25,126.97,93
+G06,Sheung Lok,常樂,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.3788,28,73.92,67
+G04,Ma Tau Kok,馬頭角,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1825,28,153.42,138
+G05,Lok Man,樂民,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.151,10,66.23,22
+G03,Ma Hang Chung,馬坑涌,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1428,23,161.06,97
+G07,Ho Man Tin,何文田,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.5114,35,68.44,124
+G02,Sung Wong Toi,宋皇臺,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1756,6,34.17,37
+G08,Kadoorie,嘉道理,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.4329,48,110.88,230
+G01,Ma Tau Wai,馬頭圍,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.351,84,239.32,365
+G09,Prince,太子,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.7569,88,116.26,321
+G11,Lung Shing,龍城,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.3039,47,154.66,162
+G14,Kai Tak Central & South,啟德中及南,G,Kowloon City,Ciudad de Kowloon,Kowloon,4.257,112,26.31,368
+G10,Kowloon Tong,九龍塘,G,Kowloon City,Ciudad de Kowloon,Kowloon,2.0376,88,43.19,298
+G13,Kai Tak East,啟德東,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.0458,5,109.17,19
+G12,Kai Tak North,啟德北,G,Kowloon City,Ciudad de Kowloon,Kowloon,0.1205,13,107.88,37
+P11,Wan Tau Tong,運頭塘,P,Tai Po,Tai Po,Nuevos Territorios,0.1233,9,72.99,30
+P10,Tai Po Kau,大埔滘,P,Tai Po,Tai Po,Nuevos Territorios,16.8056,48,2.86,173
+P09,Wang Fuk,宏福,P,Tai Po,Tai Po,Nuevos Territorios,4.0318,66,16.37,232
+P12,San Fu,新富,P,Tai Po,Tai Po,Nuevos Territorios,0.9414,32,33.99,73
+P01,Tai Po Hui,大埔墟,P,Tai Po,Tai Po,Nuevos Territorios,0.3965,70,176.54,321
+P08,Kwong Fuk & Plover Cove,廣福及寶湖,P,Tai Po,Tai Po,Nuevos Territorios,0.2335,23,98.5,113
+P15,Tai Wo,太和,P,Tai Po,Tai Po,Nuevos Territorios,0.1232,9,73.05,54
+P07,Fu Ming Sun,富明新,P,Tai Po,Tai Po,Nuevos Territorios,0.1531,5,32.66,25
+P03,Tai Po Central,大埔中,P,Tai Po,Tai Po,Nuevos Territorios,0.169,36,213.02,125
+P16,Old Market & Serenity,舊墟及太湖,P,Tai Po,Tai Po,Nuevos Territorios,0.6065,14,23.08,63
+P06,Yee Fu,怡富,P,Tai Po,Tai Po,Nuevos Territorios,0.1945,15,77.12,62
+P04,Tai Yuen,大元,P,Tai Po,Tai Po,Nuevos Territorios,0.1382,6,43.42,42
+P02,Chung Ting,頌汀,P,Tai Po,Tai Po,Nuevos Territorios,0.2301,31,134.72,170
+P05,Fu Heng,富亨,P,Tai Po,Tai Po,Nuevos Territorios,0.4007,38,94.83,121
+P13,Lam Tsuen Valley,林村谷,P,Tai Po,Tai Po,Nuevos Territorios,18.4604,93,5.04,249
+P17,Hong Lok Yuen,康樂園,P,Tai Po,Tai Po,Nuevos Territorios,19.3479,86,4.44,288
+P19,Sai Kung North,西貢北,P,Tai Po,Tai Po,Nuevos Territorios,176.6725,74,0.42,303
+P18,Shuen Wan,船灣,P,Tai Po,Tai Po,Nuevos Territorios,102.1801,100,0.98,272
+N05,Wah Ming,華明,N,North,Norte,Nuevos Territorios,0.0985,18,182.74,41
+N06,Yan Shing,欣盛,N,North,Norte,Nuevos Territorios,3.072,23,7.49,66
+N04,Wah Do,華都,N,North,Norte,Nuevos Territorios,0.1318,17,128.98,81
+N03,Cheung Wah,祥華,N,North,Norte,Nuevos Territorios,0.1812,23,126.93,99
+N08,Shing Fuk,盛福,N,North,Norte,Nuevos Territorios,0.143,14,97.9,72
+N09,Ching Ho,清河,N,North,Norte,Nuevos Territorios,0.0928,8,86.21,25
+N07,Fanling South,粉嶺南,N,North,Norte,Nuevos Territorios,0.6795,35,51.51,202
+N10,Yu Tai,御太,N,North,Norte,Nuevos Territorios,5.6274,42,7.46,104
+N01,Luen Wo Hui,聯和墟,N,North,Norte,Nuevos Territorios,0.2316,37,159.76,142
+N12,Choi Yuen,彩園,N,North,Norte,Nuevos Territorios,0.1265,7,55.34,49
+N02,Fanling Town,粉嶺市,N,North,Norte,Nuevos Territorios,1.3718,77,56.13,224
+N17,Tin Ping East,天平東,N,North,Norte,Nuevos Territorios,0.7863,8,10.17,29
+N14,Tin Ping West,天平西,N,North,Norte,Nuevos Territorios,0.2127,17,79.92,67
+N13,Shek Wu Hui,石湖墟,N,North,Norte,Nuevos Territorios,0.6698,78,116.45,233
+N15,Fung Tsui,鳳翠,N,North,Norte,Nuevos Territorios,3.4403,25,7.27,63
+N18,Queen's Hill,皇后山,N,North,Norte,Nuevos Territorios,15.9204,88,5.53,294
+N11,Sheung Shui Rural,上水鄉郊,N,North,Norte,Nuevos Territorios,19.7158,52,2.64,59
+N16,Sha Ta,沙打,N,North,Norte,Nuevos Territorios,133.0615,114,0.86,263
+M12,Shap Pat Heung West,十八鄉西,M,Yuen Long,Yuen Long,Nuevos Territorios,7.2542,23,3.17,23
+M39,Pat Heung South,八鄉南,M,Yuen Long,Yuen Long,Nuevos Territorios,23.3585,162,6.94,397
+M05,Shap Pat Heung Central,十八鄉中,M,Yuen Long,Yuen Long,Nuevos Territorios,0.9183,16,17.42,28
+M13,Ping Shan South,屏山南,M,Yuen Long,Yuen Long,Nuevos Territorios,4.9132,79,16.08,137
+M03,Fung Cheung,鳳翔,M,Yuen Long,Yuen Long,Nuevos Territorios,0.2602,13,49.96,38
+M01,Fung Nin,豐年,M,Yuen Long,Yuen Long,Nuevos Territorios,0.4304,41,95.26,118
+M04,Yuen Lung,元龍,M,Yuen Long,Yuen Long,Nuevos Territorios,0.2876,8,27.82,57
+M06,Shui Pin,水邊,M,Yuen Long,Yuen Long,Nuevos Territorios,0.4361,60,137.58,134
+M02,Yuen Long Centre,元朗中心,M,Yuen Long,Yuen Long,Nuevos Territorios,0.2346,45,191.82,166
+M07,Nam Ping,南屏,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1655,6,36.25,16
+M18,Tin Shing,天盛,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1564,11,70.33,39
+M19,Tin Yiu,天耀,M,Yuen Long,Yuen Long,Nuevos Territorios,0.0979,14,143.0,40
+M09,Yuen Long Tung Tau,元朗東頭,M,Yuen Long,Yuen Long,Nuevos Territorios,0.4016,27,67.23,58
+M20,Yiu Yau,耀祐,M,Yuen Long,Yuen Long,Nuevos Territorios,0.0875,14,160.0,47
+M21,Tsz Yau,慈祐,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1541,18,116.81,37
+M23,Shui Oi,瑞愛,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1758,15,85.32,37
+M11,Shap Pat Heung East,十八鄉東,M,Yuen Long,Yuen Long,Nuevos Territorios,7.5856,31,4.09,135
+M22,Kingswood South,嘉湖南,M,Yuen Long,Yuen Long,Nuevos Territorios,0.5402,42,77.75,131
+M24,Shui Wah,瑞華,M,Yuen Long,Yuen Long,Nuevos Territorios,0.186,7,37.63,24
+M25,Chung Wah,頌華,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1229,7,56.96,22
+M26,Chung Pak,頌栢,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1193,21,176.03,63
+M27,Kingswood North,嘉湖北,M,Yuen Long,Yuen Long,Nuevos Territorios,0.3684,33,89.58,121
+M16,Ping Shan Central,屏山中,M,Yuen Long,Yuen Long,Nuevos Territorios,4.3836,87,19.85,252
+M37,Kam Tin,錦田,M,Yuen Long,Yuen Long,Nuevos Territorios,9.0083,119,13.21,308
+M28,Yuet Yan,悅恩,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1675,21,125.37,46
+M30,Fu Yan,富恩,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1627,18,110.63,70
+M29,Ching King,晴景,M,Yuen Long,Yuen Long,Nuevos Territorios,0.2902,30,103.38,116
+M31,Yat Chak,逸澤,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1329,15,112.87,52
+M38,Pat Heung North,八鄉北,M,Yuen Long,Yuen Long,Nuevos Territorios,17.4225,79,4.53,154
+M33,Wang Yat,宏逸,M,Yuen Long,Yuen Long,Nuevos Territorios,0.685,25,36.5,92
+M32,Tin Heng,天恒,M,Yuen Long,Yuen Long,Nuevos Territorios,0.2159,7,32.42,9
+M15,Ha Tsuen,廈村,M,Yuen Long,Yuen Long,Nuevos Territorios,44.173,50,1.13,74
+M35,Fairview Park,錦綉花園,M,Yuen Long,Yuen Long,Nuevos Territorios,9.4521,18,1.9,20
+M34,Ping Shan North,屏山北,M,Yuen Long,Yuen Long,Nuevos Territorios,23.1459,69,2.98,80
+M36,San Tin,新田,M,Yuen Long,Yuen Long,Nuevos Territorios,27.714,106,3.82,159
+M08,Pek Long,北朗,M,Yuen Long,Yuen Long,Nuevos Territorios,0.0826,21,254.24,31
+M10,Shap Pat Heung North,十八鄉北,M,Yuen Long,Yuen Long,Nuevos Territorios,1.8967,35,18.45,130
+M14,Hung Fuk,洪福,M,Yuen Long,Yuen Long,Nuevos Territorios,0.1215,15,123.46,37
+M17,Shing Yan,盛欣,M,Yuen Long,Yuen Long,Nuevos Territorios,0.0995,38,381.91,63
+Q09,Wai King,維景,Q,Sai Kung,Sai Kung,Nuevos Territorios,1.5236,4,2.63,4
+Q08,Do Shin,都善,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.082,9,109.76,28
+Q07,Kin Ming,健明,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1029,4,38.87,18
+Q10,Hoi Chun,海晉,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.5194,24,46.21,56
+Q29,Wan Po South,環保南,Q,Sai Kung,Sai Kung,Nuevos Territorios,5.7244,43,7.51,166
+Q06,Choi Kin,彩健,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1577,11,69.75,39
+Q13,O Tong,澳唐,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1027,6,58.42,18
+Q12,Fu Kwan,富君,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1869,19,101.66,70
+Q28,Wan Po North,環保北,Q,Sai Kung,Sai Kung,Nuevos Territorios,1.0864,22,20.25,152
+Q14,Sheung Tak,尚德,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.0859,17,197.9,57
+Q27,Kwan Po,軍寶,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.2831,12,42.39,50
+Q15,Kwong Ming,廣明,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.2736,9,32.89,14
+Q25,Tak Ming,德明,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.0851,7,82.26,30
+Q26,Nam On,南安,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1667,12,71.99,51
+Q23,Hau Tak,厚德,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.115,16,139.13,110
+Q24,Fu Nam,富藍,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.175,32,182.86,111
+Q22,King Lam,景林,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1349,9,66.72,49
+Q21,Wan Hang,運亨,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.2146,11,51.26,23
+Q17,Tsui Lam,翠林,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.3339,13,38.93,56
+Q16,Hong King,康景,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.4849,32,65.99,165
+Q19,Yan Ying,欣英,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.1291,32,247.87,107
+Q18,Po Lam,寶林,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.2094,16,76.41,83
+Q05,Hang Hau West,坑口西,Q,Sai Kung,Sai Kung,Nuevos Territorios,9.8796,102,10.32,425
+Q04,Hang Hau East,坑口東,Q,Sai Kung,Sai Kung,Nuevos Territorios,388.9162,114,0.29,223
+Q01,Sai Kung Central,西貢市中心,Q,Sai Kung,Sai Kung,Nuevos Territorios,1.5567,39,25.05,73
+Q02,Pak Sha Wan,白沙灣,Q,Sai Kung,Sai Kung,Nuevos Territorios,23.1146,59,2.55,131
+Q03,Sai Kung Islands,西貢離島,Q,Sai Kung,Sai Kung,Nuevos Territorios,330.6551,65,0.2,206
+Q11,Po Yee,寶怡,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.0904,10,110.62,50
+Q20,Wai Yan,慧茵,Q,Sai Kung,Sai Kung,Nuevos Territorios,0.0671,13,193.74,44
+P14,Po Nga,寶雅,P,Tai Po,Tai Po,Nuevos Territorios,0.2875,25,86.96,80

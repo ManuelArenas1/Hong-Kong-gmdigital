@@ -1,0 +1,19 @@
+codigo,distrito_en,distrito_zh,distrito_es,region,ingreso_mediano_hogar_hkd_2021,ingreso_mediano_hogar_econ_activo_hkd_2021,ingreso_mediano_mensual_empleo_hkd_2021,tasa_participacion_laboral_pct_2021,fuerza_laboral_2021,poblacion_ocupada_2021,tasa_ocupacion_sobre_fuerza_laboral_pct,ingreso_mediano_hogar_hkd_2025,tasa_participacion_laboral_pct_2025,var_ingreso_2016_2025_pct,indice_ingreso_vs_mediana_distritos
+A,Central and Western,中西區,Centro y Oeste,Isla de Hong Kong,45040,57350,21250,65.3,138216,132881,96.14,45000,60.1,13.92,145.2
+B,Wan Chai,灣仔區,Wan Chai,Isla de Hong Kong,45000,60070,21000,64.0,95914,92238,96.17,43300,62.7,8.25,139.7
+C,Eastern,東區,Este,Isla de Hong Kong,32000,41900,19000,58.9,281513,266089,94.52,33400,56.3,6.71,107.7
+D,Southern,南區,Sur,Isla de Hong Kong,32440,40110,17000,60.1,141885,134977,95.13,36000,58.7,17.26,116.1
+E,Yau Tsim Mong,油尖旺區,Yau Tsim Mong,Kowloon,26080,33550,18000,63.7,174774,162705,93.09,30300,61.6,17.44,97.7
+F,Sham Shui Po,深水埗區,Sham Shui Po,Kowloon,21490,28540,16000,58.1,221796,204073,92.01,25000,57.1,21.36,80.6
+G,Kowloon City,九龍城區,Ciudad de Kowloon,Kowloon,30010,38670,18000,60.4,217531,203964,93.76,31300,57.6,16.36,101.0
+H,Wong Tai Sin,黃大仙區,Wong Tai Sin,Kowloon,23520,30140,16000,56.4,209093,192614,92.12,25600,52.7,16.36,82.6
+J,Kwun Tong,觀塘區,Kwun Tong,Kowloon,22000,29240,16000,56.4,339904,312937,92.07,24900,53.7,19.71,80.3
+K,Tsuen Wan,荃灣區,Tsuen Wan,Nuevos Territorios,32040,40050,20000,61.3,172888,163147,94.37,34200,58.6,17.12,110.3
+L,Tuen Mun,屯門區,Tuen Mun,Nuevos Territorios,25040,31300,17500,58.7,265678,247419,93.13,27400,56.3,21.78,88.4
+M,Yuen Long,元朗區,Yuen Long,Nuevos Territorios,27560,33170,17800,60.8,359362,332587,92.55,30000,58.5,31.58,96.8
+N,North,北區,Norte,Nuevos Territorios,23580,30270,16000,57.8,159707,146416,91.68,26200,55.4,21.86,84.5
+P,Tai Po,大埔區,Tai Po,Nuevos Territorios,30000,37540,18000,59.9,168898,157836,93.45,30700,57.3,17.18,99.0
+Q,Sai Kung,西貢區,Sai Kung,Nuevos Territorios,37840,44760,20000,64.2,277603,262126,94.42,40600,60.6,28.89,131.0
+R,Sha Tin,沙田區,Sha Tin,Nuevos Territorios,28870,36170,18500,59.2,363268,340605,93.76,31800,55.4,18.66,102.6
+S,Kwai Tsing,葵青區,Kwai Tsing,Nuevos Territorios,23740,30170,16000,56.8,253756,234425,92.38,25700,53.5,21.23,82.9
+T,Islands,離島區,Islas,Nuevos Territorios,28960,35210,18000,62.5,100892,93368,92.54,31800,61.4,10.03,102.6

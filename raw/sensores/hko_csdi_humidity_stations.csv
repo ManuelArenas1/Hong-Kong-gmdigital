@@ -1,0 +1,27 @@
+station_en,station_sc,station_tc,data_url,lon,lat
+Chek Lap Kok,赤鱲角,赤鱲角,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_0.csv,113.92194444,22.3094444
+Cheung Chau,长洲,長洲,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_1.csv,114.02666667,22.2011111
+Clear Water Bay,清水湾,清水灣,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_2.csv,114.29972222,22.2633333
+HK Observatory,天文台,天文台,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_3.csv,114.17416667,22.3019444
+Hong Kong Park,香港公园,香港公園,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_4.csv,114.16222222,22.2783333
+Kai Tak Runway Park,启德跑道公园,啟德跑道公園,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_5.csv,114.21694444,22.3047222
+Kau Sai Chau,滘西洲,滘西洲,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_6.csv,114.3125,22.3702778
+King's Park,京士柏,京士柏,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_7.csv,114.17277778,22.3119444
+Kowloon City,九龙城,九龍城,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_8.csv,114.18472222,22.335
+Lau Fau Shan,流浮山,流浮山,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_9.csv,113.98361111,22.4688889
+Pak Tam Chung,北潭涌,北潭涌,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_10.csv,114.32305556,22.4027778
+Peng Chau,坪洲,坪洲,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_11.csv,114.04333333,22.2911111
+Sai Kung,西贡,西貢,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_12.csv,114.27444444,22.3755556
+Sha Tin,沙田,沙田,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_13.csv,114.21,22.4025
+Shau Kei Wan,筲箕湾,筲箕灣,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_14.csv,114.23611111,22.2816667
+Shek Kong,石岗,石崗,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_15.csv,114.08472222,22.4361111
+Sheung Shui,上水,上水,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_16.csv,114.11111111,22.5019444
+Ta Kwu Ling,打鼓岭,打鼓嶺,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_17.csv,114.15666667,22.5286111
+Tai Lung,大陇,大隴,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_18.csv,114.1175,22.4847222
+Tai Po,大埔,大埔,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_19.csv,114.17888889,22.4461111
+Tseung Kwan O,将军澳,將軍澳,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_20.csv,114.25555556,22.3158333
+Tsing Yi,青衣,青衣,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_21.csv,114.11,22.3441667
+Tuen Mun,屯门,屯門,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_22.csv,113.96416667,22.3858333
+Waglan Island,横澜岛,橫瀾島,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_23.csv,114.30333333,22.1822222
+Wetland Park,湿地公园,濕地公園,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_24.csv,114.00888889,22.4666667
+Wong Chuk Hang,黄竹坑,黃竹坑,https://data.weather.gov.hk/weatherAPI/hko_data/csdi/dataset/latest_1min_humidity_csdi_25.csv,114.17361111,22.2477778

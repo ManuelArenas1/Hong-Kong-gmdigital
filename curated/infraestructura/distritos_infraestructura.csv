@@ -1,0 +1,19 @@
+codigo,distrito_en,distrito_zh,distrito_es,region,paradas_transporte,paradas_bus,paradas_minibus,paradas_metro_mtr,paradas_tren_ligero,paradas_ferry,hospitales_urgencias,rutas_distintas,paradas_por_km2,paradas_por_10k_hab,hab_por_hospital_urgencias,dist_media_hospital_km
+A,Central and Western,中西區,Centro y Oeste,Isla de Hong Kong,676,664,198,7,0,5,0,333,53.86,28.65,,2.23
+B,Wan Chai,灣仔區,Wan Chai,Isla de Hong Kong,627,623,160,4,0,0,1,347,58.93,37.61,166695.0,1.38
+C,Eastern,東區,Este,Isla de Hong Kong,845,835,267,8,0,2,1,207,46.61,15.96,529603.0,2.04
+D,Southern,南區,Sur,Isla de Hong Kong,626,622,266,4,0,0,1,162,15.89,23.78,263278.0,3.46
+E,Yau Tsim Mong,油尖旺區,Yau Tsim Mong,Kowloon,858,847,224,11,0,0,2,492,122.75,27.62,155324.0,0.89
+F,Sham Shui Po,深水埗區,Sham Shui Po,Kowloon,710,704,194,6,0,0,1,262,75.85,16.47,431090.0,1.24
+G,Kowloon City,九龍城區,Ciudad de Kowloon,Kowloon,886,876,318,6,0,4,0,291,88.42,21.58,,1.77
+H,Wong Tai Sin,黃大仙區,Wong Tai Sin,Kowloon,627,623,248,4,0,0,0,280,67.42,15.41,,3.03
+J,Kwun Tong,觀塘區,Kwun Tong,Kowloon,1335,1329,580,5,0,1,1,409,118.35,19.83,673166.0,1.45
+K,Tsuen Wan,荃灣區,Tsuen Wan,Nuevos Territorios,612,607,156,5,0,0,1,288,9.77,19.12,320094.0,2.33
+L,Tuen Mun,屯門區,Tuen Mun,Nuevos Territorios,1234,1176,190,2,55,1,1,179,14.1,24.35,506879.0,2.29
+M,Yuen Long,元朗區,Yuen Long,Nuevos Territorios,1446,1416,405,5,25,0,2,199,10.44,21.64,334040.0,1.85
+N,North,北區,Norte,Nuevos Territorios,683,680,248,3,0,0,1,135,5.0,22.06,309631.0,3.37
+P,Tai Po,大埔區,Tai Po,Nuevos Territorios,780,778,288,2,0,0,1,180,5.26,24.65,316470.0,3.46
+Q,Sai Kung,西貢區,Sai Kung,Nuevos Territorios,762,757,299,5,0,0,1,155,5.59,15.58,489037.0,2.6
+R,Sha Tin,沙田區,Sha Tin,Nuevos Territorios,1317,1304,424,13,0,0,1,351,19.01,19.01,692806.0,3.0
+S,Kwai Tsing,葵青區,Kwai Tsing,Nuevos Territorios,797,793,297,4,0,0,1,249,34.15,16.08,495798.0,1.9
+T,Islands,離島區,Islas,Nuevos Territorios,461,448,18,3,0,10,2,163,2.52,24.88,92641.0,3.74

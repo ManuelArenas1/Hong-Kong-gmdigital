@@ -1,0 +1,87 @@
+estacion,codigo_estacion,tipo,lat,lon,elevacion_m,inicio_operacion,codigo_dcca,codigo,ubicacion_en_tierra
+Hong Kong Observatory,HKO,tripulada,22.301944,114.174167,32.0,01/01/1884,E20,E,True
+Hong Kong International Airport,HKA,tripulada,22.309444,113.921944,6.0,01/06/1997,T06,T,True
+Beas River,BR1,automatica,22.493333,114.105,11.0,06/12/2012,N10,N,True
+Bluff Head,BHD,automatica,22.1975,114.211944,94.0,01/01/1995,D17,D,True
+Central Pier,CP1,automatica,22.288889,114.155833,19.0,20/12/2005,A01,A,True
+Cheung Chau,CCH,automatica,22.201111,114.026667,72.0,30/03/1992,T10,T,True
+Ching Pak House (Tsing Yi),CPH,automatica,22.348056,114.109167,122.0,01/07/1987,S25,S,True
+Clear Water Bay,CWB,automatica,22.263333,114.299722,66.0,20/12/2018,Q04,Q,True
+Green Island,GI,automatica,22.285,114.112778,88.0,11/09/1989,A07,A,True
+Happy Valley,HPV,automatica,22.270556,114.183611,5.0,01/12/2008,B10,B,True
+Hong Kong Park,HKP,automatica,22.278333,114.162222,26.0,04/09/2007,A01,A,True
+Kai Tak,SE,automatica,22.309722,114.213333,3.0,04/09/1998,G14,G,True
+Kai Tak Runway Park,SE1,automatica,22.305,114.216944,4.0,17/12/2014,G14,G,True
+Kadoorie Farm and Botanic Garden,KFB,automatica,22.432778,114.120833,307.0,01/12/2010,P13,P,True
+Kat O,KAT,automatica,22.536389,114.301944,10.0,01/01/1993,N16,N,True
+Kau Sai Chau,KSC,automatica,22.370278,114.3125,39.0,03/07/2008,Q03,Q,True
+King's Park,KP,automatica,22.311944,114.172778,65.0,01/07/1992,E17,E,True
+Kowloon City,KLT,automatica,22.335,114.184722,92.0,04/09/1998,G10,G,True
+Kwun Tong,KTG,automatica,22.318611,114.224722,90.0,21/10/2009,J33,J,True
+Lamma Island,LAM,automatica,22.226111,114.108611,7.0,25/07/2011,T09,T,True
+Lau Fau Shan,LFS,automatica,22.468889,113.983611,31.0,16/09/1985,M15,M,True
+Nei Lak Shan,NLS,automatica,22.263333,113.911111,747.0,12/02/1998,T01,T,True
+New Tsing Yi Station,TY1,automatica,22.344167,114.11,8.0,23/08/2010,S28,S,True
+Ngong Ping,NGP,automatica,22.258611,113.912778,593.0,01/01/2002,T01,T,True
+Pak Tam Chung (Tsak Yue Wu),TYW,automatica,22.402778,114.323056,5.0,01/10/1995,Q03,Q,True
+Peng Chau,PEN,automatica,22.291111,114.043333,34.0,01/06/2004,T08,T,True
+Ping Chau,EPC,automatica,22.546667,114.428333,29.0,01/01/1993,P19,P,True
+Sai Kung,SKG,automatica,22.375556,114.274444,4.0,03/03/1993,Q01,Q,True
+Sha Lo Wan,SLW,automatica,22.291111,113.906944,61.0,25/02/1993,T01,T,True
+Sha Tin,SHA,automatica,22.4025,114.21,6.0,01/10/1984,R23,R,True
+Sham Shui Po,SSP,automatica,22.335833,114.136944,11.0,09/03/2010,F16,F,True
+Shau Kei Wan,SKW,automatica,22.281667,114.236111,53.0,17/09/2007,C07,C,True
+Shek Kong,SEK,automatica,22.436111,114.084722,16.0,04/11/1996,M38,M,True
+Sheung Shui,SSH,automatica,22.501944,114.111111,10.0,09/07/2004,N11,N,True
+Stanley,STY,automatica,22.214167,114.218611,31.0,12/06/2009,D17,D,True
+Ta Kwu Ling,TKL,automatica,22.528611,114.156667,15.0,14/10/1985,N16,N,True
+Tai Lung,TLS,automatica,22.484722,114.1175,21.0,14/02/2020,N10,N,True
+Tai Mei Tuk,PLC,automatica,22.475278,114.2375,51.0,01/01/1993,P18,P,True
+Tai Mo Shan,TMS,automatica,22.410556,114.124444,955.0,20/12/1996,K15,K,True
+Tai Po (Yuen Chau Tsai Park),YCT,automatica,22.448333,114.177222,6.0,01/04/2022,P09,P,True
+Tap Mun,TAP,automatica,22.471389,114.360556,15.0,15/09/1993,P19,P,True
+Tate's Cairn,TC,automatica,22.357778,114.217778,572.0,18/12/1997,H18,H,True
+The Peak,VP1,automatica,22.264167,114.155,406.0,17/02/2003,A04,A,True
+Tseung Kwan O,JKB,automatica,22.315833,114.255556,38.0,01/12/1991,Q16,Q,True
+Tsuen Wan,TWN,automatica,22.383611,114.107778,142.0,25/04/2006,K15,K,True
+Tsuen Wan Shing Mun Valley,TW,automatica,22.375556,114.126667,35.0,07/12/2010,K17,K,True
+Tuen Mun Children and Juvenile Home,TU1,automatica,22.385833,113.964167,28.0,01/01/2007,L21,L,True
+Waglan Island,WGL,automatica,22.182222,114.303333,56.0,22/08/1989,T09,T,True
+Wetland Park,WLP,automatica,22.466667,114.008889,4.0,10/11/2005,M33,M,True
+Wong Chuk Hang,HKS,automatica,22.247778,114.173611,5.0,01/08/1989,D15,D,True
+Wong Tai Sin,WTS,automatica,22.339444,114.205278,21.0,27/03/2009,H06,H,True
+Yuen Long Park,YLP,automatica,22.440833,114.018333,8.0,20/03/2015,M06,M,True
+Automatic Weather Buoy No.2,WB2,boya,22.291111,113.882222,9.0,16/08/2002,T01,T,True
+Automatic Weather Buoy No.8,WB8,boya,22.305833,113.953889,9.0,01/01/2012,T06,T,True
+Cheung Chau Beach,CCB,viento,22.210833,114.029167,27.0,14/09/2009,T10,T,True
+North Point,NP,viento,22.294444,114.199722,26.0,04/09/1998,C19,C,True
+Sha Chau,SC,viento,22.345833,113.891111,31.0,22/11/1997,L20,L,True
+Shell Oil Depot,SHL,viento,22.346667,114.086389,43.0,01/12/1992,S28,S,True
+Star Ferry (Kowloon),SF,viento,22.293056,114.168611,18.0,15/12/1987,E01,E,True
+Tai Mo To,TMT,viento,22.329722,113.966667,15.0,17/10/1997,L13,L,True
+Tai O,TO,viento,22.256111,113.854722,105.0,24/05/2004,T01,T,True
+Tai Po Kau,TPK,viento,22.4425,114.183889,12.0,01/12/2010,P09,P,True
+Tuen Mun Government Offices,TUN,viento,22.390556,113.976667,69.0,23/10/1987,L01,L,True
+Yi Tung Shan,YTS,viento,22.259167,113.964167,752.0,30/10/1997,T01,T,True
+Tap Mun East,TME,viento,22.468333,114.363056,48.0,06/07/2017,P19,P,True
+Au Tau,R28,pluviometro,22.45,114.053056,3.0,30/06/1985,M37,M,True
+Cape D'Aguilar,CDA,pluviometro,22.209444,114.254722,45.0,29/07/2016,D17,D,True
+Discovery Bay,R12,pluviometro,22.291389,114.009167,106.0,30/12/1984,T07,T,True
+Po Pin Chau,PPC,pluviometro,22.361667,114.371389,68.0,06/06/2014,Q03,Q,True
+Lok Ma Chau,R29,pluviometro,22.511667,114.080278,67.0,30/09/1985,M36,M,True
+Ngong Ping Fresh Water Reservoir,R11,pluviometro,22.255556,113.911389,479.0,01/09/2006,T01,T,True
+Quarry Bay,QU1,pluviometro,22.291111,114.213333,7.0,13/06/2006,C24,C,True
+Hong Kong Adventist College (Sai Kung),R18,pluviometro,22.3075,114.286944,122.0,30/06/1985,Q04,Q,True
+Sha Tau Kok,R24,pluviometro,22.5375,114.211111,39.0,30/12/1984,N16,N,True
+Tai Mei Tuk Pumping Station,R31,pluviometro,22.478333,114.238889,24.0,30/06/1985,P18,P,True
+Tai Po Wong Shiu Chi Secondary School,R23,pluviometro,22.445556,114.171667,23.0,30/12/1984,P01,P,True
+Tap Shek Kok,R21,pluviometro,22.379167,113.92,28.0,30/12/1984,L20,L,True
+Tsim Bei Tsui,R22,pluviometro,22.486389,114.011667,8.0,30/12/1984,M34,M,True
+Tuen Mun Reservoir,TMR,pluviometro,22.4075,113.987222,98.0,01/01/2016,L30,L,True
+Tai Tan Camp,TTC,pluviometro,22.435278,114.334167,19.0,01/04/2017,P19,P,True
+Tsim Bei Tsui,TBT,mareografo,22.487222,114.014167,,01/12/1974,M34,M,True
+Quarry Bay,QUB,mareografo,22.291111,114.213333,,01/01/1986,C24,C,True
+Shek Pik,SPW,mareografo,22.220278,113.894444,,01/01/1998,T01,T,True
+Tai Miu Wan,TMW,mareografo,22.269722,114.288611,,01/01/1996,Q04,Q,True
+Tai Po Kau,TPK,mareografo,22.4425,114.183889,,01/12/1963,P09,P,True
+Waglan Island,WGL,mareografo,22.183056,114.302778,,01/12/1976,T09,T,True

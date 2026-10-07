@@ -1,0 +1,19 @@
+hospital_en,hospital_zh,lat,lon,servicio,codigo_dcca,codigo,ubicacion_en_tierra
+Alice Ho Miu Ling Nethersole Hospital,雅麗氏何妙齡那打素醫院,22.4586,114.1733,A&E (urgencias),P05,P,True
+Caritas Medical Centre,明愛醫院,22.3412112,114.1530598,A&E (urgencias),F20,F,True
+Kwong Wah Hospital,廣華醫院,22.3145659,114.1692827,A&E (urgencias),E16,E,True
+North District Hospital,北區醫院,22.4968697,114.1066664,A&E (urgencias),N11,N,True
+North Lantau Hospital,北大嶼山醫院,22.282033,113.9366904,A&E (urgencias),T03,T,True
+Princess Margaret Hospital,瑪嘉烈醫院,22.3409129,114.1311642,A&E (urgencias),S19,S,True
+Pok Oi Hospital,博愛醫院,22.444953,114.0392153,A&E (urgencias),M10,M,True
+Prince of Wales Hospital,威爾斯親王醫院,22.3806748,114.1994029,A&E (urgencias),R06,R,True
+Pamela Youde Nethersole Eastern Hospital,東區尤德夫人那打素醫院,22.269467,114.2330282,A&E (urgencias),C31,C,True
+Queen Elizabeth Hospital,伊利沙伯醫院,22.3094959,114.1733437,A&E (urgencias),E17,E,True
+Queen Mary Hospital,瑪麗醫院,22.2705135,114.1264732,A&E (urgencias),D11,D,True
+Ruttonjee Hospital,律敦治醫院,22.2758503,114.1727248,A&E (urgencias),B12,B,True
+St John Hospital,長洲醫院,22.2080649,114.0269039,A&E (urgencias),T10,T,True
+Tseung Kwan O Hospital,將軍澳醫院,22.3172899,114.2676787,A&E (urgencias),Q24,Q,True
+Tuen Mun Hospital,屯門醫院,22.4069271,113.9733528,A&E (urgencias),L27,L,True
+Tin Shui Wai Hospital,天水圍醫院,22.4587122,113.9930365,A&E (urgencias),M34,M,True
+United Christian Hospital,基督教聯合醫院,22.322561,114.2229544,A&E (urgencias),J35,J,True
+Yan Chai Hospital,仁濟醫院,22.3697863,114.1169341,A&E (urgencias),K01,K,True

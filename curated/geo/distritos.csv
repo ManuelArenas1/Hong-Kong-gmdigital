@@ -1,0 +1,19 @@
+codigo,distrito_en,distrito_zh,distrito_es,region,area_km2_oficial,area_km2_poligono_incluye_mar,centro_lat,centro_lon,n_circunscripciones
+A,Central and Western,中西區,Centro y Oeste,Isla de Hong Kong,12.55,19.755,22.274851,114.148691,15
+B,Wan Chai,灣仔區,Wan Chai,Isla de Hong Kong,10.64,12.343,22.273943,114.186257,13
+C,Eastern,東區,Este,Isla de Hong Kong,18.13,26.094,22.273014,114.218647,35
+D,Southern,南區,Sur,Isla de Hong Kong,39.4,93.992,22.234968,114.20794,17
+E,Yau Tsim Mong,油尖旺區,Yau Tsim Mong,Kowloon,6.99,11.457,22.307382,114.165464,20
+F,Sham Shui Po,深水埗區,Sham Shui Po,Kowloon,9.36,10.799,22.331221,114.172183,25
+G,Kowloon City,九龍城區,Ciudad de Kowloon,Kowloon,10.02,14.443,22.321705,114.188679,25
+H,Wong Tai Sin,黃大仙區,Wong Tai Sin,Kowloon,9.3,9.303,22.344315,114.212624,25
+J,Kwun Tong,觀塘區,Kwun Tong,Kowloon,11.28,13.963,22.308656,114.22408,40
+K,Tsuen Wan,荃灣區,Tsuen Wan,Nuevos Territorios,62.62,84.27,22.365015,114.066706,19
+L,Tuen Mun,屯門區,Tuen Mun,Nuevos Territorios,87.54,188.531,22.378875,113.918795,31
+M,Yuen Long,元朗區,Yuen Long,Nuevos Territorios,138.56,187.408,22.457067,114.060526,39
+N,North,北區,Norte,Nuevos Territorios,136.51,185.563,22.517135,114.21358,18
+P,Tai Po,大埔區,Tai Po,Nuevos Territorios,148.19,341.496,22.480836,114.327091,19
+Q,Sai Kung,西貢區,Sai Kung,Nuevos Territorios,136.34,766.457,22.307422,114.415828,29
+R,Sha Tin,沙田區,Sha Tin,Nuevos Territorios,69.27,74.27,22.391564,114.223624,41
+S,Kwai Tsing,葵青區,Kwai Tsing,Nuevos Territorios,23.34,49.317,22.340963,114.094669,31
+T,Islands,離島區,Islas,Nuevos Territorios,182.74,664.709,22.226356,113.988311,10

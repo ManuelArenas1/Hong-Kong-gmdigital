@@ -1,0 +1,163 @@
+{
+  "nombre": "Data lake Hong Kong — Cerebro HK",
+  "descripcion": "Datos públicos de Hong Kong organizados por dominio (geo, demografía, economía, infraestructura, sensores, escucha, atlas de zonas, atlas distribuido y correlaciones) para replicar un tablero tipo 'Cerebro Lima'.",
+  "unidad_territorial_principal": "18 distritos (District Council districts), código de letra A–T del censo",
+  "unidad_territorial_fina": "452 circunscripciones DCCA 2019 (EAC)",
+  "crs": {"publicacion": "EPSG:4326 (WGS84)", "calculos": "EPSG:2326 (HK 1980 Grid)"},
+  "fecha_captura": "2026-10-06",
+  "capas": {
+    "raw": "Datos tal como se obtuvieron de la fuente (bronce).",
+    "curated": "Tablas y capas limpias, tipadas, en español y unidas por código de distrito (plata).",
+    "public/data": "JSON listos para el front, uno por pestaña (oro)."
+  },
+  "fuentes": [
+    {
+      "id": "eac_dcca_2019",
+      "dominio": "geo",
+      "titulo": "Límites de las circunscripciones del Consejo de Distrito (DCCA) 2019",
+      "proveedor": "Electoral Affairs Commission (EAC), convertido a GeoJSON por hkdce",
+      "url": "https://raw.githubusercontent.com/hkdce/dcca-boundaries/master/converted-geojson/DCCA_2019.geojson",
+      "archivo_raw": "raw/geo/eac_dcca_2019.geojson",
+      "licencia": "Datos del Gobierno de HK; ver términos de data.gov.hk",
+      "notas": "Los 18 distritos se obtienen disolviendo las 452 DCCA por la primera letra del código. Los polígonos incluyen superficie marina; para densidades se usa el área terrestre oficial."
+    },
+    {
+      "id": "census2021_dc",
+      "dominio": "demografia / economia",
+      "titulo": "Censo de Población 2021 — Estadísticas y límites por distrito (DC_21C)",
+      "proveedor": "Census and Statistics Department (C&SD) vía CSDI",
+      "url": "https://portal.csdi.gov.hk/server/services/common/censtatd_rcd_1635932856094_19982/MapServer/WFSServer",
+      "ficha": "https://data.gov.hk/en-data/dataset/hk-censtatd-census_geo-2021-population-census-by-dcd",
+      "archivos_raw": ["raw/demografia/csdi_census2021_dc_basico.csv", "raw/demografia/csdi_census2021_dc_edad_educacion.csv", "raw/demografia/csdi_census2021_dc_vivienda_origen.csv", "raw/economia/csdi_census2021_dc_economia.csv"],
+      "campos_usados": "t_pop, dh, adhz, t_ma, sr, age_1..age_5, edu_deg, born_hk, pop_pub, pop_s, pop_pri, pop_tem, pop_non, ma_hh, ma_econhh, t_mmearn, lfpr_t, t_lf, t_wp",
+      "licencia": "Términos de uso de data.gov.hk (reutilización libre con atribución)",
+      "validacion": "La suma de grupos de edad y la suma de tipos de vivienda coinciden exactamente con t_pop en los 18 distritos."
+    },
+    {
+      "id": "ghs_dc_2016_2025",
+      "dominio": "economia / demografia",
+      "titulo": "Estadísticas de población y hogares por distrito (Encuesta General de Hogares) 2016–2025",
+      "proveedor": "Census and Statistics Department (C&SD) vía CSDI",
+      "url": "https://portal.csdi.gov.hk/server/services/common/censtatd_rcd_1635934545173_69201/MapServer/WFSServer",
+      "ficha": "https://data.gov.hk/en-data/dataset/hk-censtatd-census_geo-dc-ghs-csdi",
+      "archivo_raw": "raw/economia/csdi_ghs_dc_panel_2016_2025.csv",
+      "campos_usados": "ma_hh (ingreso mediano mensual del hogar), my_lp (población terrestre a mitad de año), lbnp_ma_t (edad mediana, entera), t_lfpr (participación laboral)",
+      "licencia": "Términos de uso de data.gov.hk"
+    },
+    {
+      "id": "wiki_distritos",
+      "dominio": "referencia",
+      "titulo": "Área terrestre oficial por distrito y nombres en chino",
+      "proveedor": "Wikipedia (Districts of Hong Kong), cifras del Censo 2021",
+      "url": "https://en.wikipedia.org/wiki/Districts_of_Hong_Kong",
+      "archivo_raw": "raw/referencia/wikipedia_distritos_area.csv",
+      "licencia": "CC BY-SA 4.0",
+      "validacion": "La población 2021 coincide con t_pop del censo para los 18 distritos."
+    },
+    {
+      "id": "hkbus_routefarelist",
+      "dominio": "infraestructura",
+      "titulo": "Rutas y paradas de transporte público (bus KMB/Citybus/NLB, minibús GMB, MTR, tren ligero, ferris)",
+      "proveedor": "hkbus/hk-bus-crawling (compila datos abiertos de operadores publicados en data.gov.hk)",
+      "url": "https://raw.githubusercontent.com/hkbus/hk-bus-crawling/gh-pages/routeFareList.min.json",
+      "archivo_raw": "raw/infraestructura/hkbus_routeFareList.min.json",
+      "licencia": "GPL-2.0 (repositorio hk-bus-crawling); datos de origen bajo términos de data.gov.hk",
+      "notas": "15.287 paradas con coordenadas; se asignan a distrito y DCCA por unión espacial (punto en polígono o polígono más cercano a ≤1 km)."
+    },
+    {
+      "id": "ha_hospitales",
+      "dominio": "infraestructura",
+      "titulo": "Hospitales públicos con servicio de urgencias (A&E) y coordenadas",
+      "proveedor": "Lista de hospitales A&E de la Hospital Authority; coordenadas del paquete npm ane-hk",
+      "url": "https://www.npmjs.com/package/ane-hk",
+      "archivo_raw": "raw/infraestructura/ha_hospitales_urgencias.csv",
+      "licencia": "Hechos (nombre y ubicación); el paquete de origen es GPL-3.0, no se copió su código"
+    },
+    {
+      "id": "hko_estaciones",
+      "dominio": "sensores",
+      "titulo": "Información de estaciones meteorológicas del Observatorio de Hong Kong",
+      "proveedor": "Hong Kong Observatory (HKO)",
+      "url": "https://www.hko.gov.hk/en/cis/stn.htm",
+      "archivo_raw": "raw/sensores/hko_weather_stations.csv",
+      "licencia": "Términos de uso de HKO / data.gov.hk",
+      "validacion": "Coordenadas cruzadas con la capa CSDI 'latest_1min_humidity' (26 estaciones): 24 coinciden a <1 m; Kai Tak Runway Park a 31 m; Tai Po a 300 m (estación reubicada a Yuen Chau Tsai Park en 2022)."
+    },
+    {
+      "id": "hko_csdi_humedad",
+      "dominio": "sensores",
+      "titulo": "Tiempo regional — humedad relativa media del último minuto (formato espacial)",
+      "proveedor": "Hong Kong Observatory vía CSDI",
+      "url": "https://portal.csdi.gov.hk/server/services/common/hko_rcd_1634875711587_25731/MapServer/WFSServer",
+      "archivo_raw": "raw/sensores/hko_csdi_humidity_stations.csv",
+      "notas": "Incluye la URL del CSV en tiempo real de cada estación (data_url) para futuras ingestas."
+    },
+    {
+      "id": "epd_aqhi",
+      "dominio": "sensores",
+      "titulo": "AQHI actual por estación de monitoreo de calidad del aire",
+      "proveedor": "Environmental Protection Department (EPD)",
+      "url": "https://www.aqhi.gov.hk/epd/ddata/html/out/aqhi_ind_rss_Eng.xml",
+      "archivo_raw": "raw/sensores/epd_aqhi_snapshot.csv",
+      "licencia": "Términos de uso de data.gov.hk",
+      "notas": "Captura puntual (publicada 2026-10-06 07:30 HKT). Las estaciones se asignan a distrito por nombre; no se incluyen coordenadas exactas."
+    },
+    {
+      "id": "fred_worldbank",
+      "dominio": "economia",
+      "titulo": "PIB per cápita (USD corrientes y constantes) e inflación IPC de Hong Kong",
+      "proveedor": "Banco Mundial, vía FRED (St. Louis Fed)",
+      "urls": ["https://fred.stlouisfed.org/data/PCAGDPHKA646NWDB", "https://fred.stlouisfed.org/data/NYGDPPCAPKDHKG", "https://fred.stlouisfed.org/data/FPCPITOTLZGHKG"],
+      "archivos_raw": ["raw/economia/worldbank_fred_gdp_per_capita_current_usd.csv", "raw/economia/worldbank_fred_gdp_per_capita_constant_usd.csv", "raw/economia/worldbank_fred_cpi_inflation.csv"],
+      "licencia": "CC BY 4.0 (Banco Mundial)",
+      "notas": "La serie de PIB per cápita constante tiene base 2015 (el valor de 2015 coincide con el corriente)."
+    },
+    {
+      "id": "hkpf_delitos",
+      "dominio": "escucha",
+      "titulo": "Situación de delitos totales y violentos (mensual) y Police in Figures 2025",
+      "proveedor": "Hong Kong Police Force",
+      "urls": ["https://www.police.gov.hk/info/doc/crime_details_overall.csv", "https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html"],
+      "archivos_raw": ["raw/escucha/hkpf_crime_monthly_2022_2024.csv", "raw/economia/indicadores_recientes.csv"],
+      "notas": "La suma mensual 2024 (94.948) difiere levemente del total anual publicado (94.747) por revisiones; el CSV mensual no trae desagregación por distrito."
+    },
+    {
+      "id": "noticias_escucha",
+      "dominio": "escucha",
+      "titulo": "Titulares de prensa sobre Hong Kong por tema (captura)",
+      "proveedor": "Búsqueda web; medios: The Standard, SCMP, RTHK, TVB, info.gov.hk, otros",
+      "archivo_raw": "raw/escucha/noticias_busqueda_2026-10-06.csv",
+      "notas": "Solo titular y URL (sin texto de artículos). Distritos detectados por diccionario de lugares (hkopendata, MIT) y tono por léxico heurístico."
+    },
+    {
+      "id": "hkopendata_lugares",
+      "dominio": "referencia",
+      "titulo": "Diccionario de barrios por distrito",
+      "proveedor": "Paquete npm hkopendata 1.0.0 (MIT)",
+      "archivo_raw": "raw/referencia/hkopendata_hk-location.json"
+    },
+    {
+      "id": "unemployment_recent",
+      "dominio": "economia",
+      "titulo": "Tasa de desempleo desestacionalizada más reciente",
+      "proveedor": "C&SD (reportado por Moody's Analytics economy.com)",
+      "url": "https://www.economy.com/hong-kong/unemployment-rate",
+      "archivo_raw": "raw/economia/indicadores_recientes.csv"
+    }
+  ],
+  "salidas_publicas": {
+    "panorama.json": "KPIs de ciudad, destacados y resumen por distrito",
+    "geo.json": "Distritos (simplificados) y regiones en GeoJSON",
+    "geo_circunscripciones.json": "452 circunscripciones DCCA 2019 en GeoJSON",
+    "demografia.json": "Indicadores demográficos por distrito, serie de población 2016–2025 y pirámide",
+    "economia.json": "Ingreso, empleo por distrito, series 2016–2025 y macro 2000–2025",
+    "infraestructura.json": "Resumen por distrito, estaciones MTR, hospitales y acceso a urgencias por DCCA",
+    "infraestructura_paradas.json": "Todas las paradas de transporte en formato columnar compacto",
+    "sensores.json": "Estaciones HKO, AQHI y resumen por distrito",
+    "escucha.json": "Titulares etiquetados, temas, menciones por distrito y delitos mensuales",
+    "atlas_zonas.json": "Ficha integrada por distrito, tipologías (k-means), índices compuestos y DCCA",
+    "atlas_distribuidos.json": "Malla hexagonal H3 (res. 8) con conteos de activos y capas puntuales",
+    "correlaciones.json": "Matrices Pearson/Spearman, pares principales y datos para dispersión",
+    "manifest.json": "Índice de pestañas y archivos"
+  }
+}

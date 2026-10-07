@@ -1,0 +1,9 @@
+indicador,periodo,valor,unidad,fuente,url
+tasa_desempleo_desestacionalizada,2026-06/2026-08,3.8,%,Census and Statistics Department (via Moody's Analytics),https://www.economy.com/hong-kong/unemployment-rate
+tasa_desempleo_desestacionalizada,2026-05/2026-07,3.7,%,Census and Statistics Department (via Moody's Analytics),https://www.economy.com/hong-kong/unemployment-rate
+delitos_totales,2025,89137.0,casos,Hong Kong Police Force - Police in Figures 2025,https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html
+delitos_totales,2024,94747.0,casos,Hong Kong Police Force - Police in Figures 2025,https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html
+delitos_violentos,2025,8823.0,casos,Hong Kong Police Force - Police in Figures 2025,https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html
+delitos_violentos,2024,10485.0,casos,Hong Kong Police Force - Police in Figures 2025,https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html
+tasa_esclarecimiento_delitos,2025,30.3,%,Hong Kong Police Force - Police in Figures 2025,https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html
+tasa_esclarecimiento_delitos_violentos,2025,58.7,%,Hong Kong Police Force - Police in Figures 2025,https://www.police.gov.hk/info/doc/police_in_figure/2025/2025_en.html

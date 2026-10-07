@@ -1,0 +1,87 @@
+name,code,lat_dms,lon_dms,elevation_m,type,first_operation
+Hong Kong Observatory,HKO,22°18'07",114°10'27",32,Manned,01/01/1884
+Hong Kong International Airport,HKA,22°18'34",113°55'19",6,Manned,01/06/1997
+Beas River,BR1,22°29'36",114°06'18",11,Automatic,06/12/2012
+Bluff Head,BHD,22°11'51",114°12'43",94,Automatic,01/01/1995
+Central Pier,CP1,22°17'20",114°09'21",19,Automatic,20/12/2005
+Cheung Chau,CCH,22°12'04",114°01'36",72,Automatic,30/03/1992
+Ching Pak House (Tsing Yi),CPH,22°20'53",114°06'33",122,Automatic,01/07/1987
+Clear Water Bay,CWB,22°15'48",114°17'59",66,Automatic,20/12/2018
+Green Island,GI,22°17'06",114°06'46",88,Automatic,11/09/1989
+Happy Valley,HPV,22°16'14",114°11'01",5,Automatic,01/12/2008
+Hong Kong Park,HKP,22°16'42",114°09'44",26,Automatic,04/09/2007
+Kai Tak,SE,22°18'35",114°12'48",3,Automatic,04/09/1998
+Kai Tak Runway Park,SE1,22°18'18",114°13'1",4,Automatic,17/12/2014
+Kadoorie Farm and Botanic Garden,KFB,22°25'58",114°07'15",307,Automatic,01/12/2010
+Kat O,KAT,22°32'11",114°18'07",10,Automatic,01/01/1993
+Kau Sai Chau,KSC,22°22'13",114°18'45",39,Automatic,03/07/2008
+King's Park,KP,22°18'43",114°10'22",65,Automatic,01/07/1992
+Kowloon City,KLT,22°20'06",114°11'05",92,Automatic,04/09/1998
+Kwun Tong,KTG,22°19'07",114°13'29",90,Automatic,21/10/2009
+Lamma Island,LAM,22°13'34",114°06'31",7,Automatic,25/07/2011
+Lau Fau Shan,LFS,22°28'08",113°59'01",31,Automatic,16/09/1985
+Nei Lak Shan,NLS,22°15'48",113°54'40",747,Automatic,12/02/1998
+New Tsing Yi Station,TY1,22°20'39",114°06'36",8,Automatic,23/08/2010
+Ngong Ping,NGP,22°15'31",113°54'46",593,Automatic,01/01/2002
+Pak Tam Chung (Tsak Yue Wu),TYW,22°24'10",114°19'23",5,Automatic,01/10/1995
+Peng Chau,PEN,22°17'28",114°02'36",34,Automatic,01/06/2004
+Ping Chau,EPC,22°32'48",114°25'42",29,Automatic,01/01/1993
+Sai Kung,SKG,22°22'32",114°16'28",4,Automatic,03/03/1993
+Sha Lo Wan,SLW,22°17'28",113°54'25",61,Automatic,25/02/1993
+Sha Tin,SHA,22°24'09",114°12'36",6,Automatic,01/10/1984
+Sham Shui Po,SSP,22°20'09",114°08'13",11,Automatic,09/03/2010
+Shau Kei Wan,SKW,22°16'54",114°14'10",53,Automatic,17/09/2007
+Shek Kong,SEK,22°26'10",114°05'05",16,Automatic,04/11/1996
+Sheung Shui,SSH,22°30'07",114°06'40",10,Automatic,09/07/2004
+Stanley,STY,22°12'51",114°13'07",31,Automatic,12/06/2009
+Ta Kwu Ling,TKL,22°31'43",114°09'24",15,Automatic,14/10/1985
+Tai Lung,TLS,22°29'05",114°07'03",21,Automatic,14/02/2020
+Tai Mei Tuk,PLC,22°28'31",114°14'15",51,Automatic,01/01/1993
+Tai Mo Shan,TMS,22°24'38",114°07'28",955,Automatic,20/12/1996
+Tai Po (Yuen Chau Tsai Park),YCT,22°26'54",114°10'38",6,Automatic,01/04/2022
+Tap Mun,TAP,22°28'17",114°21'38",15,Automatic,15/09/1993
+Tate's Cairn,TC,22°21'28",114°13'04",572,Automatic,18/12/1997
+The Peak,VP1,22°15'51",114°09'18",406,Automatic,17/02/2003
+Tseung Kwan O,JKB,22°18'57",114°15'20",38,Automatic,01/12/1991
+Tsuen Wan,TWN,22°23'01",114°06'28",142,Automatic,25/04/2006
+Tsuen Wan Shing Mun Valley,TW,22°22'32",114°07'36",35,Automatic,07/12/2010
+Tuen Mun Children and Juvenile Home,TU1,22°23'09",113°57'51",28,Automatic,01/01/2007
+Waglan Island,WGL,22°10'56",114°18'12",56,Automatic,22/08/1989
+Wetland Park,WLP,22°28'00",114°00'32",4,Automatic,10/11/2005
+Wong Chuk Hang,HKS,22°14'52",114°10'25",5,Automatic,01/08/1989
+Wong Tai Sin,WTS,22°20'22",114°12'19",21,Automatic,27/03/2009
+Yuen Long Park,YLP,22°26'27",114°01'06",8,Automatic,20/03/2015
+Automatic Weather Buoy No.2,WB2,22°17'28",113°52'56",9,Buoy,16/08/2002
+Automatic Weather Buoy No.8,WB8,22°18'21",113°57'14",9,Buoy,01/01/2012
+Cheung Chau Beach,CCB,22°12'39",114°01'45",27,Wind,14/09/2009
+North Point,NP,22°17'40",114°11'59",26,Wind,04/09/1998
+Sha Chau,SC,22°20'45",113°53'28",31,Wind,22/11/1997
+Shell Oil Depot,SHL,22°20'48",114°05'11",43,Wind,01/12/1992
+Star Ferry (Kowloon),SF,22°17'35",114°10'07",18,Wind,15/12/1987
+Tai Mo To,TMT,22°19'47",113°58'00",15,Wind,17/10/1997
+Tai O,TO,22°15'22",113°51'17",105,Wind,24/05/2004
+Tai Po Kau,TPK,22°26'33",114°11'02",12,Wind,01/12/2010
+Tuen Mun Government Offices,TUN,22°23'26",113°58'36",69,Wind,23/10/1987
+Yi Tung Shan,YTS,22°15'33",113°57'51",752,Wind,30/10/1997
+Tap Mun East,TME,22°28'06",114°21'47",48,Wind,06/07/2017
+Au Tau,R28,22°27'00",114°03'11",3,Rainfall,30/06/1985
+Cape D'Aguilar,CDA,22°12'34",114°15'17",45,Rainfall,29/07/2016
+Discovery Bay,R12,22°17'29",114°00'33",106,Rainfall,30/12/1984
+Po Pin Chau,PPC,22°21'42",114°22'17",68,Rainfall,06/06/2014
+Lok Ma Chau,R29,22°30'42",114°04'49",67,Rainfall,30/09/1985
+Ngong Ping Fresh Water Reservoir,R11,22°15'20",113°54'41",479,Rainfall,01/09/2006
+Quarry Bay,QU1,22°17'28",114°12'48",7,Rainfall,13/06/2006
+Hong Kong Adventist College (Sai Kung),R18,22°18'27",114°17'13",122,Rainfall,30/06/1985
+Sha Tau Kok,R24,22°32'15",114°12'40",39,Rainfall,30/12/1984
+Tai Mei Tuk Pumping Station,R31,22°28'42",114°14'20",24,Rainfall,30/06/1985
+Tai Po Wong Shiu Chi Secondary School,R23,22°26'44",114°10'18",23,Rainfall,30/12/1984
+Tap Shek Kok,R21,22°22'45",113°55'12",28,Rainfall,30/12/1984
+Tsim Bei Tsui,R22,22°29'11",114°00'42",8,Rainfall,30/12/1984
+Tuen Mun Reservoir,TMR,22°24'27",113°59'14",98,Rainfall,01/01/2016
+Tai Tan Camp,TTC,22°26'07",114°20'03",19,Rainfall,01/04/2017
+Tsim Bei Tsui,TBT,22°29'14",114°00'51",,Tide,01/12/1974
+Quarry Bay,QUB,22°17'28",114°12'48",,Tide,01/01/1986
+Shek Pik,SPW,22°13'13",113°53'40",,Tide,01/01/1998
+Tai Miu Wan,TMW,22°16'11",114°17'19",,Tide,01/01/1996
+Tai Po Kau,TPK,22°26'33",114°11'02",,Tide,01/12/1963
+Waglan Island,WGL,22°10'59",114°18'10",,Tide,01/12/1976
