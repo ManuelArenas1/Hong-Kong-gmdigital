@@ -3,10 +3,10 @@
 const NS = "http://www.w3.org/2000/svg";
 // Series validadas para fondo blanco (azul, aqua, violeta, amarillo). El rojo de la bandera se reserva para resaltar.
 export const PALETA = ["#2a78d6", "#1baf7a", "#6250d6", "#eda100", "#e87ba4", "#008300"];
-export const ROJO = "#de2910";
+export const ROJO = "#b4443a";
 export const CORAL = ROJO; // compatibilidad: «resaltar» = rojo bandera
-export const NEUTRO = "#9a827e";
-const TINTA3 = "#8a625c";
+export const NEUTRO = "#9aa3ad";
+const TINTA3 = "#6b7280";
 
 const fmtNum = new Intl.NumberFormat("es-CO", { maximumFractionDigits: 1 });
 export const fmt = (v, dec) => (v == null || Number.isNaN(v) ? "—" : dec != null
@@ -105,7 +105,7 @@ export function lineas(nodo, { series, alto = 260, yFmt = fmtCorto, xFmt = (x) =
         while (ultY.some((u) => Math.abs(u - yy) < 12)) yy += 12;
         ultY.push(yy);
         el("circle", { cx: X(p.x), cy: Y(p.y), r: 3.5, fill: s.color, stroke: "#ffffff", "stroke-width": 2 }, svg);
-        const t = el("text", { x: X(p.x) + 8, y: yy + 3, "font-family": "var(--mono)", "font-size": 10, fill: "#5e3a35" }, svg);
+        const t = el("text", { x: X(p.x) + 8, y: yy + 3, "font-family": "var(--mono)", "font-size": 10, fill: "#4b5563" }, svg);
         t.textContent = s.nombre.length > 14 ? s.nombre.slice(0, 13) + "…" : s.nombre;
       }
     }
@@ -136,11 +136,11 @@ export function barrasH(nodo, { filas, fmtV = fmt, alto, color = NEUTRO, max, su
     const fh = (h - 8) / filas.length;
     filas.forEach((f, i) => {
       const y = 4 + i * fh, bh = Math.min(12, fh - 6);
-      el("text", { x: anchoEtiqueta - 8, y: y + fh / 2 + 3.5, "text-anchor": "end", "font-size": 11, fill: f.resaltar ? "#2b0d09" : "#5e3a35", "font-weight": f.resaltar ? 600 : 400 }, svg)
+      el("text", { x: anchoEtiqueta - 8, y: y + fh / 2 + 3.5, "text-anchor": "end", "font-size": 11, fill: f.resaltar ? "#1f2933" : "#4b5563", "font-weight": f.resaltar ? 600 : 400 }, svg)
         .textContent = f.etiqueta;
       const x0 = X(Math.min(0, f.valor)), w = Math.max(2, Math.abs(X(f.valor) - X(0)));
       el("rect", { x: x0, y: y + (fh - bh) / 2, width: w, height: bh, rx: 3, fill: f.color || (f.resaltar ? CORAL : color) }, svg);
-      el("text", { x: X(Math.max(0, f.valor)) + 6, y: y + fh / 2 + 3.5, "font-family": "var(--mono)", "font-size": 10, fill: "#5e3a35" }, svg)
+      el("text", { x: X(Math.max(0, f.valor)) + 6, y: y + fh / 2 + 3.5, "font-family": "var(--mono)", "font-size": 10, fill: "#4b5563" }, svg)
         .textContent = fmtV(f.valor) + sufijo;
       const hit = el("rect", { x: 0, y, width: ancho, height: fh, fill: "transparent" }, svg);
       hit.addEventListener("mousemove", (ev) => mostrarTip(ev, `<div class="tt">${f.etiqueta}</div><b>${fmtV(f.valor)}${sufijo}</b>${tipExtra ? tipExtra(f) : ""}`));
@@ -158,7 +158,7 @@ export function apiladaH(nodo, { filas, partes, alto, anchoEtiqueta = 130, fmtV 
     const fh = (h - 8) / filas.length, W = ancho - anchoEtiqueta - 8;
     filas.forEach((f, i) => {
       const y = 4 + i * fh, bh = Math.min(12, fh - 6);
-      el("text", { x: anchoEtiqueta - 8, y: y + fh / 2 + 3.5, "text-anchor": "end", "font-size": 11, fill: f.resaltar ? "#2b0d09" : "#5e3a35" }, svg).textContent = f.etiqueta;
+      el("text", { x: anchoEtiqueta - 8, y: y + fh / 2 + 3.5, "text-anchor": "end", "font-size": 11, fill: f.resaltar ? "#1f2933" : "#4b5563" }, svg).textContent = f.etiqueta;
       const total = partes.reduce((a, p) => a + (f.valores[p.clave] || 0), 0) || 1;
       let x = anchoEtiqueta;
       partes.forEach((p) => {
@@ -195,7 +195,7 @@ export function columnas(nodo, { filas, alto = 220, color = NEUTRO, fmtV = fmtCo
       const ya = Y(Math.max(0, f.valor)), yb = Y(Math.min(0, f.valor));
       el("rect", { x: x + (bw - w) / 2, y: ya, width: w, height: Math.max(1.5, yb - ya), rx: 3, fill: f.color || color }, svg);
       if (i % cada === 0) el("text", { x: x + bw / 2, y: alto - 8, "text-anchor": "middle" }, g).textContent = f.etiqueta;
-      if (etiquetasValor && filas.length <= 8) el("text", { x: x + bw / 2, y: (f.valor >= 0 ? ya - 5 : yb + 12), "text-anchor": "middle", "font-family": "var(--mono)", "font-size": 10, fill: "#5e3a35" }, svg).textContent = fmtV(f.valor);
+      if (etiquetasValor && filas.length <= 8) el("text", { x: x + bw / 2, y: (f.valor >= 0 ? ya - 5 : yb + 12), "text-anchor": "middle", "font-family": "var(--mono)", "font-size": 10, fill: "#4b5563" }, svg).textContent = fmtV(f.valor);
       const hit = el("rect", { x, y: m.t, width: bw, height: alto - m.t - m.b, fill: "transparent" }, svg);
       hit.addEventListener("mousemove", (ev) => mostrarTip(ev, `<div class="tt">${f.etiqueta}</div><b>${fmt(f.valor)}</b>${f.nota ? `<div class="muted">${f.nota}</div>` : ""}`));
       hit.addEventListener("mouseleave", ocultarTip);
@@ -221,8 +221,8 @@ export function dispersion(nodo, { puntos, alto = 360, xNombre, yNombre, xFmt = 
       el("line", { y1: m.t, y2: alto - m.b, x1: X(t), x2: X(t), class: "rejilla-l" }, g);
       el("text", { x: X(t), y: alto - m.b + 16, "text-anchor": "middle" }, g).textContent = xFmt(t);
     }
-    el("text", { x: (m.l + ancho - m.r) / 2, y: alto - 6, "text-anchor": "middle", "font-size": 11, fill: "#5e3a35" }, svg).textContent = xNombre;
-    el("text", { x: -(alto - m.b + m.t) / 2, y: 12, transform: "rotate(-90)", "text-anchor": "middle", "font-size": 11, fill: "#5e3a35" }, svg).textContent = yNombre;
+    el("text", { x: (m.l + ancho - m.r) / 2, y: alto - 6, "text-anchor": "middle", "font-size": 11, fill: "#4b5563" }, svg).textContent = xNombre;
+    el("text", { x: -(alto - m.b + m.t) / 2, y: 12, transform: "rotate(-90)", "text-anchor": "middle", "font-size": 11, fill: "#4b5563" }, svg).textContent = yNombre;
     if (tendencia && puntos.length > 2) {
       const n = xs.length, mx = xs.reduce((a, b) => a + b) / n, my = ys.reduce((a, b) => a + b) / n;
       const b = xs.reduce((s, x, i) => s + (x - mx) * (ys[i] - my), 0) / (xs.reduce((s, x) => s + (x - mx) ** 2, 0) || 1);
@@ -233,7 +233,7 @@ export function dispersion(nodo, { puntos, alto = 360, xNombre, yNombre, xFmt = 
     for (const p of orden) {
       const c = el("circle", { cx: X(p.x), cy: Y(p.y), r: p.resaltar ? 7 : 5.5, fill: p.resaltar ? ROJO : NEUTRO, stroke: "#ffffff", "stroke-width": 2 }, svg);
       if (p.resaltar || p.etiquetar) {
-        el("text", { x: X(p.x) + 9, y: Y(p.y) - 7, "font-size": 11, "font-weight": 600, fill: p.resaltar ? "#a81d0a" : "#5e3a35" }, svg).textContent = p.etiqueta;
+        el("text", { x: X(p.x) + 9, y: Y(p.y) - 7, "font-size": 11, "font-weight": 600, fill: p.resaltar ? "#8f3329" : "#4b5563" }, svg).textContent = p.etiqueta;
       }
       const hit = el("circle", { cx: X(p.x), cy: Y(p.y), r: 12, fill: "transparent" }, svg);
       hit.addEventListener("mousemove", (ev) => mostrarTip(ev, `<div class="tt">${p.etiqueta}</div><div class="fila"><span>${xNombre}</span><b>${xFmt(p.x)}</b></div><div class="fila"><span>${yNombre}</span><b>${yFmt(p.y)}</b></div>`));

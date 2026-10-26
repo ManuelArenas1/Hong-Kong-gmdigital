@@ -2,7 +2,7 @@
 import { fmt, fmtCorto, PALETA, ROJO } from "./graficos.js";
 
 const ESTILO = "https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json";
-const RAMPA = ["#fde4e0", "#f6ab9f", "#eb6a55", "#cf3018", "#86160a"]; // secuencial de un solo tono: rojo de la bandera, claro→oscuro
+const RAMPA = ["#e3eef0", "#b3d1d6", "#78aab4", "#3f7d8c", "#1d5262"]; // secuencial de un solo tono: rojo de la bandera, claro→oscuro
 const RAMPA_HEX = ["#dde9f7", "#a9c7ec", "#6fa1de", "#2a78d6", "#184f95"]; // segundo contexto secuencial: azul
 const TIPOS = {
   "Centro financiero de ingreso alto": PALETA[3],
@@ -30,7 +30,7 @@ export async function iniciarMapa(G, estado, elegirDistrito) {
 
   let estilo = ESTILO;
   try { const r = await fetch(ESTILO); if (!r.ok) throw 0; estilo = await r.json(); }
-  catch { estilo = { version: 8, sources: {}, layers: [{ id: "fondo", type: "background", paint: { "background-color": "#f6f2f1" } }] }; }
+  catch { estilo = { version: 8, sources: {}, layers: [{ id: "fondo", type: "background", paint: { "background-color": "#eef0f2" } }] }; }
 
   const map = new maplibregl.Map({ container: caja, style: estilo, center: [114.14, 22.36], zoom: 9.6, pitch: 0, attributionControl: { compact: true }, cooperativeGestures: true });
   map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "bottom-right");
@@ -48,18 +48,18 @@ export async function iniciarMapa(G, estado, elegirDistrito) {
   map.addLayer({ id: "dist-fill", type: "fill", source: "distritos", paint: { "fill-color": RAMPA[2], "fill-opacity": 0.78 } });
   map.addLayer({ id: "dist-3d", type: "fill-extrusion", source: "distritos", layout: { visibility: "none" }, paint: { "fill-extrusion-color": RAMPA[2], "fill-extrusion-height": 0, "fill-extrusion-opacity": 0.85 } });
   map.addLayer({ id: "hex", type: "fill", source: "hex", layout: { visibility: "none" }, paint: { "fill-color": ["interpolate", ["linear"], ["get", "parada_transporte"], 1, RAMPA_HEX[0], 3, RAMPA_HEX[1], 8, RAMPA_HEX[2], 15, RAMPA_HEX[3], 30, RAMPA_HEX[4]], "fill-opacity": 0.8, "fill-outline-color": "rgba(255,255,255,.7)" } });
-  map.addLayer({ id: "dcca-line", type: "line", source: "dcca", layout: { visibility: "none" }, paint: { "line-color": "rgba(43,13,9,.25)", "line-width": 0.6 } });
+  map.addLayer({ id: "dcca-line", type: "line", source: "dcca", layout: { visibility: "none" }, paint: { "line-color": "rgba(17,24,39,.25)", "line-width": 0.6 } });
   map.addLayer({ id: "dist-line", type: "line", source: "distritos", paint: { "line-color": "#ffffff", "line-width": 1.4 } });
-  map.addLayer({ id: "dist-sel", type: "line", source: "distritos", filter: ["==", ["get", "codigo"], ""], paint: { "line-color": "#2b0d09", "line-width": 3.2 } });
-  map.addLayer({ id: "paradas", type: "circle", source: "paradas", layout: { visibility: "none" }, paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, 1.2, 15, 3.5], "circle-color": "#5e3a35", "circle-opacity": 0.65 } });
+  map.addLayer({ id: "dist-sel", type: "line", source: "distritos", filter: ["==", ["get", "codigo"], ""], paint: { "line-color": "#1f2933", "line-width": 3.2 } });
+  map.addLayer({ id: "paradas", type: "circle", source: "paradas", layout: { visibility: "none" }, paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, 1.2, 15, 3.5], "circle-color": "#4b5563", "circle-opacity": 0.65 } });
   map.addLayer({ id: "hko", type: "circle", source: "hko", layout: { visibility: "none" }, paint: { "circle-radius": 4.5, "circle-color": PALETA[2], "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.5 } });
   map.addLayer({ id: "mtr", type: "circle", source: "mtr", paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 2.5, 14, 6], "circle-color": PALETA[0], "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.8 } });
-  map.addLayer({ id: "hosp", type: "circle", source: "hosp", paint: { "circle-radius": 6.5, "circle-color": "#2b0d09", "circle-stroke-color": "#ffffff", "circle-stroke-width": 2.2 } });
+  map.addLayer({ id: "hosp", type: "circle", source: "hosp", paint: { "circle-radius": 6.5, "circle-color": "#1f2933", "circle-stroke-color": "#ffffff", "circle-stroke-width": 2.2 } });
 
   // etiquetas de distrito como marcadores HTML (no dependen de glifos del estilo base)
   const etiquetas = distritos.features.map((f) => {
     const e = document.createElement("div");
-    e.style.cssText = "font:600 10.5px var(--sans);color:#2b0d09;text-shadow:0 0 3px #fff,0 0 6px #fff,0 0 10px #fff;pointer-events:none;white-space:nowrap";
+    e.style.cssText = "font:600 10.5px var(--sans);color:#1f2933;text-shadow:0 0 3px #fff,0 0 6px #fff,0 0 10px #fff;pointer-events:none;white-space:nowrap";
     e.textContent = f.properties.distrito_es;
     e.dataset.chico = f.properties.area_km2_oficial < 25 ? "1" : "";
     return new maplibregl.Marker({ element: e }).setLngLat([f.properties.centro_lon, f.properties.centro_lat]).addTo(map);
@@ -75,7 +75,7 @@ export async function iniciarMapa(G, estado, elegirDistrito) {
   if (matchMedia("(max-width:860px)").matches) lentesEl.querySelector("[data-capas]").style.display = "";
   function aplicarLente() {
     let color;
-    if (lente.cat) color = ["match", ["get", "tipologia"], ...Object.entries(TIPOS).flat(), "#cbb8b5"];
+    if (lente.cat) color = ["match", ["get", "tipologia"], ...Object.entries(TIPOS).flat(), "#cfd4da"];
     else {
       const vals = G.D.map((d) => d[lente.id]), mn = Math.min(...vals), mx = Math.max(...vals);
       color = ["interpolate", ["linear"], ["get", lente.id], ...RAMPA.flatMap((c, i) => [mn + (mx - mn) * i / (RAMPA.length - 1), c])];
@@ -90,12 +90,12 @@ export async function iniciarMapa(G, estado, elegirDistrito) {
   function leyenda() {
     const el = document.getElementById("leyendaMapa");
     if (lente.cat) {
-      el.innerHTML = `<div style="color:#2b0d09;margin-bottom:6px">Tipología de distrito</div>` + Object.entries(TIPOS).map(([t, c]) => `<div style="display:flex;gap:6px;align-items:center;margin-top:3px"><i style="width:10px;height:10px;border-radius:3px;background:${c}"></i>${t}</div>`).join("");
+      el.innerHTML = `<div style="color:#1f2933;margin-bottom:6px">Tipología de distrito</div>` + Object.entries(TIPOS).map(([t, c]) => `<div style="display:flex;gap:6px;align-items:center;margin-top:3px"><i style="width:10px;height:10px;border-radius:3px;background:${c}"></i>${t}</div>`).join("");
     } else {
       const vals = G.D.map((d) => d[lente.id]);
-      el.innerHTML = `<div style="color:#2b0d09">${lente.nombre}</div><div class="muted">${lente.unidad}</div><div class="rampa" style="background:linear-gradient(90deg,${RAMPA.join(",")})"></div><div class="ext"><span>${lente.f(Math.min(...vals))}</span><span>${lente.f(Math.max(...vals))}</span></div>`;
+      el.innerHTML = `<div style="color:#1f2933">${lente.nombre}</div><div class="muted">${lente.unidad}</div><div class="rampa" style="background:linear-gradient(90deg,${RAMPA.join(",")})"></div><div class="ext"><span>${lente.f(Math.min(...vals))}</span><span>${lente.f(Math.max(...vals))}</span></div>`;
     }
-    if (map.getLayoutProperty("hex", "visibility") === "visible") el.innerHTML += `<div style="margin-top:10px;color:#2b0d09">Hexágonos H3</div><div class="muted">paradas por celda (~0,74 km²)</div><div class="rampa" style="background:linear-gradient(90deg,${RAMPA_HEX.join(",")})"></div><div class="ext"><span>1</span><span>30+</span></div>`;
+    if (map.getLayoutProperty("hex", "visibility") === "visible") el.innerHTML += `<div style="margin-top:10px;color:#1f2933">Hexágonos H3</div><div class="muted">paradas por celda (~0,74 km²)</div><div class="rampa" style="background:linear-gradient(90deg,${RAMPA_HEX.join(",")})"></div><div class="ext"><span>1</span><span>30+</span></div>`;
   }
   lentesEl.addEventListener("click", (e) => {
     const b = e.target.closest("button"); if (!b) return;
@@ -115,12 +115,12 @@ export async function iniciarMapa(G, estado, elegirDistrito) {
   // ---- capas ----
   const CAPAS = [
     { id: "dist-fill", nombre: "Distritos (coropleta)", color: RAMPA[3], on: true, n: 18 },
-    { id: "dcca-line", nombre: "Circunscripciones DCCA", color: "#c9b3af", on: false, n: 452 },
+    { id: "dcca-line", nombre: "Circunscripciones DCCA", color: "#cfd4da", on: false, n: 452 },
     { id: "hex", nombre: "Malla hexagonal H3", color: RAMPA_HEX[3], on: false, n: hex.features.length },
     { id: "mtr", nombre: "Estaciones MTR", color: PALETA[0], on: true, n: G.infraestructura.estaciones_mtr.length },
-    { id: "hosp", nombre: "Hospitales con urgencias", color: "#2b0d09", on: true, n: G.infraestructura.hospitales.length },
+    { id: "hosp", nombre: "Hospitales con urgencias", color: "#1f2933", on: true, n: G.infraestructura.hospitales.length },
     { id: "hko", nombre: "Estaciones del Observatorio", color: PALETA[2], on: false, n: G.sensores.estaciones_meteorologicas.length },
-    { id: "paradas", nombre: "Paradas de transporte", color: "#5e3a35", on: false, n: G.panorama.kpis.paradas_transporte_publico },
+    { id: "paradas", nombre: "Paradas de transporte", color: "#4b5563", on: false, n: G.panorama.kpis.paradas_transporte_publico },
   ];
   document.getElementById("capas").innerHTML = CAPAS.map((c) => `<label class="capa"><input type="checkbox" data-id="${c.id}" ${c.on ? "checked" : ""}><i style="background:${c.color}"></i>${c.nombre}<small>${fmt(c.n, 0)}</small></label>`).join("") +
     `<p class="mono muted" style="font-size:10px;margin:10px 0 0;line-height:1.4">Archivos: <b>geo.json</b> (F19, F22) · <b>geo_circunscripciones.json</b> (F19) · <b>hex_h3_res8.geojson</b> (F23–F25) · <b>infraestructura.json</b> (F23, F24) · <b>sensores.json</b> (F25) · <b>infraestructura_paradas.json</b> (F23). Mapa base © CARTO / OpenStreetMap.</p>`;

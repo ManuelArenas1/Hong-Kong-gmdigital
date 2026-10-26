@@ -231,8 +231,8 @@ function economia() {
   const sel = ["A", "J", "F", "Q"];
   const colorDe = {}; sel.forEach((c, i) => (colorDe[c] = PALETA[i]));
   const pintarIng = () => {
-    $("#ingresoSel").innerHTML = D.map((d) => `<button class="chip" data-c="${d.codigo}" style="${sel.includes(d.codigo) ? `border-color:${colorDe[d.codigo]};color:#2b0d09;box-shadow:inset 0 -3px 0 ${colorDe[d.codigo]}` : ""}">${d.distrito_es}</button>`).join("");
-    const series = D.map((d) => ({ nombre: d.distrito_es, color: sel.includes(d.codigo) ? colorDe[d.codigo] : "#eadcd9", tenue: !sel.includes(d.codigo), grosor: sel.includes(d.codigo) ? 2.2 : 1.2,
+    $("#ingresoSel").innerHTML = D.map((d) => `<button class="chip" data-c="${d.codigo}" style="${sel.includes(d.codigo) ? `border-color:${colorDe[d.codigo]};color:#1f2933;box-shadow:inset 0 -3px 0 ${colorDe[d.codigo]}` : ""}">${d.distrito_es}</button>`).join("");
+    const series = D.map((d) => ({ nombre: d.distrito_es, color: sel.includes(d.codigo) ? colorDe[d.codigo] : "#e5e7eb", tenue: !sel.includes(d.codigo), grosor: sel.includes(d.codigo) ? 2.2 : 1.2,
       valores: e.serie_distritos.filter((r) => r.codigo === d.codigo).map((r) => ({ x: r.anio, y: r.ingreso_mediano_hogar_hkd })) }))
       .sort((a, b) => (a.tenue ? 0 : 1) - (b.tenue ? 0 : 1));
     lineas($("#gIngreso"), { series, alto: 300, yFmt: (v) => "HK$ " + fmtCorto(v) });
@@ -252,7 +252,7 @@ function economia() {
   const pintarTen = () => apiladaH($("#gTenencia"), {
     filas: [...D].sort((a, b) => b.pct_vivienda_publica_alquiler - a.pct_vivienda_publica_alquiler).map((d) => ({ etiqueta: d.distrito_es, resaltar: d.codigo === estado.a,
       valores: { pub: d.pct_vivienda_publica_alquiler, sub: d.pct_vivienda_subsidiada_venta, pri: d.pct_vivienda_privada, otr: Math.max(0, 100 - d.pct_vivienda_publica_alquiler - d.pct_vivienda_subsidiada_venta - d.pct_vivienda_privada) } })),
-    partes: [{ clave: "pub", nombre: "Pública de alquiler", color: PALETA[0] }, { clave: "sub", nombre: "Subsidiada en propiedad", color: PALETA[1] }, { clave: "pri", nombre: "Privada", color: PALETA[2] }, { clave: "otr", nombre: "Temporal y no doméstica", color: "#d9c9c6" }],
+    partes: [{ clave: "pub", nombre: "Pública de alquiler", color: PALETA[0] }, { clave: "sub", nombre: "Subsidiada en propiedad", color: PALETA[1] }, { clave: "pri", nombre: "Privada", color: PALETA[2] }, { clave: "otr", nombre: "Temporal y no doméstica", color: "#cfd4da" }],
   });
   pintarTen(); estado.oyentes.push(pintarTen);
   columnas($("#gOferta"), { filas: [{ etiqueta: "2024 terminadas", valor: W("vivienda", "viviendas_privadas_terminadas_2024") }, { etiqueta: "2026 previstas", valor: W("vivienda", "oferta_privada_prevista_2026") }, { etiqueta: "2027 previstas", valor: W("vivienda", "oferta_privada_prevista_2027") }], alto: 200, fmtV: fmtCorto });
@@ -277,7 +277,7 @@ function turismo() {
     { v: n0(t("ocupacion_hotelera_2025_pct")), u: "%", l: "Ocupación hotelera", f: "F12 · perfil_wiki.json", sello: "dec" },
   ]);
   barrasH($("#gLlegadas"), { filas: [
-    { etiqueta: "2018 (pico)", valor: t("llegadas_visitantes_pico_2018") / 1e6, color: "#d9c9c6" },
+    { etiqueta: "2018 (pico)", valor: t("llegadas_visitantes_pico_2018") / 1e6, color: "#cfd4da" },
     { etiqueta: "2025 total", valor: t("llegadas_visitantes_2025") / 1e6, color: PALETA[0] },
     { etiqueta: "2025 · China continental", valor: t("llegadas_continentales_2025") / 1e6, color: PALETA[1] },
     { etiqueta: "2025 · otros mercados", valor: t("llegadas_no_continentales_2025") / 1e6, color: PALETA[2] },
@@ -497,7 +497,7 @@ function escucha() {
     { v: men.length, u: "distritos", l: "Distritos nombrados en titulares", f: "F32, F33 · escucha.json", sello: "der" },
   ]);
   apiladaH($("#gTemas"), { filas: temas.map((t) => ({ etiqueta: NOMBRE_TEMA[t.tema] || t.tema, valores: { p: t.positivas, n: t.menciones - t.positivas - t.negativas, x: t.negativas } })),
-    partes: [{ clave: "p", nombre: "Positivo", color: PALETA[1] }, { clave: "n", nombre: "Neutral", color: "#d9c9c6" }, { clave: "x", nombre: "Negativo", color: PALETA[2] }], fmtV: (v) => n0(v) + " titulares", anchoEtiqueta: 120 });
+    partes: [{ clave: "p", nombre: "Positivo", color: PALETA[1] }, { clave: "n", nombre: "Neutral", color: "#cfd4da" }, { clave: "x", nombre: "Negativo", color: PALETA[2] }], fmtV: (v) => n0(v) + " titulares", anchoEtiqueta: 120 });
   $("#escNota").textContent = E.nota_metodologica;
   barrasH($("#gMenciones"), { filas: men.map((m) => ({ etiqueta: m.distrito_es, valor: m.menciones_noticias, resaltar: m.codigo === estado.a, alClic: () => elegirDistrito(m.codigo, "graf") })), fmtV: n0 });
   let filtro = "todos";
