@@ -207,6 +207,9 @@ def construir_economia():
         "cpi_inflation_pct": "inflacion_ipc_pct"})
     macro["crecimiento_real_pib_pc_pct"] = (100 * macro.pib_per_capita_usd_constantes_2015.pct_change()).round(2)
     recientes = pd.read_csv(RAW / "economia" / "indicadores_recientes.csv")
+    # F34 (Moody's) se descarta por términos restrictivos; el resto viene de HKPF (F10)
+    recientes = recientes[~recientes.fuente.str.contains("Moody", na=False)].copy()
+    recientes["fuente_id"] = "F10"
 
     dst = asegurar_dir(CURATED / "economia")
     escribir_csv(dst / "distritos_economia.csv", dist)

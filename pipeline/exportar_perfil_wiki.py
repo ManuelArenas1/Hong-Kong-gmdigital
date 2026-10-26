@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from common import PUBLIC, escribir_json  # noqa: E402
 from llenar_diccionario_wiki import CAMPOS  # noqa: E402
+from catalogo_unico import REEMPLAZADOS  # noqa: E402
 
 # Hoja «1. Fuentes» del grupo (copiada del archivo compartido por el equipo, 2026-10-06)
 FUENTES_GRUPO = {
@@ -42,6 +43,8 @@ def main():
     for fid, archivo, campo, _orig, sig, _tipo, unidad, ej, _vac, _rango, _trans, preg in CAMPOS:
         tema = Path(archivo).stem
         if tema == "suelo_parques":
+            continue
+        if f"{tema}.{campo}" in REEMPLAZADOS:  # el lago tiene la versión descargada: ver conciliacion.json
             continue
         temas[tema][campo] = {"valor": ej, "unidad": unidad, "que_es": sig, "fuente": fid, "pregunta": preg}
     # Tabla de parques naturales (wiki 5.7): seis filas

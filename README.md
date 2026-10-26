@@ -22,9 +22,14 @@ Sellos de cada cifra: **observado** (descargado y procesado por el pipeline), **
 raw/            Bronce: datos tal como se obtuvieron de cada fuente
 curated/        Plata: tablas y capas limpias, en español, unidas por código de distrito
 public/data/    Oro: un JSON por pestaña, listo para servir en el front (Vercel/Next/Vite)
-catalogo/       catalogo.json — fuentes, URLs, licencias, validaciones y notas
+catalogo/       fuentes.json — catálogo único F01–F45 con licencias literales (en inglés)
+                diccionario_web.csv — un campo por fila de cada archivo de public/data que lee la web, con su F0x
+                Diccionario_de_datos_TallerDatos_HongKong.xlsx — entrega del grupo, generada desde los dos anteriores
 pipeline/       build.py — reconstruye curated/ y public/data/ a partir de raw/
-                exportar_perfil_wiki.py — perfil de ciudad de la wiki, hexágonos, catálogo y barrios para la web
+                exportar_perfil_wiki.py — perfil de ciudad de la wiki, hexágonos y barrios para la web
+                catalogo_unico.py — catálogo F01–F45, licencias literales y conciliación wiki vs. lago
+                diccionario_web.py — diccionario generado leyendo los JSON reales de public/data
+                excel_grupo.py — llena la plantilla del taller desde el catálogo y el diccionario
 public/         página web (index.html + assets/) que consume public/data/
 ```
 
@@ -33,7 +38,13 @@ public/         página web (index.html + assets/) que consume public/data/
 ```bash
 pip install -r requirements.txt
 python pipeline/build.py
+python pipeline/exportar_perfil_wiki.py
+python pipeline/catalogo_unico.py
+python pipeline/diccionario_web.py
+python pipeline/excel_grupo.py <excel_del_grupo.xlsx> catalogo/Diccionario_de_datos_TallerDatos_HongKong.xlsx
 ```
+
+Regla de la página: **cada gráfico lee un archivo de `public/data/`, ese archivo tiene sus filas en el diccionario con su F0x, y nada se consulta en vivo.** Debajo de cada gráfico la página muestra la fuente, el archivo y el campo.
 
 El pipeline es determinista (k-means con semilla fija) y no descarga nada: todo parte de `raw/`.
 
@@ -54,17 +65,7 @@ El pipeline es determinista (k-means con semilla fija) y no descarga nada: todo 
 
 ## Fuentes
 
-Detalle completo en [`catalogo/catalogo.json`](catalogo/catalogo.json). Resumen:
-
-- **C&SD** — Censo 2021 y Encuesta General de Hogares 2016–2025 por distrito (servicios WFS del portal CSDI).
-- **EAC** — límites de las circunscripciones DCCA 2019 (vía `hkdce/dcca-boundaries`).
-- **Hong Kong Observatory** — lista oficial de estaciones y capa espacial CSDI.
-- **EPD** — AQHI por estación.
-- **Operadores de transporte** (KMB, Citybus, NLB, GMB, MTR, ferris) compilados por `hkbus/hk-bus-crawling` (GPL-2.0).
-- **Hospital Authority** — hospitales con urgencias.
-- **Banco Mundial vía FRED** — PIB per cápita e inflación.
-- **Hong Kong Police Force** — delitos mensuales y anuales.
-- **Wikipedia** — área terrestre oficial por distrito (CC BY-SA).
+El catálogo único está en [`catalogo/fuentes.json`](catalogo/fuentes.json) (también en la sección «Fuentes» de la página): 45 fuentes, de las cuales 29 están integradas. Las licencias se copian **literalmente, en inglés**; cuando la página de avisos no se pudo abrir quedan como `not verified` en vez de suponerlas. Licencias con riesgo: F10 y F17 (restrictivas), F34 (Moody's, descartada), F25 y F27 (solo uso no comercial).
 
 ## Advertencias
 
@@ -72,4 +73,5 @@ Detalle completo en [`catalogo/catalogo.json`](catalogo/catalogo.json). Resumen:
 - La población del censo por distrito suma 7.411.945 (excluye a la población marina).
 - Las correlaciones usan 18 observaciones: son descriptivas, no causales.
 - El tono de `escucha` es un léxico heurístico, no un modelo de sentimiento validado.
-- AQHI y titulares son capturas puntuales del 2026-10-06; para series en vivo conviene agendar la ingesta (ver `catalogo.json`, campo `data_url` de las estaciones HKO).
+- AQHI y titulares son capturas puntuales del 2026-10-06; la página no consulta nada en vivo.
+- La pobreza por distrito no se grafica: la decisión de cómo protegerla está escrita en la sección Gente de la página.
