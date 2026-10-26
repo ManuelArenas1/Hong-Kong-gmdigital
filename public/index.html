@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cerebro HK · Hong Kong</title>
+<meta name="description" content="Gemelo territorial de Hong Kong: 18 distritos, datos públicos trazables del lago Hong-Kong-gmdigital.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='5' fill='%23ff8152'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link href="assets/estilo.css" rel="stylesheet">
+</head>
+<body>
+<aside class="lateral" id="lateral">
+  <div class="marca">
+    <b>CEREBRO HK</b>
+    <small><span class="punto"></span><span>Hong Kong · RAE · 18 distritos · 452 circunscripciones</span></small>
+  </div>
+  <nav class="nav" id="nav">
+    <a href="#panorama" class="activo"><i>◎</i>Panorama</a>
+    <a href="#mapa"><i>▲</i>Gemelo territorial</a>
+    <a href="#gente"><i>●</i>Gente</a>
+    <a href="#economia"><i>$</i>Economía y vivienda</a>
+    <a href="#turismo"><i>✈</i>Turismo</a>
+    <a href="#gobierno"><i>⌂</i>Finanzas públicas</a>
+    <a href="#seguridad"><i>⚠</i>Seguridad</a>
+    <a href="#infraestructura"><i>◇</i>Transporte y salud</a>
+    <a href="#ambiente"><i>☁</i>Ambiente y sensores</a>
+    <a href="#correlaciones"><i>↗</i>Correlaciones</a>
+    <a href="#atlas"><i>▦</i>Atlas 18 distritos</a>
+    <a href="#escucha"><i>◌</i>Escucha social</a>
+    <a href="#fuentes"><i>≡</i>Fuentes</a>
+  </nav>
+  <div class="pie-lateral">
+    <small id="estadoLago">lago: cargando…</small>
+    <button class="btn-lat" id="abrirPaleta">⌘K buscar</button>
+    <a class="btn-lat" style="text-align:center;text-decoration:none" href="https://github.com/ManuelArenas1/Hong-Kong-gmdigital" target="_blank" rel="noopener">repositorio ↗</a>
+  </div>
+</aside>
+
+<main class="contenido">
+  <div class="barra">
+    <span><button class="btn-menu" id="btnMenu" aria-label="Abrir menú">☰</button> <span class="migas" id="migas">◎ Panorama</span></span>
+    <span><span id="reloj">—</span> <span class="clima" id="clima"></span></span>
+  </div>
+
+  <!-- ================= PANORAMA ================= -->
+  <section id="panorama" class="sec">
+    <div class="hero">
+      <div class="anillo"></div>
+      <div class="fantasma">香港</div>
+      <p class="ceja">Hong Kong · 18 distritos · 452 circunscripciones</p>
+      <h1>Entiende un distrito.<span>Decide con evidencia.</span></h1>
+      <p class="lead" id="heroLead"></p>
+      <div class="pastillas" id="heroPastillas"></div>
+    </div>
+
+    <div class="tarjeta grande" id="diagnostico">
+      <div class="cab">
+        <div><p class="ceja">Diagnóstico territorial · 18 distritos</p><h2 class="tit" style="font-size:clamp(26px,3vw,38px);margin:0">¿Qué ocurre en este distrito?</h2></div>
+        <p class="lead" style="max-width:440px;font-size:13.5px;margin:0">Compara prosperidad, conectividad y presión demográfica. Cambia la prioridad y observa si la conclusión se sostiene.</p>
+      </div>
+      <div class="ctl-fila">
+        <div class="ctl"><label for="zonaA">Distrito principal</label><select id="zonaA"></select></div>
+        <button class="btn swap" id="intercambiar" title="Intercambiar" aria-label="Intercambiar distritos">⇄</button>
+        <div class="ctl"><label for="zonaB">Comparar con</label><select id="zonaB"></select></div>
+        <div class="ctl buscar-wrap"><label for="lugar">O busca un barrio</label>
+          <div class="buscar"><input class="campo" id="lugar" list="lugares" placeholder="Mong Kok, Tin Shui Wai, Stanley…"><button class="btn cian" id="buscarLugar">Ir al distrito</button></div>
+          <datalist id="lugares"></datalist></div>
+      </div>
+      <div class="chips" id="prioridades"><span class="lbl">Prioridad:</span></div>
+      <div class="diag-top">
+        <div class="tarjeta"><p class="ceja" id="lecturaCeja">Lectura ejecutiva</p><div class="score" id="score">—</div><p class="lectura" id="lectura"></p></div>
+        <div class="tarjeta" style="display:flex;flex-direction:column;justify-content:center"><p class="ceja">Posición relativa</p><div class="puesto" id="puesto">#—</div><p class="muted mono" style="font-size:11px;margin:6px 0 12px" id="puestoNota"></p><button class="btn" id="verEnMapa">Ver en el mapa ↑</button></div>
+      </div>
+      <div class="dims" id="dims"></div>
+      <div class="tarjeta mt"><div class="cab"><div><p class="ceja">Comparación directa</p><h3 id="cmpTitulo"></h3></div><span class="meta">Las barras usan valores normalizados 0–100 entre los 18 distritos; las etiquetas muestran el valor original.</span></div><div class="comparar" id="comparar"></div></div>
+      <div class="tarjeta mt"><div class="cab"><div><p class="ceja">Sensibilidad del índice</p><h3>¿La conclusión cambia si cambia la prioridad?</h3></div><span class="meta">Los pesos se normalizan solos. Son una decisión analítica, no un dato observado.</span></div>
+        <div class="pesos" id="pesos"></div><div class="top5" id="top5"></div></div>
+      <div class="nota"><span><span class="sello obs inline">OBSERVADO</span> censo y encuesta de hogares · <span class="sello der inline">DERIVADO</span> conectividad e índices del lago</span><button class="btn" id="copiarDiag">Copiar diagnóstico</button></div>
+    </div>
+
+    <div class="tarjeta mt"><div class="cab"><h3>Señales que importan</h3><span class="meta">lo que cambia la lectura de la ciudad</span></div><div class="senales" id="senalesPanorama"></div></div>
+  </section>
+
+  <!-- ================= MAPA ================= -->
+  <section id="mapa" class="sec">
+    <p class="ceja">Gemelo territorial</p>
+    <h2 class="tit">Mapa de los 18 distritos</h2>
+    <p class="lead">Explora Hong Kong por preguntas —<b>ingreso, densidad, envejecimiento, vivienda pública, transporte</b>— y haz clic en un distrito para ver su ficha. El mapa combina los límites oficiales de 452 circunscripciones, 15.285 paradas de transporte, 97 estaciones MTR, 18 hospitales con urgencias, 86 estaciones del Observatorio y una malla hexagonal H3.</p>
+    <div class="mapa-lentes" id="lentes" role="toolbar" aria-label="Lente del mapa"></div>
+    <div class="mapa-caja">
+      <div id="mapaLienzo"></div>
+      <div class="mapa-aviso" id="mapaAviso"></div>
+      <div class="mapa-panel oculto-movil" id="mapaPanel">
+        <h4>Explorador territorial</h4><span class="muted mono" style="font-size:10.5px">clic en un distrito · arrastra para girar</span>
+        <div class="lbl">Capas</div><div id="capas"></div>
+      </div>
+      <div class="mapa-der"><div class="mapa-ficha" id="ficha"></div><div class="mapa-leyenda" id="leyendaMapa"></div></div>
+    </div>
+  </section>
+
+  <!-- ================= GENTE ================= -->
+  <section id="gente" class="sec">
+    <p class="ceja">Población</p><h2 class="tit">Gente</h2>
+    <p class="lead" id="genteLead"></p>
+    <div class="kpis" id="genteKpis"></div>
+    <div class="tarjeta"><div class="senales" id="genteSenales"></div></div>
+    <div class="rejilla r2 mt">
+      <div class="tarjeta"><div class="cab"><h3>Población de Hong Kong, 2016–2025</h3><span class="meta">personas · población terrestre a mitad de año</span></div><div id="gPobTotal"></div><p class="fuente">Fuente: C&amp;SD, Encuesta General de Hogares por distrito (suma de 18 distritos).</p></div>
+      <div class="tarjeta"><div class="cab"><h3>Estructura por edad, Censo 2021</h3><span class="meta">personas · 5 grupos</span></div><div id="gEdad"></div><p class="fuente">Fuente: C&amp;SD, Censo 2021 por distrito (DC_21C).</p></div>
+    </div>
+    <div class="rejilla r3 mt">
+      <div class="tarjeta"><div class="cab"><h3>Población por distrito, 2025</h3><span class="meta">personas</span></div><div id="gPobDist"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>Envejecimiento por distrito</h3><span class="meta">% con 65 años o más · 2021</span></div><div id="gEnvej"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>Crecimiento 2016–2025</h3><span class="meta">% variación de la población</span></div><div id="gCrec"></div></div>
+    </div>
+    <div class="rejilla r2 mt">
+      <div class="tarjeta"><div class="cab"><h3>Educación universitaria por distrito</h3><span class="meta">% de la población de 15+ con título · 2021</span></div><div id="gEdu"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>Natalidad: de 16,8 a 4,2 por mil</h3><span class="meta">nacimientos por 1.000 habitantes</span></div><div id="gNatal"></div><p class="fuente">Fuente: Centre for Health Protection (F04, wiki 1.10). Tres cortes publicados.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= ECONOMÍA ================= -->
+  <section id="economia" class="sec">
+    <p class="ceja">Ingreso, empleo y vivienda</p><h2 class="tit">Economía y vivienda</h2>
+    <p class="lead" id="ecoLead"></p>
+    <div class="kpis" id="ecoKpis"></div>
+    <div class="tarjeta"><div class="senales" id="ecoSenales"></div></div>
+    <div class="tarjeta mt"><div class="cab"><div><h3>Ingreso mediano del hogar por distrito, 2016–2025</h3></div>
+      <div class="chips" id="ingresoSel"></div></div><div id="gIngreso"></div><p class="fuente">Fuente: C&amp;SD, Encuesta General de Hogares por distrito (HK$ por mes, nominal). En gris, los demás distritos.</p></div>
+    <div class="rejilla r3 mt">
+      <div class="tarjeta"><div class="cab"><h3>Ranking de ingreso, 2025</h3><span class="meta">HK$ por mes</span></div><div id="gRankIng"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>PIB per cápita, 2000–2025</h3><span class="meta">US$ corrientes</span></div><div id="gPib"></div><p class="fuente">Fuente: Banco Mundial vía FRED.</p></div>
+      <div class="tarjeta"><div class="cab"><h3>Inflación anual</h3><span class="meta">% IPC</span></div><div id="gInfl"></div><p class="fuente">Fuente: Banco Mundial vía FRED.</p></div>
+    </div>
+    <div class="rejilla r2 mt">
+      <div class="tarjeta"><div class="cab"><h3>¿Dónde vive la gente? Tenencia por distrito</h3><span class="meta">% de la población · Censo 2021</span></div><div id="gTenencia"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>Oferta de vivienda privada</h3><span class="meta">unidades terminadas o previstas</span></div><div id="gOferta"></div><p class="fuente">Fuente: Rating and Valuation Department (F05, wiki 2.6).</p>
+        <div class="senales mt" id="viviendaSenales"></div></div>
+    </div>
+  </section>
+
+  <!-- ================= TURISMO ================= -->
+  <section id="turismo" class="sec">
+    <p class="ceja">Visitantes</p><h2 class="tit">Turismo</h2>
+    <p class="lead" id="turLead"></p>
+    <div class="kpis" id="turKpis"></div>
+    <div class="rejilla r2">
+      <div class="tarjeta"><div class="cab"><h3>Llegadas de visitantes</h3><span class="meta">millones · pico 2018 vs 2025</span></div><div id="gLlegadas"></div><p class="fuente">Fuente: gov.hk, Hong Kong: The Facts – Tourism (F12).</p></div>
+      <div class="tarjeta"><div class="cab"><h3>Parques naturales más grandes</h3><span class="meta">hectáreas · AFCD</span></div><div id="gParques"></div><p class="fuente">Fuente: AFCD, Country Parks (F13, wiki 5.7).</p></div>
+    </div>
+    <div class="tarjeta mt"><div class="cab"><h3>Lo que dice la prensa sobre turismo</h3><span class="meta">titulares capturados</span></div><div class="titulares" id="turNoticias"></div></div>
+  </section>
+
+  <!-- ================= GOBIERNO ================= -->
+  <section id="gobierno" class="sec">
+    <p class="ceja">Presupuesto 2026-27</p><h2 class="tit">Finanzas públicas</h2>
+    <p class="lead" id="finLead"></p>
+    <div class="kpis" id="finKpis"></div>
+    <div class="rejilla r2">
+      <div class="tarjeta"><div class="cab"><h3>Ingresos y gastos, 2026-27</h3><span class="meta">HK$ millones</span></div><div id="gFin"></div><p class="fuente">Fuente: The 2026-27 Budget (F08, wiki 3).</p></div>
+      <div class="tarjeta"><div class="cab"><h3>Resultado fiscal</h3><span class="meta">HK$ millones · positivo = superávit</span></div><div id="gBalance"></div><p class="fuente">Fuente: The 2026-27 Budget (F08, wiki 3.6).</p></div>
+    </div>
+  </section>
+
+  <!-- ================= SEGURIDAD ================= -->
+  <section id="seguridad" class="sec">
+    <p class="ceja">Ley y orden</p><h2 class="tit">Seguridad</h2>
+    <p class="lead" id="segLead"></p>
+    <div class="kpis" id="segKpis"></div>
+    <div class="tarjeta"><div class="senales" id="segSenales"></div></div>
+    <div class="rejilla r2 mt">
+      <div class="tarjeta"><div class="cab"><h3>Delitos registrados por mes, 2022–2024</h3><span class="meta">casos</span></div><div id="gDelitos"></div><p class="fuente">Fuente: Hong Kong Police Force, crime_details_overall.csv. Sin desagregación por distrito.</p></div>
+      <div class="tarjeta"><div class="cab"><h3>Variación 2025 frente a 2024</h3><span class="meta">% por tipo de delito</span></div><div id="gVarDelitos"></div><p class="fuente">Fuente: HKPF, situación de ley y orden 2025 (F10).</p></div>
+    </div>
+  </section>
+
+  <!-- ================= INFRAESTRUCTURA ================= -->
+  <section id="infraestructura" class="sec">
+    <p class="ceja">Red de transporte y urgencias</p><h2 class="tit">Transporte y salud</h2>
+    <p class="lead" id="infLead"></p>
+    <div class="kpis" id="infKpis"></div>
+    <div class="rejilla r3">
+      <div class="tarjeta"><div class="cab"><h3>Paradas por cada 10.000 habitantes</h3><span class="meta">bus, minibús, MTR, tren ligero, ferry</span></div><div id="gParadas10k"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>Distancia media a urgencias</h3><span class="meta">km desde cada circunscripción</span></div><div id="gDistHosp"></div></div>
+      <div class="tarjeta"><div class="cab"><h3>Estaciones MTR por distrito</h3><span class="meta">estaciones</span></div><div id="gMtr"></div></div>
+    </div>
+    <div class="tarjeta mt"><div class="cab"><h3>Mezcla de modos por distrito</h3><span class="meta">paradas por modo (una parada puede tener varios)</span></div><div id="gModos"></div><p class="fuente">Fuente: hkbus/hk-bus-crawling (datos abiertos de operadores) · unión espacial con circunscripciones EAC.</p></div>
+  </section>
+
+  <!-- ================= AMBIENTE ================= -->
+  <section id="ambiente" class="sec">
+    <p class="ceja">Aire, agua, naturaleza y sensores</p><h2 class="tit">Ambiente y sensores</h2>
+    <p class="lead" id="ambLead"></p>
+    <div class="kpis" id="ambKpis"></div>
+    <div class="rejilla r3">
+      <div class="tarjeta"><div class="cab"><h3>Calidad del aire por estación</h3><span class="meta" id="aqhiFecha">AQHI</span></div><div id="gAqhi"></div><p class="fuente">Fuente: EPD, AQHI por estación (captura puntual). 1–3 riesgo bajo · 4–6 moderado · 7+ alto.</p></div>
+      <div class="tarjeta"><div class="cab"><h3>¿De dónde sale el agua?</h3><span class="meta">% del consumo 2024</span></div><div id="gAgua"></div><p class="fuente">Fuente: Water Supplies Department (F14, wiki 6.7).</p></div>
+      <div class="tarjeta"><div class="cab"><h3>Estaciones del Observatorio por tipo</h3><span class="meta">estaciones</span></div><div id="gEstaciones"></div><p class="fuente">Fuente: Hong Kong Observatory, información de estaciones.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= CORRELACIONES ================= -->
+  <section id="correlaciones" class="sec">
+    <div class="tarjeta grande">
+      <p class="ceja">Lectura cruzada · 18 distritos</p><h2 class="tit">Correlaciones</h2>
+      <p class="lead">Cruza <b>17 variables trazables</b> de los 18 distritos: demografía, ingreso, vivienda, empleo, transporte y acceso a urgencias. El gráfico conserva los valores originales y calcula Pearson y Spearman. <b>Correlación no implica causalidad</b>: con 18 distritos son relaciones descriptivas que sirven para formular preguntas.</p>
+      <div class="kpis" id="corKpis"></div>
+      <div class="tarjeta"><div class="cab"><h3>Explorador de relaciones</h3><span class="meta">elige dos variables · distrito principal en coral</span></div>
+        <div class="chips" id="corPresets" style="margin-bottom:12px"></div>
+        <div class="ctl-fila" style="grid-template-columns:1fr auto 1fr auto">
+          <div class="ctl"><label for="ejeX">Eje horizontal</label><select id="ejeX"></select></div>
+          <button class="btn swap" id="corSwap" aria-label="Intercambiar ejes">⇄</button>
+          <div class="ctl"><label for="ejeY">Eje vertical</label><select id="ejeY"></select></div>
+          <div class="ctl"><label>Método</label><div class="chips" id="corMetodo"></div></div>
+        </div>
+        <div class="cor-grid"><div class="tarjeta"><p class="ceja" id="coefNombre">rho de Spearman</p><div class="coef" id="coef">—</div><p style="margin:6px 0 0;font-weight:600" id="coefLectura"></p><p class="muted mono" style="font-size:10.5px">18 distritos</p></div><div id="gDisp"></div></div>
+        <p class="fuente">Método: casos completos, sin imputación. Pearson mide relación lineal; Spearman mide relación monótona sobre rangos. Fuente: public/data/correlaciones.json (derivado del lago).</p>
+      </div>
+      <div class="tarjeta mt"><div class="cab"><h3>Relaciones que abren preguntas</h3><span class="meta">las más fuertes · clic para explorarlas</span></div><div class="pares" id="pares"></div></div>
+    </div>
+  </section>
+
+  <!-- ================= ATLAS ================= -->
+  <section id="atlas" class="sec">
+    <p class="ceja">Distrito a distrito</p><h2 class="tit">Atlas de los 18 distritos</h2>
+    <p class="lead">Los <b>18 distritos</b> comparados con lo que el lago sabe de cada uno. Cada dimensión va de 0 a 100 entre distritos (min-max) y el índice es el promedio con los pesos que tú fijes: <b>mueve los controles y el ranking cambia</b>. Lo que no existe por distrito no se inventa.</p>
+    <div class="tarjeta"><div class="cab"><h3>Índice compuesto: pesos por dimensión</h3><span class="meta">promedio ponderado de 5 dimensiones 0–100</span></div>
+      <div class="pesos pesos5" id="atlasPesos"></div>
+      <div class="chips mt" id="atlasPresets"></div>
+      <p class="muted" style="font-size:12.5px;margin:10px 0 0" id="atlasResumen"></p></div>
+    <div class="tarjeta mt"><div class="cab"><h3>Ranking de los 18 distritos</h3><span class="meta">clic en una fila la lleva al diagnóstico y al mapa</span></div>
+      <div class="tabla-scroll"><table class="tabla" id="atlasTabla"></table></div>
+      <p class="fuente">Método: min-max 0–100 por variable entre los 18 distritos (invertida cuando menos es mejor), promedio por dimensión, promedio ponderado. Derivado del lago.</p></div>
+  </section>
+
+  <!-- ================= ESCUCHA ================= -->
+  <section id="escucha" class="sec">
+    <p class="ceja">Conversación pública</p><h2 class="tit">Escucha social</h2>
+    <p class="lead" id="escLead"></p>
+    <div class="kpis" id="escKpis"></div>
+    <div class="rejilla r2">
+      <div class="tarjeta"><div class="cab"><h3>Temas en la prensa</h3><span class="meta">titulares por tono</span></div><div id="gTemas"></div><p class="fuente" id="escNota"></p></div>
+      <div class="tarjeta"><div class="cab"><h3>Distritos que aparecen en los titulares</h3><span class="meta">menciones</span></div><div id="gMenciones"></div></div>
+    </div>
+    <div class="tarjeta mt"><div class="cab"><h3>Titulares</h3><div class="chips" id="escFiltro"></div></div><div class="titulares" id="escLista"></div></div>
+  </section>
+
+  <!-- ================= FUENTES ================= -->
+  <section id="fuentes" class="sec">
+    <p class="ceja">Trazabilidad</p><h2 class="tit">Fuentes y método</h2>
+    <p class="lead" id="fuentesLead"></p>
+    <div class="chips" id="fuentesFiltro" style="margin-bottom:12px"></div>
+    <div class="tarjeta"><div class="tabla-scroll"><table class="tabla" id="fuentesTabla"></table></div></div>
+    <p class="fuente">Cada cifra de esta página sale de <code>public/data/*.json</code>, generado por <code>pipeline/build.py</code> a partir de <code>raw/</code>. El diccionario de datos está en <code>catalogo/</code>.</p>
+  </section>
+</main>
+
+<div class="paleta-fondo" id="paletaFondo"><div class="paleta" role="dialog" aria-label="Buscar"><input id="paletaInput" placeholder="Busca un distrito o una sección…" autocomplete="off"><ul id="paletaLista"></ul></div></div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>

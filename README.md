@@ -4,6 +4,18 @@ Data lake con datos **públicos** de Hong Kong organizado en las mismas pestaña
 
 La unidad territorial principal son los **18 distritos** de Hong Kong (códigos A–T del censo), con detalle fino en las **452 circunscripciones DCCA 2019**.
 
+## Página web (Cerebro HK)
+
+`public/index.html` es el tablero territorial, con el mismo sistema visual de *Cerebro Lima*: menú lateral, panorama con diagnóstico comparativo, mapa MapLibre (coropletas, circunscripciones, malla H3, MTR, hospitales, estaciones), y secciones de gente, economía y vivienda, turismo, finanzas públicas, seguridad, transporte y salud, ambiente, correlaciones, atlas de los 18 distritos, escucha social y fuentes. Lee solo `public/data/*.json`; no tiene backend.
+
+```bash
+cd public && python -m http.server 8000   # abrir http://localhost:8000
+```
+
+Para publicarla en Vercel basta con importar el repositorio: `vercel.json` sirve la carpeta `public/` sin paso de compilación.
+
+Sellos de cada cifra: **observado** (descargado y procesado por el pipeline), **declarado** (cifra oficial leída de un informe y registrada en la wiki, fuentes F01–F18), **derivado** (calculado en el lago).
+
 ## Estructura
 
 ```
@@ -12,6 +24,8 @@ curated/        Plata: tablas y capas limpias, en español, unidas por código d
 public/data/    Oro: un JSON por pestaña, listo para servir en el front (Vercel/Next/Vite)
 catalogo/       catalogo.json — fuentes, URLs, licencias, validaciones y notas
 pipeline/       build.py — reconstruye curated/ y public/data/ a partir de raw/
+                exportar_perfil_wiki.py — perfil de ciudad de la wiki, hexágonos, catálogo y barrios para la web
+public/         página web (index.html + assets/) que consume public/data/
 ```
 
 ## Cómo reconstruir
