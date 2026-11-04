@@ -136,11 +136,6 @@ Herramienta principal: Claude (Anthropic). La bitácora completa está en la hoj
 | Verificación | Claude | Escribir el script de verificación del lago (pipeline/verificar.py) | Parcial: Entregó 16 comprobaciones: catálogo, diccionario, Excel, datos de personas, umbral de población, secretos y te… | Una comprobación que nunca falla no prueba nada, y un barrido de patrones sobre código da falsos positivos: se acotó a los datos. |
 | Vistas | Claude | Probar una segunda herramienta de visualización (Observable Framework) con los mismos datos | Parcial: Armó un proyecto en exploracion/observable-framework/ con dos cargadores que leen public/data, una coropleta y… | Una herramienta puede depender de un CDN en el build y no solo en el navegador.… |
 
-## Revisión cruzada
-
-- Tres cifras auditadas por el grupo [X]: [COMPLETAR resultado y correcciones]
-- Ataque del grupo [Y]: [COMPLETAR qué intentó, qué consiguió, qué cambiamos]
-- Vueltas atrás en la ruta: [COMPLETAR; una conocida: de «vistas» a «permiso» al quitar el desempleo de Moody's (F34)]
 
 ---
 
