@@ -84,7 +84,7 @@ Dos herramientas probadas el 2026-11-03 con los **mismos datos** (`public/data/d
 - **Nivel:** solo agregados (distrito como unidad mínima con población) y abierto. Sin compuerta: es un sitio estático y todo lo que está en `public/` se descarga.
 - **Qué teníamos que proteger:** pobreza por distrito cruzada con minorías, vivienda subdividida o edad (decisión escrita antes de graficar, sección «Gente» de la página: hoy no se grafica; si entra, solo como tasa de los 18 distritos, sin ranking de «peor distrito» y fuera del explorador de correlaciones); y los 32 titulares de prensa (F32), texto libre de terceros.
 - **Cómo se comprueba:** `python pipeline/verificar.py` falla —y entonces no se publica— si una clave delata datos de personas, si un distrito publica menos de 100.000 habitantes, si circunscripciones o malla H3 traen población u hogares, si hay claves o secretos en el repo, si alguna URL lleva llave, o si el Excel y el diccionario no coinciden con lo publicado. La probamos inyectando cuatro fallas en una copia y las detectó.
-- **Por qué esta herramienta cumple las dos cosas:** abre en teléfono (reglas responsive hasta 860 px) [CONFIRMAR: probado en un teléfono real] y, como todo es agregado público, la protección es no publicar lo sensible, no cerrarlo. **Descartamos por poco:** Observable Framework (ver la bitácora de exploración).
+- **Por qué esta herramienta cumple las dos cosas:** abre en teléfono (reglas responsive hasta 860 px; falta probarlo en un teléfono real) y, como todo es agregado público, la protección es no publicar lo sensible, no cerrarlo. **Descartamos por poco:** Observable Framework (ver la bitácora de exploración).
 
 ## Nuestra posición
 
