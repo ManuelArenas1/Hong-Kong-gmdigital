@@ -1,0 +1,17 @@
+{
+  "name": "cerebro-hk-observable",
+  "private": true,
+  "type": "module",
+  "description": "Exploración: los mismos datos de public/data/ con Observable Framework (no es el sistema publicado).",
+  "scripts": {
+    "build": "observable build",
+    "dev": "observable preview"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.4",
+    "@observablehq/plot": "^0.6.18"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

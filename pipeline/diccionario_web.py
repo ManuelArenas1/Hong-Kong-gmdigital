@@ -22,7 +22,7 @@ PUB = ROOT / "public" / "data"
 # Archivos que la web pide con fetch (app.js → ARCHIVOS; mapa.js → geo, circunscripciones, hexágonos, paradas)
 WEB = ["panorama.json", "atlas_zonas.json", "demografia.json", "economia.json", "infraestructura.json", "sensores.json",
        "escucha.json", "correlaciones.json", "perfil_wiki.json", "fuentes.json", "conciliacion.json", "barrios.json",
-       "geo.json", "geo_circunscripciones.json", "hex_h3_res8.geojson", "infraestructura_paradas.json"]
+       "geo.json", "geo_circunscripciones.json", "hex_h3_res8.geojson", "infraestructura_paradas.json", "atlas_distribuidos.json"]
 
 COLUMNAS = ["ID fuente", "Archivo o tabla en el lago", "Nombre del campo en el lago", "Nombre original en la fuente",
             "Qué significa (en una frase)", "Tipo de dato", "Unidad de medida", "Ejemplo de valor",
@@ -38,6 +38,7 @@ MAPAS = {"correlaciones.json": {"variables", "pearson", "pearson.*", "spearman",
 EXTRA: dict[str, tuple] = {
     # campo: (fuente o None=fuentes del archivo, original, significado, unidad, transformación, pregunta)
     "generado_utc": (None, "(pipeline)", "Momento en que el pipeline generó el archivo.", "fecha-hora UTC", "datetime.utcnow() al escribir el archivo.", "¿De cuándo son los datos que veo?"),
+    "resolucion_h3": (None, "(pipeline)", "Resolución de la malla hexagonal H3 usada en todo el archivo (8 ≈ 0,74 km² por celda).", "nivel H3", "Constante del pipeline (h3.latlng_to_cell).", "¿Qué tan fina es la malla?"),
     "ciudad": (None, "(pipeline)", "Ciudad a la que corresponde el archivo.", "—", "Constante.", "¿De qué ciudad es el tablero?"),
     "unidad_territorial": (None, "(pipeline)", "Unidad territorial de las filas del archivo.", "—", "Constante.", "¿A qué escala se lee cada cifra?"),
     "catalogo": (None, "(pipeline)", "Ruta al catálogo de fuentes que documenta el archivo.", "—", "Constante.", "¿Dónde está la procedencia?"),

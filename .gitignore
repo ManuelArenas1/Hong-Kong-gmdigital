@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+
+node_modules/
+exploracion/observable-framework/dist/
+exploracion/observable-framework/src/.observablehq/

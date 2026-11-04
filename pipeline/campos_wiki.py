@@ -1,24 +1,19 @@
-"""Llena la hoja «2. Diccionario» del archivo del grupo usando SOLO la wiki y las fuentes F01–F18 del grupo.
+"""Campos del perfil de ciudad de la wiki del grupo (cifras «declaradas», fuentes F01–F18).
 
-Solo entran campos de fuentes con estado «Integrada al lago» en la hoja 1 (F01–F06, F08–F15).
-Uso: python pipeline/llenar_diccionario_wiki.py <entrada.xlsx> <salida.xlsx>
+Cada fila es una cifra oficial leída de un informe y registrada a mano en la wiki. Alimenta
+public/data/perfil_wiki.json (pipeline/exportar_perfil_wiki.py). La columna «archivo» es el NOMBRE DEL
+TEMA dentro de perfil_wiki.json, no un archivo del lago. Antes era la tabla de un Excel que describía
+archivos lago/*.json que nunca existieron en el repositorio; ese relleno se eliminó.
 """
 from __future__ import annotations
 
-import re
-import sys
-from copy import copy
-
-import openpyxl
-from openpyxl.worksheet.cell_range import MultiCellRange
-
-P = "lago/poblacion.json"
-V = "lago/vivienda.json"
-FI = "lago/finanzas_publicas.json"
-S = "lago/seguridad.json"
-T = "lago/turismo.json"
-SU = "lago/suelo.json"
-PQ = "lago/suelo_parques.json"
+P = "poblacion"
+V = "vivienda"
+FI = "finanzas_publicas"
+S = "seguridad"
+T = "turismo"
+SU = "suelo"
+PQ = "suelo_parques"
 
 # (ID, archivo, campo, nombre original, significado, tipo, unidad, ejemplo, vacío, rango, transformación, pregunta)
 CAMPOS = [
@@ -269,34 +264,3 @@ CAMPOS = [
     ("F15", SU, "pct_especies_en_riesgo", "Share of species at risk", "Porcentaje de especies evaluadas que están en riesgo.", "Decimal", "%", 26, "No", "0 a 100",
      "Se copió el porcentaje como número.", "¿Qué tan amenazada está la naturaleza local? (Wiki 6.11)"),
 ]
-
-
-def main(entrada, salida):
-    wb = openpyxl.load_workbook(entrada)
-    ws = wb["2. Diccionario"]
-    n = len(CAMPOS)
-    fin = 4 + n
-    modelo = [ws.cell(row=5, column=c) for c in range(1, 14)]
-    for r in range(5, fin + 1):
-        for c, m in enumerate(modelo, 1):
-            cel = ws.cell(row=r, column=c)
-            if r > 44:
-                cel.fill, cel.font, cel.border, cel.alignment = copy(m.fill), copy(m.font), copy(m.border), copy(m.alignment)
-    for i, (fid, archivo, campo, orig, sig, tipo, unidad, ej, vacio, rango, trans, preg) in enumerate(CAMPOS, 5):
-        fila = [fid, archivo, campo, orig, sig, tipo, unidad, ej, vacio, rango, "Pública", trans, preg]
-        for j, v in enumerate(fila, 1):
-            ws.cell(row=i, column=j, value=v)
-    if fin > 44:
-        for dv in ws.data_validations.dataValidation:
-            dv.sqref = MultiCellRange(re.sub(r"([A-Z]+)5:([A-Z]+)44", lambda m: f"{m.group(1)}5:{m.group(2)}{fin}", str(dv.sqref)))
-        res = wb["Resumen"]
-        for row in res.iter_rows(min_col=2, max_col=2):
-            for c in row:
-                if isinstance(c.value, str) and "'2. Diccionario'" in c.value:
-                    c.value = re.sub(r"('2\. Diccionario'!\$?[A-Z]+\$?5:\$?[A-Z]+\$?)44", rf"\g<1>{fin}", c.value)
-    wb.save(salida)
-    print(f"{n} campos escritos (filas 5 a {fin})")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])

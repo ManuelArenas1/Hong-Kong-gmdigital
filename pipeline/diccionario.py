@@ -3,8 +3,7 @@
 Uso:
     python pipeline/diccionario.py
 Salidas:
-    catalogo/diccionario_datos.csv
-    catalogo/diccionario_datos.xlsx
+    catalogo/diccionario_datos.csv   (insumo de diccionario_web.py: significado de los campos de curated/)
 """
 from __future__ import annotations
 

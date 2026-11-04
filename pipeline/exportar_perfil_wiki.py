@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import PUBLIC, escribir_json  # noqa: E402
-from llenar_diccionario_wiki import CAMPOS  # noqa: E402
+from campos_wiki import CAMPOS  # noqa: E402
 from catalogo_unico import REEMPLAZADOS  # noqa: E402
 
 # Hoja «1. Fuentes» del grupo (copiada del archivo compartido por el equipo, 2026-10-06)
@@ -71,13 +71,11 @@ if __name__ == "__main__":
 
 
 def copiar_auxiliares():
-    """Copia a public/data los archivos que la web necesita y que viven en curated/ o catalogo/."""
+    """Copia a public/data los archivos que la web necesita y que viven en curated/."""
     import json
     import shutil
     root = Path(__file__).resolve().parents[1]
     shutil.copy(root / "curated" / "atlas_distribuidos" / "hex_h3_res8.geojson", PUBLIC / "hex_h3_res8.geojson")
-    cat = json.loads((root / "catalogo" / "catalogo.json").read_text())
-    escribir_json(PUBLIC / "catalogo.json", {"fuentes": cat["fuentes"], "fecha_captura": cat.get("fecha_captura")})
 
 
 if __name__ == "__main__":

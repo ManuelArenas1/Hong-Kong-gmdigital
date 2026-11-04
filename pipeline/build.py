@@ -611,7 +611,7 @@ def geojson_dict(path):
 def publicar(ctx):
     d = ctx
     meta = {"generado_utc": GENERADO, "ciudad": "Hong Kong", "unidad_territorial": "18 distritos (District Council districts)",
-            "catalogo": "catalogo/catalogo.json"}
+            "catalogo": "catalogo/fuentes.json"}
     t = d["atlas"]
     ult = d["ult_anio"]
     ghs = d["panel_eco"].merge(d["panel_pob"], on=["anio", "codigo"])

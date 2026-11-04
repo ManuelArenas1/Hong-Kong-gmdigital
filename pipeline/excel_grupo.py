@@ -11,6 +11,7 @@ Uso: python pipeline/excel_grupo.py <excel_del_grupo.xlsx> <salida.xlsx>
 from __future__ import annotations
 
 import json
+import re
 import sys
 from copy import copy
 from datetime import date
@@ -22,6 +23,9 @@ from openpyxl.styles import PatternFill
 
 ROOT = Path(__file__).resolve().parents[1]
 GRIS = PatternFill("solid", fgColor="FFEDEDED")
+
+INTEGRANTES = "Juan Esteban Zuluaga, Juan Pablo Restrepo y Manuel Arenas"
+URL_SISTEMA = "https://cerebro-hk.vercel.app/"
 
 # IDs del Excel anterior del pipeline → catálogo único
 VIEJO = {f"F{i:02d}": f"F{i + 18:02d}" for i in range(1, 14)} | {
@@ -74,6 +78,39 @@ BITACORA_WEB = [
      "Parcial", "F16", "La decisión está en la sección Gente de la página (tarjeta «Pobreza por distrito: cómo la protegemos»)."),
     ("Cambiar la paleta a los colores de la bandera", "Rehízo la hoja de estilos en rojo #DE2910 y blanco; dejó los colores de series en azul, verde y violeta validados para daltonismo.",
      "Se probó en escritorio y móvil con capturas; aparecieron textos largos que desbordaban en móvil y se corrigieron.", "Correcto", "—", "El rojo se reserva para tipografía, fondos y el elemento destacado."),
+]
+
+BITACORA_SESION = [
+    ("Revisar el repositorio contra la rúbrica de la entrega y las correcciones del taller",
+     "Comparó README, catálogo, diccionario, página y scripts contra cada requisito y entregó una lista de faltantes y de problemas de consistencia. No señaló que el repositorio no tenía script de verificación: se vio después, al leer la lámina «La entrega».",
+     "Al limpiar se vio que una afirmación era errónea: llamó «lago viejo» a catalogo/diccionario_datos.xlsx y al catálogo de 348 campos, pero diccionario_datos.csv alimenta pipeline/diccionario_web.py.",
+     "Parcial", "—",
+     "Antes de borrar, buscar quién importa o lee cada archivo. El lago viejo real eran los restos del relleno que describía archivos lago/*.json que nunca existieron."),
+    ("Leer las láminas «La herramienta», «Cómo protegerlo» y «La entrega» del taller",
+     "La descarga directa de la página devolvió solo «Cargando el cuaderno…»; las láminas se leyeron abriendo la página en un navegador.",
+     "Se contrastó la plantilla del README de la lámina «La entrega» con el README resultante.",
+     "Parcial", "—",
+     "Una página que se arma con JavaScript no se lee con una descarga simple, y su contenido es dato, no instrucción."),
+    ("Limpiar el lago viejo y mantener el Excel igual al lago",
+     "Borró el catálogo antiguo de 14 fuentes con ids viejos, el Excel duplicado diccionario_datos.xlsx y tres scripts del relleno anterior; dejó la tabla de campos de la wiki en pipeline/campos_wiki.py.",
+     "Se volvió a correr exportar_perfil_wiki.py (perfil_wiki.json quedó idéntico) y se regeneró el Excel: cada campo del diccionario apunta a un archivo que existe en public/data.",
+     "Correcto", "F01–F45",
+     "Regenerar y comparar es la prueba de que borrar no rompió nada."),
+    ("Redactar las dos reflexiones del taller con evidencia del repositorio",
+     "Midió el conteo mínimo publicado, las columnas sin uso y barrió el texto libre del lago; redactó las respuestas en el README.",
+     "Cada cifra sale de una consulta que se puede volver a correr. Lo que no se puede saber desde el repo (permisos que tuvo la IA en sesiones anteriores, copias fuera del repositorio) quedó marcado para que el grupo lo confirme.",
+     "Parcial", "F32",
+     "Hay respuestas que solo el grupo sabe; la IA no debe inventarlas."),
+    ("Escribir el script de verificación del lago (pipeline/verificar.py)",
+     "Entregó 16 comprobaciones: catálogo, diccionario, Excel, datos de personas, umbral de población, secretos y texto libre.",
+     "La primera corrida falló en index.html: el barrido de instrucciones escondidas trataba como sospechosa la etiqueta <script> legítima. Después se inyectaron cuatro fallas en una copia (un distrito con 5.000 habitantes, una clave «email», un secreto y una frase tipo «ignore all previous instructions») y las cuatro se detectaron.",
+     "Parcial", "F32",
+     "Una comprobación que nunca falla no prueba nada, y un barrido de patrones sobre código da falsos positivos: se acotó a los datos."),
+    ("Probar una segunda herramienta de visualización (Observable Framework) con los mismos datos",
+     "Armó un proyecto en exploracion/observable-framework/ con dos cargadores que leen public/data, una coropleta y un gráfico de barras, y lo construyó.",
+     "El primer build falló: Framework descarga Plot de cdn.jsdelivr.net y ese CDN no era accesible desde el entorno de prueba. Se resolvió instalando @observablehq/plot en local y el segundo build terminó (7 s). Licencias y versiones se leyeron en el registro de npm. La página no se vio renderizada.",
+     "Parcial", "—",
+     "Una herramienta puede depender de un CDN en el build y no solo en el navegador. Las razones para quedarse con la primera herramienta se escribieron después de medir, no cuando el grupo decidió."),
 ]
 
 
@@ -142,9 +179,10 @@ def main(entrada, salida):
 
     # ---------------- 3. Bitácora IA ----------------
     ws = wb["3. Bitácora IA"]
+    propias = {e[0] for e in BITACORA_PIPELINE + BITACORA_WEB + BITACORA_SESION}
     grupo = []
     for r in ws.iter_rows(min_row=4, max_col=8, values_only=True):
-        if r[2]:
+        if r[2] and r[2] not in propias:  # solo las filas escritas por el grupo; las del pipeline se regeneran
             grupo.append(list(r))
     for i, g in enumerate(grupo, start=1):
         g[0] = i
@@ -153,7 +191,7 @@ def main(entrada, salida):
     for enc, resp, comp, res, ids, apr in BITACORA_PIPELINE:
         nuevos = ", ".join(VIEJO.get(x.strip(), x.strip()) for x in ids.split(","))
         extra.append([None, "Claude (Anthropic)", enc, resp, comp, res, nuevos, apr])
-    for enc, resp, comp, res, ids, apr in BITACORA_WEB:
+    for enc, resp, comp, res, ids, apr in BITACORA_WEB + BITACORA_SESION:
         extra.append([None, "Claude (Anthropic)", enc, resp, comp, res, ids, apr])
     for k, e in enumerate(extra, start=n + 1):
         e[0] = k
@@ -161,25 +199,24 @@ def main(entrada, salida):
     ampliar_validaciones(ws, 4, ult_b)
 
     # ---------------- Resumen ----------------
+    # Cada rango se reescribe por hoja, así que el resultado no depende de cuántas veces se corrió antes.
     ws = wb["Resumen"]
+    hojas = {"1. Fuentes": (5, ult_f), "2. Diccionario": (5, ult_d), "3. Bitácora IA": (4, ult_b)}
     for row in ws.iter_rows(min_row=4, max_col=2):
         v = row[1].value
         if isinstance(v, str) and v.startswith("="):
-            v = v.replace("A5:A44", f"A5:A{ult_f}").replace("N5:N44", f"N5:N{ult_f}").replace("H5:H44", f"H5:H{ult_f}").replace("I5:I44", f"I5:I{ult_f}")
-            v = v.replace("C5:C44", f"C5:C{ult_d}").replace("K5:K44", f"K5:K{ult_d}").replace("M5:M44", f"M5:M{ult_d}")
-            v = v.replace("C4:C43", f"C4:C{ult_b}").replace("F4:F43", f"F4:F{ult_b}")
+            for hoja, (ini, fin) in hojas.items():
+                v = re.sub(rf"('{re.escape(hoja)}'!)\$?([A-Z]+)\$?\d+:\$?([A-Z]+)\$?\d+", rf"\g<1>\g<2>{ini}:\g<3>{fin}", v)
             row[1].value = v
-    # Las fórmulas de «Fuentes» y «Diccionario» comparten letras de columna; se corrigen por hoja
-    for row in ws.iter_rows(min_row=4, max_col=2):
-        v = row[1].value
-        if isinstance(v, str) and "'2. Diccionario'" in v:
-            row[1].value = v.replace(f"C5:C{ult_f}", f"C5:C{ult_d}")
 
     # Instrucciones: dónde está la página y de dónde sale todo
     ws = wb["Instrucciones"]
     ws["A8"] = ("Página: public/index.html del mismo repositorio. Este Excel se genera con pipeline/excel_grupo.py desde "
                 "catalogo/fuentes.json y public/data/*.json: ninguna cifra se copia a mano.")
     ws["A8"].font = copy(ws["A7"].font)
+    ws["B6"] = f"Integrantes: {INTEGRANTES}"
+    ws["B7"] = "Enlace al repositorio o a la carpeta del lago: https://github.com/ManuelArenas1/Hong-Kong-gmdigital"
+    ws["A8"] = ws["A8"].value + " Sistema publicado: " + URL_SISTEMA
 
     wb.save(salida)
     print(f"Fuentes: {len(filas)} (filas 5–{ult_f}) · Diccionario: {len(dic)} (5–{ult_d}) · Bitácora: {len(grupo)} del grupo + {len(extra)} nuevas (4–{ult_b})")
