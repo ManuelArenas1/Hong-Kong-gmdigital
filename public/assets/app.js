@@ -511,19 +511,20 @@ function escucha() {
 function fuentes() {
   const FU = G.fuentes.fuentes;
   const cuenta = (f) => FU.filter(f).length;
-  const integ = cuenta((x) => x.estado === "Integrada al lago"), riesgo = cuenta((x) => x.riesgo_licencia), noVer = cuenta((x) => !x.licencia_verificada && x.licencia !== "no declara");
-  $("#fuentesLead").innerHTML = `<b>${FU.length} fuentes en un solo catálogo</b> (F01–F18 registradas por el equipo en la wiki; F19–F34 descargadas por el pipeline; F35–F45 probadas y no integradas): ${integ} <span class="estado integrada">integradas</span> · ${cuenta((x) => x.estado === "Candidata")} <span class="estado candidata">candidatas</span> · ${cuenta((x) => /Descartada|No existe|No responde/.test(x.estado))} <span class="estado descartada">descartadas o sin respuesta</span>. Las licencias se copian <b>literales, en inglés</b>, tal como aparecen en cada sitio (revisadas ${G.fuentes.fecha_licencias}); ${noVer} quedan como «not verified» porque la herramienta no pudo abrir la página de avisos, y ${riesgo} tienen términos restrictivos o condicionados.`;
+  const integ = cuenta((x) => x.estado === "Integrada al lago"), riesgo = cuenta((x) => x.riesgo_licencia);
+  $("#fuentesLead").innerHTML = `<b>${FU.length} fuentes en un solo catálogo</b> (F01–F18 registradas por el equipo en la wiki; F19–F34 descargadas por el pipeline; F35–F45 probadas y no integradas): ${integ} <span class="estado integrada">integradas</span> · ${cuenta((x) => x.estado === "Candidata")} <span class="estado candidata">candidatas</span> · ${cuenta((x) => /Descartada|No existe|No responde/.test(x.estado))} <span class="estado descartada">descartadas o sin respuesta</span>. Las licencias se copian <b>literales, en inglés</b>, tal como aparecen en cada sitio (revisadas ${G.fuentes.fecha_licencias}); ${riesgo} tienen términos restrictivos o condicionados.`;
   const filtros = [["todas", () => true], ["integradas", (x) => x.estado === "Integrada al lago"], ["candidatas", (x) => x.estado === "Candidata"],
-    ["descartadas / no existen", (x) => /Descartada|No existe|No responde/.test(x.estado)], ["licencia restrictiva", (x) => x.riesgo_licencia], ["licencia sin verificar", (x) => !x.licencia_verificada && x.licencia !== "no declara"]];
+    ["descartadas / no existen", (x) => /Descartada|No existe|No responde/.test(x.estado)], ["licencia restrictiva", (x) => x.riesgo_licencia]];
   $("#fuentesFiltro").innerHTML = filtros.map(([n], i) => `<button class="chip${i ? "" : " on"}" data-i="${i}">${n}</button>`).join("");
   const clase = (e) => (e === "Integrada al lago" ? "integrada" : e === "Candidata" ? "candidata" : "descartada");
   const pintar = (f) => {
-    $("#fuentesTabla").innerHTML = `<thead><tr><th>ID</th><th>Dataset y entidad</th><th>Estado</th><th>Licencia (literal, tal como aparece)</th><th>Archivo del lago</th><th>URL</th></tr></thead><tbody>` +
-      FU.filter(f).map((x) => `<tr><td class="mono" style="font-size:12px;font-weight:600;color:var(--rojo-osc)">${x.id}</td>
+    $("#fuentesTabla").innerHTML = `<thead><tr><th>ID</th><th>Dataset y entidad</th><th>Estado</th><th>Licencia (literal, tal como aparece)</th><th>Archivo del lago</th><th>Periodo que cubre</th><th>Probada el</th><th>URL</th></tr></thead><tbody>` +
+      FU.filter(f).map((x) => `<tr id="f-${x.id}"><td class="mono" style="font-size:12px;font-weight:600;color:var(--rojo-osc)">${x.id}</td>
         <td><b>${esc(x.nombre)}</b><div class="muted" style="font-size:11.5px">${esc(x.entidad)}</div>${x.observaciones ? `<div class="muted" style="font-size:11px;margin-top:3px">${esc(x.observaciones)}</div>` : ""}</td>
         <td><span class="estado ${clase(x.estado)}">${esc(x.estado.toLowerCase())}</span>${x.riesgo_licencia ? `<div style="margin-top:4px"><span class="estado riesgo">licencia ${x.riesgo_licencia}</span></div>` : ""}</td>
-        <td style="font-size:11.5px;max-width:420px">${x.licencia_verificada || x.licencia === "no declara" ? "" : '<span class="estado candidata">not verified</span> '}${esc(x.licencia)}${x.url_licencia ? `<div class="mono muted" style="font-size:10px;margin-top:3px"><a href="${esc(x.url_licencia)}" target="_blank" rel="noopener">${esc(x.url_licencia.replace(/^https?:\/\//, "").slice(0, 60))}</a></div>` : ""}</td>
+        <td style="font-size:11.5px;max-width:420px">${!x.licencia_verificada && x.licencia !== "no declara" ? '<span class="muted">—</span>' : esc(x.licencia)}${x.url_licencia ? `<div class="mono muted" style="font-size:10px;margin-top:3px"><a href="${esc(x.url_licencia)}" target="_blank" rel="noopener">${esc(x.url_licencia.replace(/^https?:\/\//, "").slice(0, 60))}</a></div>` : ""}</td>
         <td class="mono" style="font-size:10.5px">${x.archivos_lago.length ? x.archivos_lago.map((a) => `data/${a}`).join("<br>") : '<span class="muted">—</span>'}</td>
+        <td class="mono" style="font-size:11px">${esc(x.periodo || "—")}</td><td class="mono" style="font-size:11px;white-space:nowrap">${esc(x.fecha_probada || "—")}</td>
         <td>${/^https?:/.test(x.url) ? `<a href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="Abrir ${x.id}">↗</a>` : ""}</td></tr>`).join("") + "</tbody>";
   };
   $("#fuentesFiltro").addEventListener("click", (e) => { const b = e.target.closest(".chip"); if (!b) return; document.querySelectorAll("#fuentesFiltro .chip").forEach((c) => c.classList.toggle("on", c === b)); pintar(filtros[+b.dataset.i][1]); });
@@ -577,7 +578,7 @@ function trazar() {
     const nodo = document.getElementById(id); if (!nodo) { console.warn("[traza] falta", id); continue; }
     const host = nodo.closest(".tabla-scroll") || nodo;
     const p = document.createElement("p"); p.className = "fuente";
-    p.innerHTML = `<b>${ids.join(" · ")}</b> ${ids.map(nombre).filter((v, i, a) => a.indexOf(v) === i).join(" · ")} — archivo <code>data/${archivo}</code> → ${campo}`;
+    p.innerHTML = `<b>${ids.map((i) => `<a href="#f-${i}" style="color:inherit" title="Ver fuente, periodo y fecha de prueba">${i}</a>`).join(" · ")}</b> ${ids.map(nombre).filter((v, i, a) => a.indexOf(v) === i).join(" · ")} — archivo <code>data/${archivo}</code> → ${campo}`;
     host.insertAdjacentElement("afterend", p);
   }
 }

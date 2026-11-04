@@ -280,3 +280,6 @@ table.tabla td.n{text-align:right;font-family:var(--mono)}
 /* las rutas de campo largas (trazabilidad) no deben ensanchar la grilla */
 .rejilla>*,.kpis>*,.dims>*,.comparar>*{min-width:0}
 .fuente,.fuente code,.kpi .f{overflow-wrap:anywhere}
+
+#fuentesTabla tr{scroll-margin-top:72px}
+#fuentesTabla tr:target td{background:rgba(31,41,55,.07)}
